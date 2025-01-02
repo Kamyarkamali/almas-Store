@@ -18,7 +18,6 @@ function MenuLg() {
           />
         </Link>
       </div>
-
       <div className="border-[2px] border-[#E5E5E5] lg:w-[713px] custom:w-[329px] h-[46px] rounded-md flex items-center justify-between">
         <input
           placeholder="جستوجوی محصولات"
@@ -29,7 +28,6 @@ function MenuLg() {
           <SearchSvg />
         </button>
       </div>
-
       <div>
         <TopMenuSection />
       </div>

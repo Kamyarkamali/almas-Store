@@ -2,7 +2,7 @@ import React, { ReactElement } from "react";
 
 //type childrens
 export interface Chidlren {
-  children: ReactElement;
+  children: React.ReactNode;
 }
 
 //interface Icons
@@ -29,9 +29,23 @@ export interface MenuLgProps {
   setOpenLogin: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface BasketShop {
+  openBasket: boolean;
+  setOpenBasket: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 // type form login
 export interface FormData {
   username: string;
   password: string;
   answer: string;
+}
+
+// تایپ اسلایدر هیرو
+export interface Slide {
+  paths: string;
+  id: number;
+  image: string;
+  title: string;
+  description: string;
 }

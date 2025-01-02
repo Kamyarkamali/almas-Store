@@ -1,34 +1,29 @@
 "use client";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import Link from "next/link";
 
-import { MenuLgProps } from "@/types/interFace";
 import HamburgerMenuSvg from "../icon/HamburgerMenuSvg";
 import LoginMenu from "./LoginMenu";
 // کامپوننت های svg
 import ShopSvg from "../icon/ShopSvg";
 import UserSvg from "../icon/UserSvg";
 import Image from "next/image";
+import { CombinedProps } from "@/types/type";
+import BasketShop from "./BasketShop";
 
-const MenuMobile: FC<MenuLgProps> = ({ openLogin, setOpenLogin }) => {
-  // مدیریت برای بسته منو و اسکرول نخوردن
-  // useEffect(() => {
-  //   if (!openLogin) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [openLogin]);
-
+const MenuMobile: FC<CombinedProps> = ({
+  // در  نظر گرفتن مقدارهای پیش فرض برای  پراپس برای جلوگیری از اختلال
+  openLogin = false,
+  setOpenLogin = () => {},
+  openBasket = false,
+  setOpenBasket = () => {},
+}) => {
   return (
     <div
       className={`${
-        openLogin &&
-        "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-xl"
+        openLogin ||
+        (openBasket &&
+          "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-xl")
       }`}
     >
       <div className="flex lg:hidden justify-between items-center pr-2 pl-2 pt-2">
@@ -51,7 +46,8 @@ const MenuMobile: FC<MenuLgProps> = ({ openLogin, setOpenLogin }) => {
         </section>
 
         <section className="flex items-center">
-          <div className=" relative flex items-center group pl-[15px] cursor-pointer">
+          {/* منو ورود */}
+          <div className="relative flex items-center group pl-[15px] cursor-pointer">
             <div onClick={() => setOpenLogin(true)}>
               <UserSvg width="20px" height="19px" />
             </div>
@@ -64,13 +60,27 @@ const MenuMobile: FC<MenuLgProps> = ({ openLogin, setOpenLogin }) => {
             </section>
           </div>
 
-          <div className="flex items-center group pl-[15px]">
+          {/* منو سبد خرید */}
+          <div className="flex items-center group pl-[15px] cursor-pointer">
             <div className="flex items-center gap-3">
               <div className="relative">
-                <ShopSvg width="21px" height="21px" color="#B6B6B6" />
+                <div onClick={() => setOpenBasket((prv) => !prv)}>
+                  <ShopSvg width="21px" height="21px" color="#B6B6B6" />
+                </div>
                 <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
                   <span className="text-[9px]">0</span>
                 </div>
+                {/* منو سبد خرید در موبایل */}
+                <section
+                  className={`absolute top-[-24px] left-[-20px] w-[285px] overflow-y-auto overflow-x-hidden h-screen bg-white z-50 transition-transform duration-300 ease-out ${
+                    openBasket ? "block" : "hidden"
+                  }`}
+                >
+                  <BasketShop
+                    openBasket={openBasket}
+                    setOpenBasket={setOpenBasket}
+                  />
+                </section>
               </div>
             </div>
           </div>

@@ -29,12 +29,12 @@ function ScrollTop() {
   return (
     <button
       onClick={scrollTop}
-      className={`fixed bottom-5 flex justify-center items-center w-[40px] h-[40px] cursor-pointer shadow-md shadow-gray-400 rounded-full bg-white text-white
+      className={`fixed lg:bottom-5 bottom-16 flex justify-center items-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] cursor-pointer shadow-md shadow-gray-300 rounded-full bg-white text-white
         transition-all duration-500 ease-in-out ${
-          show ? "left-5 opacity-100" : "left-[-60px] opacity-0"
+          show ? "left-3 opacity-100" : "left-[-60px] opacity-0"
         }`}
     >
-      <Upbutton />
+      <Upbutton width="15px" height="26px" />
     </button>
   );
 }

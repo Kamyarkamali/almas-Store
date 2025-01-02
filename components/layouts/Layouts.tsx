@@ -14,7 +14,7 @@ const Layouts: FC<Chidlren> = ({ children }) => {
         <Header />
       </header>
 
-      <main className="min-h-[100vh]">{children}</main>
+      <main className="h-[200vh]">{children}</main>
 
       <footer>
         <Footer />

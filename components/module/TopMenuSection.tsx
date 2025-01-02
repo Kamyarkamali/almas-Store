@@ -1,4 +1,5 @@
 // کامپوننت های آیکون
+import Link from "next/link";
 import ShopSvg from "../icon/ShopSvg";
 import ShuffileSvg from "../icon/ShuffileSvg";
 import UserSvg from "../icon/UserSvg";
@@ -60,9 +61,11 @@ function TopMenuSection() {
               <span className="text-[9px]">0</span>
             </div>
           </div>
-          <p className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
-            ورود / ثبت نام
-          </p>
+          <Link href={"/register"}>
+            <p className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
+              ورود / ثبت نام
+            </p>
+          </Link>
         </div>
       </div>
     </section>

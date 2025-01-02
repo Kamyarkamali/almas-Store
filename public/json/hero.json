@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "/images/imageHero/slider1.png",
+    "title": "عنوان اول",
+    "description": "توضیحات مربوط به اسلاید اول",
+    "paths": "/"
+  },
+  {
+    "id": 2,
+    "image": "/images/imageHero/slider2.png",
+    "title": "عنوان دوم",
+    "description": "توضیحات مربوط به اسلاید دوم",
+    "paths": "/"
+  }
+]
