@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,18 +9,22 @@ import { Slide } from "@/types/interFace";
 import { api } from "@/configs/api";
 import Image from "next/image";
 import Link from "next/link";
-import ArrowLeftSvg from "../icon/ArrowLeftSvg";
 import ArrowRightSvg from "../icon/ArrowRightSvg";
 import ArrowLeftSlider from "../icon/ArrowLeftSlider";
 
 const HeroSlider = () => {
   const [data, setData] = useState<Slide[]>([]);
+  const swiperRef = useRef<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await api.get("/json/hero.json");
         setData(res.data);
+
+        if (swiperRef.current && swiperRef.current.swiper) {
+          swiperRef.current.swiper.autoplay.start();
+        }
       } catch (error) {
         console.error("مشکل در گرفتن دیتای عکس‌های اسلایدر:", error);
       }
@@ -33,6 +37,9 @@ const HeroSlider = () => {
     <div className="mt-[3.06rem] hidden lg:block px-4">
       <div className="relative w-full max-w-[1440px] mx-auto shadow-lg shadow-gray-400 rounded-lg overflow-hidden">
         <Swiper
+          ref={swiperRef}
+          observeParents={true}
+          observeSlideChildren={true}
           loop={true}
           autoplay={{ delay: 3000 }}
           navigation={{
