@@ -4,18 +4,7 @@ import { useForm } from "react-hook-form";
 
 import PasswordSvg from "@/components/icon/PasswordSvg";
 import HidePassword from "@/components/icon/HidePassword";
-
-interface LoginFormData {
-  usernameOrEmail: string;
-  password: string;
-  captcha: string;
-}
-
-interface RegisterFormData {
-  email: string;
-  password: string;
-  captcha: string;
-}
+import { LoginFormData, RegisterFormData } from "@/types/interFace";
 
 function RegisterPage() {
   const [showPassword, setShowPassword] = useState<boolean>(false);

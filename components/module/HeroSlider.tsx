@@ -35,7 +35,7 @@ const HeroSlider = () => {
 
   return (
     <div className="mt-[3.06rem] hidden lg:block px-4">
-      <div className="relative w-full max-w-[1440px] mx-auto shadow-lg shadow-gray-400 rounded-lg overflow-hidden">
+      <div className="relative w-full max-w-[1440px] mx-auto shadow-lg shadow-gray-400 rounded-sm overflow-hidden">
         <Swiper
           ref={swiperRef}
           observeParents={true}
@@ -52,11 +52,11 @@ const HeroSlider = () => {
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="relative w-full h-[500px] md:h-[590px] flex items-center justify-center">
+              <div className="relative w-full h-[600px] flex items-center justify-center">
                 <Link href={slide.paths}>
                   <Image
-                    width={1367}
-                    height={590}
+                    width={2367}
+                    height={1590}
                     src={slide.image}
                     alt={slide.description}
                     className="w-full h-full object-cover"

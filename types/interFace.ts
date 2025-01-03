@@ -49,3 +49,15 @@ export interface Slide {
   title: string;
   description: string;
 }
+
+export interface LoginFormData {
+  usernameOrEmail: string;
+  password: string;
+  captcha: string;
+}
+
+export interface RegisterFormData {
+  email: string;
+  password: string;
+  captcha: string;
+}
