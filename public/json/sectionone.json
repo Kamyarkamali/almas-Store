@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "image": "/images/section1/1.png",
+    "paths": "/laptoppart/laptop-lcdled/"
+  },
+  {
+    "id": 2,
+    "image": "/images/section1/2.png",
+    "paths": "/laptoppart/laptop-ram/"
+  },
+  {
+    "id": 3,
+    "image": "/images/section1/3.png",
+    "paths": "/laptoppart/laptopdrive/"
+  },
+  {
+    "id": 4,
+    "image": "/images/section1/4.png",
+    "paths": "/laptoppart/laptophard/"
+  }
+]

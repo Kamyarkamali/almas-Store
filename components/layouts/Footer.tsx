@@ -2,7 +2,7 @@ import FooterComponents from "../module/FooterComponents";
 
 function Footer() {
   return (
-    <aside>
+    <aside className="bg-[#F4F4F4] mt-[4rem] border-t-[1px]">
       <FooterComponents />
       <div className="border-t-[1px] mb-14 lg:mb-0 gap-[15px] border-gray-300 flex flex-col items-center lg:flex-row lg:justify-between p-3">
         <p className="text-[12px] md:text-[14px] text-[#777777]">

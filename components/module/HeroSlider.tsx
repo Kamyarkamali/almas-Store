@@ -52,14 +52,14 @@ const HeroSlider = () => {
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="relative w-full h-[600px] flex items-center justify-center">
+              <div className="relative w-full h-[500px] flex items-center justify-center">
                 <Link href={slide.paths}>
                   <Image
                     width={2367}
                     height={1590}
                     src={slide.image}
                     alt={slide.description}
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </Link>
               </div>
@@ -67,8 +67,8 @@ const HeroSlider = () => {
           ))}
         </Swiper>
         {/* خطوط بالا و پایین */}
-        <div className="absolute top-0 left-0 w-full h-[34px] bg-white z-20"></div>
-        <div className="absolute bottom-0 left-0 w-full h-[34px] bg-white z-20 flex items-center justify-center">
+        <div className="absolute top-0 left-0 w-full h-[25px] bg-white z-20"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[25px] bg-white z-20 flex items-center justify-center">
           <div className="custom-pagination flex gap-2 justify-center"></div>
         </div>
         {/* دکمه‌های سفارشی */}

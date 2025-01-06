@@ -12,6 +12,7 @@ export interface IconsType {
   color?: string;
   strokeWidth?: string;
   fill?: string;
+  className?: string;
 }
 
 // interface topMenu
@@ -27,6 +28,11 @@ export interface topMenuInterFace {
 export interface MenuLgProps {
   openLogin: boolean;
   setOpenLogin: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface Opens {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface BasketShop {
@@ -60,4 +66,10 @@ export interface RegisterFormData {
   email: string;
   password: string;
   captcha: string;
+}
+
+export interface SectionData1 {
+  id: number;
+  image: string;
+  paths: string;
 }

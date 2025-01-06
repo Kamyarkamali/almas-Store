@@ -8,9 +8,11 @@ const ArrowDown: FC<IconsType> = ({
   color = "currentColor",
   strokeWidth = "1.5px",
   fill = "none",
+  className,
 }) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 24 24"
