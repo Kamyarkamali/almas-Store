@@ -1,13 +1,16 @@
 import SaidbarMobile from "@/components/module/SaidbarMobile";
 import MainProducts from "@/components/templates/MainProducts";
 import data from "@/public/json/endproduct.json";
+import { Product } from "@/types/interFace";
 import Link from "next/link";
 
 async function page({ params }: { params: { slug: string[] } }) {
   const slug = "/" + params.slug.join("/");
 
   // فیلتر محصولات بر اساس slug
-  const filteredProducts = data.filter((item: any) => item.slug === slug);
+  const filteredProducts: Product[] = data.filter(
+    (item: any) => item.slug === slug
+  );
 
   // گرفتن دسته‌بندی مرتبط با این slug
   const category =
@@ -32,6 +35,10 @@ async function page({ params }: { params: { slug: string[] } }) {
           >
             {filteredProducts.length > 0 && filteredProducts[0].category}
           </p>
+          <p className="text-[#777777] lg:block hidden">/</p>
+          <p className="text-[13px] font-bold hidden lg:block">
+            {filteredProducts.length > 0 && filteredProducts[0].nameProduct}
+          </p>
         </div>
 
         <div>22</div>
@@ -40,7 +47,7 @@ async function page({ params }: { params: { slug: string[] } }) {
       <div className="lg:hidden">
         <SaidbarMobile />
       </div>
-      <MainProducts />
+      <MainProducts products={filteredProducts} />
     </div>
   );
 }

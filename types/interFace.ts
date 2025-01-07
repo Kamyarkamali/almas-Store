@@ -73,3 +73,18 @@ export interface SectionData1 {
   image: string;
   paths: string;
 }
+
+export interface Product {
+  id: number;
+  image: string;
+  nameProduct: string;
+  price: number;
+  category1: string;
+  category: string;
+  slug: string;
+  Inventory: number;
+  description: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+}
