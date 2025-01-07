@@ -40,6 +40,11 @@ export interface BasketShop {
   setOpenBasket: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface OpenModal {
+  openModal: boolean;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 // type form login
 export interface FormData {
   username: string;
@@ -75,7 +80,7 @@ export interface SectionData1 {
 }
 
 export interface Product {
-  id: number;
+  id: string;
   image: string;
   nameProduct: string;
   price: number;
