@@ -35,10 +35,7 @@ async function page({ params }: { params: { slug: string[] } }) {
           >
             {filteredProducts.length > 0 && filteredProducts[0].category}
           </p>
-          <p className="text-[#777777] lg:block hidden">/</p>
-          <p className="text-[13px] font-bold hidden lg:block">
-            {filteredProducts.length > 0 && filteredProducts[0].nameProduct}
-          </p>
+          <p className="text-[13px] font-bold hidden lg:block"></p>
         </div>
 
         <div>22</div>

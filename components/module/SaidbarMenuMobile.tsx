@@ -26,7 +26,7 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 bottom-0 transition-all duration-300 ${
+      className={`fixed z-50 top-0 left-0 right-0 bottom-0 transition-all duration-300 ${
         open
           ? "backdrop-blur-md bg-black bg-opacity-30 visible opacity-100"
           : "invisible opacity-0"
