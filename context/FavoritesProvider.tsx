@@ -1,26 +1,36 @@
 import React, {
   createContext,
-  useState,
   useContext,
+  useState,
   ReactNode,
-  memo,
+  useCallback,
 } from "react";
 
-// Context
-const FavoritesContext = createContext(null);
+// تعریف نوع داده برای مقادیر Context
+interface FavoritesContextProps {
+  favorites: string[]; // آرایه‌ای از علاقه‌مندی‌ها
+  addToFavorites: (item: string) => void; // تابع افزودن به علاقه‌مندی‌ها
+  removeFromFavorites: (item: string) => void; // تابع حذف از علاقه‌مندی‌ها
+}
 
-export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
+// ایجاد Context و مقدار اولیه
+const FavoritesContext = createContext<FavoritesContextProps | undefined>(
+  undefined
+);
+
+// فراهم کردن Context
+export const FavoritesProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [favorites, setFavorites] = useState<string[]>([]);
 
-  const addToFavorites = (item: string) => {
-    if (!favorites.includes(item)) {
-      setFavorites([...favorites, item]);
-    }
-  };
+  const addToFavorites = useCallback((item: string) => {
+    setFavorites((prev) => [...prev, item]);
+  }, []);
 
-  const removeFromFavorites = (item: string) => {
-    setFavorites(favorites.filter((fav) => fav !== item));
-  };
+  const removeFromFavorites = useCallback((item: string) => {
+    setFavorites((prev) => prev.filter((fav) => fav !== item));
+  }, []);
 
   return (
     <FavoritesContext.Provider
@@ -31,18 +41,11 @@ export const FavoritesProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// Custom Hook
-export const useFavorites = () => useContext(FavoritesContext);
-
-// Example: Button to Add to Favorites
-const AddToFavoritesButton = memo(({ product }: { product: string }) => {
-  const { addToFavorites } = useFavorites();
-
-  return (
-    <button onClick={() => addToFavorites(product)}>
-      افزودن به علاقه‌مندی‌ها
-    </button>
-  );
-});
-
-export default AddToFavoritesButton;
+// هوک برای استفاده از Context
+export const useFavorites = (): FavoritesContextProps => {
+  const context = useContext(FavoritesContext);
+  if (!context) {
+    throw new Error("useFavorites باید در داخل FavoritesProvider استفاده شود.");
+  }
+  return context;
+};

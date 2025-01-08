@@ -33,9 +33,11 @@ function TopMenuSection() {
               <span className="text-[9px]">0</span>
             </div>
           </div>
-          <p className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
-            علاقه مندی ها
-          </p>
+          <Link href={"/wishlist"}>
+            <p className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
+              علاقه مندی ها
+            </p>
+          </Link>
         </div>
       </div>
 

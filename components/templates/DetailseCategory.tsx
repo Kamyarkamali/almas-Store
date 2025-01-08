@@ -3,15 +3,36 @@ import formatNumber from "@/helpers/replaceNumber";
 import { DetailseCategoryProps } from "@/types/interFace";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import ShuffileSvg from "../icon/ShuffileSvg";
 
 import useShareLink from "@/hooks/useShareLink";
-import PasswordSvg from "@/components/icon/PasswordSvg";
+import toast, { Toaster } from "react-hot-toast";
+import { Altet } from "@/types/enums";
 
 const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
   const { shareLink } = useShareLink();
+  const [favorites, setFavorites] = useState<string[]>([]);
+
+  useEffect(() => {
+    const storedFavorites = JSON.parse(
+      localStorage.getItem("favorites") || "[]"
+    );
+    setFavorites(storedFavorites);
+  }, []);
+
+  // افزودن محصول به علاقه‌مندی‌ها
+  const addToFavorites = (productName: string) => {
+    if (!favorites.includes(productName)) {
+      const updatedFavorites = [...favorites, productName];
+      setFavorites(updatedFavorites);
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+      toast.success(`${productName} ${Altet.ADDEDTOFAIVERITS}`);
+    } else {
+      toast.error(`${productName} ${Altet.ADDED}`);
+    }
+  };
 
   const {
     category,
@@ -62,7 +83,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
       {/* بخش تصاویر */}
       <div className="flex flex-col md:flex-row justify-between mt-6 gap-6">
         {/* تصویر اصلی */}
-        <div className="flex flex-col items-center relative w-full md:w-1/2 lg:w-1/3">
+        <div className="flex flex-col lg:flex-row-reverse items-center relative w-full md:w-1/2 lg:w-1/3">
           <div className="relative w-full sm:w-[400px] h-[400px]">
             <TransformWrapper minScale={1} maxScale={3} wheel={{ step: 0.1 }}>
               <TransformComponent>
@@ -71,14 +92,23 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
                   width={350}
                   height={350}
                   alt={nameProduct}
-                  className="w-full h-full object-cover"
+                  className="w-full border rounded-md h-full object-cover"
                 />
               </TransformComponent>
             </TransformWrapper>
+            <div
+              onClick={openModal}
+              className="absolute bottom-8 right-0 bg-white hover:shadow-lg shadow-md transition-all duration-200  rounded-[100%] cursor-pointer"
+            >
+              <img
+                className="w-[30px] hover:shadow-lg shadow-md transition-all duration-200  rounded-[100%] cursor-pointer"
+                src="/images/imagesHomePage/towwarrow.jpg"
+              />
+            </div>
           </div>
 
           {/* تصاویر کوچک */}
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex lg:flex-col items-center justify-center lg:ml-4 gap-4 mt-4">
             {images.map((img, index) => (
               <button
                 key={index}
@@ -100,7 +130,10 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         </div>
 
         {/* اطلاعات محصول */}
-        <div className="flex flex-col w-full md:w-1/2 lg:w-1/3">
+        {/* جدا کننده */}
+        <div className="border-r-2"></div>
+
+        <div className="lg:flex hidden flex-col w-full md:w-1/2 lg:w-1/3">
           <p className="text-lg font-bold text-center lg:text-start">
             {nameProduct}
           </p>
@@ -130,26 +163,59 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         </div>
 
         {/* قیمت و دکمه‌ها */}
-        <div className="w-full md:w-1/2 lg:w-1/3 border rounded p-4">
+        <div className="w-full h-[377px] md:w-1/2 lg:w-1/4 border-[4px] border-[#D9D9D9] rounded-sm p-4">
           <p className="text-xl font-bold text-red-600">
             {Inventory > 0 ? formatNumber(price) + " تومان" : "ناموجود"}
           </p>
-          {Inventory > 0 && (
-            <section className="flex justify-between mt-4">
-              <div className="flex items-center gap-2 border rounded h-10">
-                <button className="border-l-2 w-8 text-sm hover:bg-red-600 hover:text-white">
-                  -
-                </button>
-                <p className="text-sm">1</p>
-                <button className="border-r-2 w-8 text-sm hover:bg-red-600 hover:text-white">
-                  +
-                </button>
-              </div>
-              <button className="bg-red-600 text-white px-4 py-2 rounded">
-                افزودن به سبد خرید
+          <p className="text-[14px] text-[#D60644] mt-3">
+            {Inventory > 0
+              ? `${Inventory} تعداد در انبار موجود است`
+              : "موجود نیست"}
+          </p>
+          <section className="flex flex-col xl:flex-row items-center justify-center gap-4 mt-4">
+            <div className="flex items-center gap-2 border-[2px] border-[#D9D9D9] rounded-md h-10">
+              <button className="border-l-2 h-full rounded-md transition-all duration-300 rounded-l-none w-8 text-sm hover:bg-red-600 hover:text-white">
+                -
               </button>
-            </section>
-          )}
+              <p className="text-sm">1</p>
+              <button className="border-r-2 rounded-md transition-all duration-300 rounded-r-none w-8 h-full text-sm hover:bg-red-600 hover:text-white">
+                +
+              </button>
+            </div>
+            <button className="bg-[#D60644] hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded">
+              افزودن به سبد خرید
+            </button>
+          </section>
+          <div className="flex items-center justify-start">
+            <div className="flex items-center gap-2 mt-4 pr-5">
+              <ShuffileSvg width="25px" height="25px" />
+              <p className="text-[14px] font-bold">مقایسه</p>
+            </div>
+            <div className="flex items-center gap-2 mt-4 pr-5">
+              <img
+                onClick={() => addToFavorites(product.nameProduct)}
+                src="/svgs/like.svg"
+                alt="like"
+                className="w-[20px] cursor-pointer"
+              />
+              <p
+                onClick={() => addToFavorites(product.nameProduct)}
+                className="text-[14px] font-bold"
+              >
+                افزدون به علاقه مندی ها
+              </p>
+            </div>
+          </div>
+          {/* باکس مشاهده */}
+          <div className="flex justify-center mt-[2rem]">
+            <div className="w-[265px] h-[74px] bg-[#FAE6EC] p-3">
+              <p className="text-[14px] text-[#777777]">
+                {" "}
+                <span className="font-bold text-[#000000]">2</span> نفر در حال
+                مشاهده این محصول هستند!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -187,6 +253,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
           </div>
         </div>
       )}
+      <Toaster />
     </div>
   );
 };
