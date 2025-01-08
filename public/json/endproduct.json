@@ -352,11 +352,11 @@
     "image": "/images/products/manitor/34.jpg",
     "image2": "/images/products/manitor/35.jpg",
     "nameProduct": "ال سی دی لپ تاپ Toshiba Satellite C655",
-    "price": 10,
+    "price": 2100000,
     "category1": "قطعات لپ تاپ",
     "category": "ال سی دی و ال ای دی لپ تاپ",
     "slug": "/laptoppart/laptop-lcdled",
-    "Inventory": 2100000,
+    "Inventory": 10,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -364,11 +364,11 @@
     "image": "/images/products/manitor/34.jpg",
     "image2": "/images/driver/manitor/35.jpg",
     "nameProduct": "ال سی دی لپ تاپ Toshiba Satellite C650",
-    "price": 10,
+    "price": 2100000,
     "category1": "قطعات لپ تاپ",
     "category": "ال سی دی و ال ای دی لپ تاپ",
     "slug": "/laptoppart/laptop-lcdled",
-    "Inventory": 2100000,
+    "Inventory": 10,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {

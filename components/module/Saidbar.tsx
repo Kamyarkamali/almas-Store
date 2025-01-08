@@ -4,10 +4,20 @@ import menu from "@/public/json/Menu.json";
 import { useState } from "react";
 import { Range } from "react-range";
 import ArrowDown from "../icon/ArrowDown";
+import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const [values, setValues] = useState<[number, number]>([20, 80]);
+
+  const pathname = usePathname();
+
+  const isDynamicRoute = /^\/product-category\/\d+$/.test(pathname);
+
+  //  مخفی کردن سایدبار در بخش داینامیک
+  if (isDynamicRoute) {
+    return null;
+  }
 
   const min = 0;
   const max = 100;

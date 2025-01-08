@@ -89,7 +89,11 @@ export interface Product {
   slug: string;
   Inventory: number;
   description: string;
-  image2?: string;
-  image3?: string;
-  image4?: string;
+  image2?: string | undefined;
+  image3?: string | undefined;
+  image4?: string | undefined;
+}
+
+export interface DetailseCategoryProps {
+  product: Product;
 }
