@@ -53,7 +53,14 @@ const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
             category={category}
           />
         )}
-        {active === "نظرات" && <Comments />}
+        {active === "نظرات" && (
+          <Comments
+            price={price}
+            Inventory={Inventory}
+            nameProduct={nameProduct}
+            category={category}
+          />
+        )}
       </div>
     </div>
   );

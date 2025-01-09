@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 const PriceComponent: FC<Props> = ({ Inventory, nameProduct, price }) => {
   const { addFavorite } = useFavorites();
   return (
-    <div className="lg:w-[335px] h-fit shadow-md rounded-md hover:shadow-lg transition-all  duration-300 cursor-pointer">
+    <div className="lg:w-[335px] sticky top-10 h-fit shadow-md rounded-md hover:shadow-lg transition-all  duration-300 cursor-pointer">
       <div className="p-4">
         <p className="text-[16px] lg:text-[21.7px] text-[#D60644] font-bold">
           {formatNumber(price) + " تومان"}
