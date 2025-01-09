@@ -13,6 +13,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        pop: "pop 0.3s ease-in-out",
+      },
+      keyframes: {
+        pop: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
       screens: {
         custom: { min: "1024px", max: "1308px" },
       },

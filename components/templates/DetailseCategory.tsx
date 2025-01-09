@@ -1,38 +1,24 @@
 "use client";
-import formatNumber from "@/helpers/replaceNumber";
-import { DetailseCategoryProps } from "@/types/interFace";
+import React, { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC, useEffect, useState } from "react";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import ShuffileSvg from "../icon/ShuffileSvg";
+import { Toaster } from "react-hot-toast";
 
+import formatNumber from "@/helpers/replaceNumber";
+import { DetailseCategoryProps } from "@/types/interFace";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
+import ShuffileSvg from "../icon/ShuffileSvg";
 import useShareLink from "@/hooks/useShareLink";
-import toast, { Toaster } from "react-hot-toast";
-import { Altet } from "@/types/enums";
+import { useFavorites } from "@/context/FavoritesProvider";
+import DesctComments from "../module/DesctComments";
+
+import { Box } from "@/data/data";
 
 const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
   const { shareLink } = useShareLink();
-  const [favorites, setFavorites] = useState<string[]>([]);
 
-  useEffect(() => {
-    const storedFavorites = JSON.parse(
-      localStorage.getItem("favorites") || "[]"
-    );
-    setFavorites(storedFavorites);
-  }, []);
-
-  // افزودن محصول به علاقه‌مندی‌ها
-  const addToFavorites = (productName: string) => {
-    if (!favorites.includes(productName)) {
-      const updatedFavorites = [...favorites, productName];
-      setFavorites(updatedFavorites);
-      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
-      toast.success(`${productName} ${Altet.ADDEDTOFAIVERITS}`);
-    } else {
-      toast.error(`${productName} ${Altet.ADDED}`);
-    }
-  };
+  const { addFavorite } = useFavorites();
 
   const {
     category,
@@ -70,14 +56,18 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
       {/* مسیر صفحه */}
       <nav className="flex flex-wrap items-center text-sm gap-1">
         <Link href={"/"}>
-          <p className="text-gray-500">خانه</p>
+          <p className="text-gray-500 text-[12px] lg:text-[14px]">خانه</p>
         </Link>
-        <p className="text-gray-500">/</p>
-        <p className="text-gray-500">{category}</p>
-        <p className="text-gray-500">/</p>
-        <p className="text-gray-500">{category1}</p>
-        <p className="hidden lg:block text-gray-500">/</p>
-        <p className="hidden lg:block text-black">{nameProduct}</p>
+        <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p>
+        <p className="text-gray-500 text-[12px] lg:text-[14px]">{category}</p>
+        <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p>
+        <p className="text-gray-500 text-[12px] lg:text-[14px]">{category1}</p>
+        <p className="hidden lg:block text-gray-500 text-[12px] lg:text-[14px]">
+          /
+        </p>
+        <p className="hidden lg:block text-black text-[12px] lg:text-[14px]">
+          {nameProduct}
+        </p>
       </nav>
 
       {/* بخش تصاویر */}
@@ -182,8 +172,11 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
                 +
               </button>
             </div>
-            <button className="bg-[#D60644] hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded">
-              افزودن به سبد خرید
+            <button
+              disabled={Inventory <= 0}
+              className="bg-[#D60644] disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded"
+            >
+              {Inventory > 0 ? "افزودن به سبد خرید" : "موجود نیست"}
             </button>
           </section>
           <div className="flex items-center justify-start">
@@ -193,13 +186,13 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
             </div>
             <div className="flex items-center gap-2 mt-4 pr-5">
               <img
-                onClick={() => addToFavorites(product.nameProduct)}
+                onClick={() => addFavorite(product.nameProduct)}
                 src="/svgs/like.svg"
                 alt="like"
                 className="w-[20px] cursor-pointer"
               />
               <p
-                onClick={() => addToFavorites(product.nameProduct)}
+                onClick={() => addFavorite(product.nameProduct)}
                 className="text-[14px] font-bold"
               >
                 افزدون به علاقه مندی ها
@@ -253,6 +246,33 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
           </div>
         </div>
       )}
+
+      {/* جدا کننده */}
+
+      <div className="w-full border-b-[1px] border-gray-300"></div>
+
+      {/* قسمت روش های  خرید */}
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 py-2 justify-items-start  md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 lg:justify-items-center">
+        {Box.map(({ image, title, desc }) => (
+          <div className="flex items-center gap-2">
+            <img
+              className="w-[80px] h-[51px] object-contain"
+              src={image}
+              alt={title}
+            />
+            <div className="flex flex-col lg:items-start gap-2">
+              <p className="text-[12px] lg:text-[16px] font-bold">{title}</p>
+              <p className="text-[10px] lg:text-[12px] text-[#777777]">
+                {desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* قسمت کامنت ها */}
+      <DesctComments product={product} />
+
       <Toaster />
     </div>
   );

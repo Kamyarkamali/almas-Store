@@ -1,51 +1,93 @@
-import React, {
+"use client";
+import { Altet } from "@/types/enums";
+import {
   createContext,
   useContext,
   useState,
+  useEffect,
   ReactNode,
-  useCallback,
 } from "react";
+import { toast } from "react-hot-toast";
 
-// تعریف نوع داده برای مقادیر Context
-interface FavoritesContextProps {
-  favorites: string[]; // آرایه‌ای از علاقه‌مندی‌ها
-  addToFavorites: (item: string) => void; // تابع افزودن به علاقه‌مندی‌ها
-  removeFromFavorites: (item: string) => void; // تابع حذف از علاقه‌مندی‌ها
+interface FavoritesContextType {
+  favorites: string[];
+  addFavorite: (item: string) => void;
+  removeFavorite: (item: string) => void;
 }
 
-// ایجاد Context و مقدار اولیه
-const FavoritesContext = createContext<FavoritesContextProps | undefined>(
+const FavoritesContext = createContext<FavoritesContextType | undefined>(
   undefined
 );
 
-// فراهم کردن Context
-export const FavoritesProvider: React.FC<{ children: ReactNode }> = ({
+export const useFavorites = () => {
+  const context = useContext(FavoritesContext);
+  if (!context) {
+    throw new Error("useFavorites must be used within a FavoritesProvider");
+  }
+  return context;
+};
+
+interface FavoritesProviderProps {
+  children: ReactNode;
+}
+
+export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
   children,
 }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [isClient, setIsClient] = useState(false); // بررسی برای محیط مرورگر
 
-  const addToFavorites = useCallback((item: string) => {
-    setFavorites((prev) => [...prev, item]);
+  // زمانی که صفحه در مرورگر رندر می‌شود
+  useEffect(() => {
+    setIsClient(true);
   }, []);
 
-  const removeFromFavorites = useCallback((item: string) => {
-    setFavorites((prev) => prev.filter((fav) => fav !== item));
-  }, []);
+  // بارگذاری داده‌ها از localStorage
+  useEffect(() => {
+    if (isClient) {
+      const storedFavorites = localStorage.getItem("favorites");
+      if (storedFavorites) {
+        try {
+          const parsedFavorites = JSON.parse(storedFavorites);
+          if (Array.isArray(parsedFavorites)) {
+            setFavorites(parsedFavorites);
+          }
+        } catch (error) {
+          console.error("Error parsing favorites from localStorage", error);
+        }
+      }
+    }
+  }, [isClient]);
+
+  // ذخیره داده‌ها در localStorage
+  useEffect(() => {
+    if (isClient) {
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+    }
+  }, [favorites, isClient]);
+
+  const addFavorite = (item: string) => {
+    setFavorites((prevFavorites) => {
+      if (!prevFavorites.includes(item)) {
+        toast.success(Altet.ADDEDTOFAIVERITS);
+        return [...prevFavorites, item];
+      }
+      return prevFavorites;
+    });
+  };
+
+  const removeFavorite = (item: string) => {
+    toast.error(Altet.REMOVEDFROMFAIVERITS);
+    setFavorites((prevFavorites) =>
+      prevFavorites.filter((fav) => fav !== item)
+    );
+  };
 
   return (
     <FavoritesContext.Provider
-      value={{ favorites, addToFavorites, removeFromFavorites }}
+      value={{ favorites, addFavorite, removeFavorite }}
     >
       {children}
     </FavoritesContext.Provider>
   );
-};
-
-// هوک برای استفاده از Context
-export const useFavorites = (): FavoritesContextProps => {
-  const context = useContext(FavoritesContext);
-  if (!context) {
-    throw new Error("useFavorites باید در داخل FavoritesProvider استفاده شود.");
-  }
-  return context;
 };

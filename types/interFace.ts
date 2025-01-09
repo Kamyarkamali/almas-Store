@@ -97,3 +97,16 @@ export interface Product {
 export interface DetailseCategoryProps {
   product: Product;
 }
+
+export interface Boxs {
+  id: number;
+  title: string;
+  image: string;
+  desc: string;
+}
+
+export interface Props {
+  price: number;
+  Inventory: number;
+  nameProduct: string;
+}

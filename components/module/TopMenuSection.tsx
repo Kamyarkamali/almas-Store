@@ -3,8 +3,11 @@ import Link from "next/link";
 import ShopSvg from "../icon/ShopSvg";
 import ShuffileSvg from "../icon/ShuffileSvg";
 import UserSvg from "../icon/UserSvg";
+import { useFavorites } from "@/context/FavoritesProvider";
 
 function TopMenuSection() {
+  const { favorites } = useFavorites();
+
   return (
     <section className="flex items-center gap-2">
       <div className="flex items-center group border-l-[1px] border-[#D9D9D9] pl-[15px]">
@@ -30,7 +33,9 @@ function TopMenuSection() {
               alt="faiverite"
             />
             <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
+              <span className="text-[9px]">
+                {favorites.length > 0 ? favorites.length : 0}
+              </span>
             </div>
           </div>
           <Link href={"/wishlist"}>
