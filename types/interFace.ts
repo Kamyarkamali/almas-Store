@@ -109,4 +109,5 @@ export interface Props {
   price: number;
   Inventory: number;
   nameProduct: string;
+  category: string;
 }

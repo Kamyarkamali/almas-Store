@@ -6,7 +6,7 @@ import Comments from "./Comments";
 import { DetailseCategoryProps } from "@/types/interFace";
 
 const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
-  const { price, Inventory, nameProduct } = product;
+  const { price, Inventory, nameProduct, category } = product;
 
   const [active, setActive] = useState<"توضیحات" | "نظرات">("توضیحات");
 
@@ -50,6 +50,7 @@ const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
             price={price}
             Inventory={Inventory}
             nameProduct={nameProduct}
+            category={category}
           />
         )}
         {active === "نظرات" && <Comments />}

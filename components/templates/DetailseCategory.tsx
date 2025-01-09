@@ -153,7 +153,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         </div>
 
         {/* قیمت و دکمه‌ها */}
-        <div className="w-full h-[377px] md:w-1/2 lg:w-1/4 border-[4px] border-[#D9D9D9] rounded-sm p-4">
+        <div className="w-full h-fit md:w-1/2 lg:w-1/4 border-[4px] border-[#D9D9D9] rounded-sm p-4">
           <p className="text-xl font-bold text-red-600">
             {Inventory > 0 ? formatNumber(price) + " تومان" : "ناموجود"}
           </p>
@@ -162,7 +162,11 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
               ? `${Inventory} تعداد در انبار موجود است`
               : "موجود نیست"}
           </p>
-          <section className="flex flex-col xl:flex-row items-center justify-center gap-4 mt-4">
+          <section
+            className={`${
+              Inventory > 0 ? "flex" : "hidden"
+            } flex flex-col xl:flex-row items-center justify-center gap-4 mt-4`}
+          >
             <div className="flex items-center gap-2 border-[2px] border-[#D9D9D9] rounded-md h-10">
               <button className="border-l-2 h-full rounded-md transition-all duration-300 rounded-l-none w-8 text-sm hover:bg-red-600 hover:text-white">
                 -
@@ -200,7 +204,11 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
             </div>
           </div>
           {/* باکس مشاهده */}
-          <div className="flex justify-center mt-[2rem]">
+          <div
+            className={`${
+              Inventory > 0 ? "flex" : "hidden"
+            } flex justify-center mt-[2rem]`}
+          >
             <div className="w-[265px] h-[74px] bg-[#FAE6EC] p-3">
               <p className="text-[14px] text-[#777777]">
                 {" "}
@@ -256,7 +264,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         {Box.map(({ image, title, desc }) => (
           <div className="flex items-center gap-2">
             <img
-              className="w-[80px] h-[51px] object-contain"
+              className="w-[70px] h-[43px] lg:w-[80px] lg:h-[51px] object-contain"
               src={image}
               alt={title}
             />
