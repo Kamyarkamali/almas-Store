@@ -3,7 +3,7 @@ import ItemBottomMenu from "./ItemBottomMenu";
 
 function BottomMenuMobile() {
   return (
-    <div className="fixed bottom-0 w-full h-[3.5rem] bg-white lg:hidden shadow-lg shadow-gray-500">
+    <div className="fixed bottom-0 w-full z-10 h-[3.5rem] bg-white lg:hidden shadow-lg shadow-gray-500">
       <div className="flex items-center h-full justify-center">
         <ItemBottomMenu />
       </div>

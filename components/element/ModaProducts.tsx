@@ -7,7 +7,7 @@ import CloseSvg from "../icon/CloseSvg";
 interface ModaProductsProps {
   image: string;
   nameProduct: string;
-  category: string;
+  category: string | undefined;
   category1: string;
   description: string;
   openModal: boolean;

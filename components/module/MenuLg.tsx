@@ -3,7 +3,7 @@ import TopMenuSection from "./TopMenuSection";
 import Link from "next/link";
 import Image from "next/image";
 
-import SearchSvg from "@/components/icon/SearchSvg";
+import SearchSvg from "@/components/icon/SearchSvg2";
 
 function MenuLg() {
   return (

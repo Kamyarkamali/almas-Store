@@ -27,6 +27,10 @@ export default function Sidebar() {
     setActiveMenu((prev) => (prev === id ? null : id));
   };
 
+  const handleRangeChange = (values: number[]) => {
+    setValues([values[0], values[1]]);
+  };
+
   return (
     <div className="w-[400px] mt-[42px] bg-gray-100 p-4 border-l-[1px] h-full">
       <div className="flex flex-col items-center">
@@ -60,7 +64,7 @@ export default function Sidebar() {
                 max={max}
                 step={1}
                 values={values}
-                onChange={setValues}
+                onChange={handleRangeChange}
                 renderTrack={({ props, children }) => (
                   <div
                     {...props}

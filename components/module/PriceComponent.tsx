@@ -11,7 +11,7 @@ const PriceComponent: FC<Props> = ({ Inventory, nameProduct, price }) => {
     <div className="lg:w-[335px] sticky top-10 h-fit shadow-md rounded-md hover:shadow-lg transition-all  duration-300 cursor-pointer">
       <div className="p-4">
         <p className="text-[16px] lg:text-[21.7px] text-[#D60644] font-bold">
-          {formatNumber(price) + " تومان"}
+          {price ? formatNumber(price) + " تومان" : "قیمت موجود نیست"}
         </p>
         <section className="flex flex-col xl:flex-row items-center justify-center gap-4 mt-4">
           <div className="flex items-center gap-2 border-[2px] border-[#faf6f6] rounded-md h-10">

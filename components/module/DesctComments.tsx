@@ -6,7 +6,7 @@ import Comments from "./Comments";
 import { DetailseCategoryProps } from "@/types/interFace";
 
 const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
-  const { price, Inventory, nameProduct, category } = product;
+  const { price, Inventory, nameProduct, category } = product || {};
 
   const [active, setActive] = useState<"توضیحات" | "نظرات">("توضیحات");
 
@@ -19,20 +19,20 @@ const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
       <div className="flex items-center gap-5">
         <p
           onClick={() => handleActive("توضیحات")}
-          className={`relative cursor-pointer ${
+          className={`relative text-[12px] lg:text-[14px] py-2 lg:py-0 cursor-pointer ${
             active === "توضیحات" ? "text-red-500" : ""
           }`}
         >
           توضیحات
           <span
-            className={`absolute bottom-0 left-0 h-[2px] bg-red-500 transition-all duration-300 ${
+            className={`absolute  bottom-0 left-0 h-[2px] bg-red-500 transition-all duration-300 ${
               active === "توضیحات" ? "w-full" : "w-0"
             }`}
           ></span>
         </p>
         <p
           onClick={() => handleActive("نظرات")}
-          className={`relative cursor-pointer ${
+          className={`relative text-[12px] lg:text-[14px] py-2 lg:py-0 cursor-pointer ${
             active === "نظرات" ? "text-red-500" : ""
           }`}
         >

@@ -61,7 +61,7 @@ const ProductCard = ({
         {product.description}
       </div>
 
-      {/* دکمه‌های اضافی (نمایش هنگام هاور) */}
+      {/* دکمه‌های  (نمایش هنگام هاور) */}
       <div className="absolute bottom-4 items-center left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-around gap-2">
         <button className="py-2 transition-colors">
           <img

@@ -12,7 +12,6 @@ import { CombinedProps } from "@/types/type";
 import BasketShop from "./BasketShop";
 
 const MenuMobile: FC<CombinedProps> = ({
-  // در  نظر گرفتن مقدارهای پیش فرض برای  پراپس برای جلوگیری از اختلال
   openLogin = false,
   setOpenLogin = () => {},
   openBasket = false,
@@ -23,7 +22,7 @@ const MenuMobile: FC<CombinedProps> = ({
       className={`${
         openLogin ||
         (openBasket &&
-          "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-xl")
+          "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-xl z-[10000]")
       }`}
     >
       <div className="flex lg:hidden justify-between items-center pr-2 pl-2 pt-2">
@@ -72,7 +71,7 @@ const MenuMobile: FC<CombinedProps> = ({
                 </div>
                 {/* منو سبد خرید در موبایل */}
                 <section
-                  className={`absolute top-[-24px] left-[-20px] w-[285px] overflow-y-auto overflow-x-hidden h-screen bg-white z-50 transition-transform duration-300 ease-out ${
+                  className={`absolute top-[-24px] left-[-20px] w-[285px] overflow-y-auto overflow-x-hidden h-screen bg-white z-auto transition-transform duration-300 ease-out ${
                     openBasket ? "block" : "hidden"
                   }`}
                 >

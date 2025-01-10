@@ -1,5 +1,6 @@
 "use client";
 import { Altet } from "@/types/enums";
+import { Product } from "@/types/interFace";
 import {
   createContext,
   useContext,
@@ -10,9 +11,19 @@ import {
 import { toast } from "react-hot-toast";
 
 interface FavoritesContextType {
-  favorites: string[];
-  addFavorite: (item: string) => void;
-  removeFavorite: (item: string) => void;
+  favorites: Product[];
+  addFavorite: (item: any) => void;
+  removeFavorite: (item: any) => void;
+}
+
+interface Productadd {
+  id: string;
+  nameProduct: string;
+  description: string;
+  price: number;
+  image: string;
+  image2?: string;
+  Inventory: number;
 }
 
 const FavoritesContext = createContext<FavoritesContextType | undefined>(
@@ -34,10 +45,9 @@ interface FavoritesProviderProps {
 export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
   children,
 }) => {
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<any[]>([]);
   const [isClient, setIsClient] = useState(false); // بررسی برای محیط مرورگر
 
-  // زمانی که صفحه در مرورگر رندر می‌شود
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -66,7 +76,7 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
     }
   }, [favorites, isClient]);
 
-  const addFavorite = (item: string) => {
+  const addFavorite = (item: Productadd) => {
     setFavorites((prevFavorites) => {
       if (!prevFavorites.includes(item)) {
         toast.success(Altet.ADDEDTOFAIVERITS);
@@ -76,7 +86,7 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
     });
   };
 
-  const removeFavorite = (item: string) => {
+  const removeFavorite = (item: any) => {
     toast.error(Altet.REMOVEDFROMFAIVERITS);
     setFavorites((prevFavorites) =>
       prevFavorites.filter((fav) => fav !== item)

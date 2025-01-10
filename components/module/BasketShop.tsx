@@ -7,10 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 // کاستوم هوک
 
-const BasketShop: FC<CombinedProps> = ({
-  openBasket = false,
-  setOpenBasket = () => {},
-}) => {
+const BasketShop: FC<CombinedProps> = ({ setOpenBasket = () => {} }) => {
   // استفاده از کاستوم هوک برای بستن منو هنگام کلیک روی عنصر خارجی
   //   const loginRef = useClickOutside<HTMLDivElement>(
   //     () => setOpenBasket(false),
@@ -19,7 +16,7 @@ const BasketShop: FC<CombinedProps> = ({
 
   return (
     <div>
-      <div className="p-5 pl-4 pr-3 z-[1000] border-b-[0.1px] border-[#bcb8b8]">
+      <div className="p-5 pl-4 pr-3 border-b-[0.1px] border-[#bcb8b8]">
         <div className="flex justify-between items-center">
           <p className="text-[18px] text-[#333333] font-bold">سبد خرید</p>
           <div

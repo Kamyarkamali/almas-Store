@@ -30,7 +30,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
     image4,
     price,
     Inventory,
-  } = product;
+  } = product || {};
 
   const [mainImage, setMainImage] = useState(image);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -58,8 +58,12 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         <Link href={"/"}>
           <p className="text-gray-500 text-[12px] lg:text-[14px]">خانه</p>
         </Link>
-        <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p>
-        <p className="text-gray-500 text-[12px] lg:text-[14px]">{category}</p>
+        {/* <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p> */}
+
+        {/* <p className="text-gray-500 text-[12px] lg:text-[14px]">
+          {category ? category : ""}
+        </p> */}
+
         <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p>
         <p className="text-gray-500 text-[12px] lg:text-[14px]">{category1}</p>
         <p className="hidden lg:block text-gray-500 text-[12px] lg:text-[14px]">
@@ -102,13 +106,15 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
             {images.map((img, index) => (
               <button
                 key={index}
-                onClick={() => setMainImage(img)}
+                onClick={() =>
+                  setMainImage(img || "/images/imagesFooter/logo.png")
+                }
                 className={`p-1 border rounded ${
                   mainImage === img ? "border-blue-500" : "border-gray-300"
                 }`}
               >
                 <Image
-                  src={img}
+                  src={img || "/images/imagesFooter/logo.png"}
                   width={100}
                   height={100}
                   alt={`thumbnail-${index}`}
@@ -231,7 +237,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
               بستن
             </button>
             <Image
-              src={images[currentImageIndex]}
+              src={images[currentImageIndex] || "/images/default.jpg"}
               alt="Modal Image"
               width={800}
               height={800}

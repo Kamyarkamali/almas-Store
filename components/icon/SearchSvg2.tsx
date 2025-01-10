@@ -2,7 +2,7 @@
 import { IconsType } from "@/types/interFace";
 import React, { FC } from "react";
 
-const LikeSvg: FC<IconsType> = ({
+const SearchSvg2: FC<IconsType> = ({
   width = "18px",
   height = "18px",
   color = "currentColor",
@@ -12,6 +12,8 @@ const LikeSvg: FC<IconsType> = ({
   return (
     <svg
       fill={fill}
+      color={color}
+      strokeWidth={strokeWidth}
       width={width}
       height={height}
       viewBox="0 0 32 32"
@@ -55,4 +57,4 @@ const LikeSvg: FC<IconsType> = ({
   );
 };
 
-export default LikeSvg;
+export default SearchSvg2;

@@ -7,6 +7,8 @@ function page({ params }: { params: { category: number } }) {
 
   const product: Product = data[category - 1];
 
+  console.log(product);
+
   return (
     <div>
       <DetailseCategory product={product} />

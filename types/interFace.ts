@@ -45,6 +45,16 @@ export interface OpenModal {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface OpenBasket2 {
+  openBasket: boolean;
+  setOpenBasket: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface LoginForm {
+  openLogin: boolean;
+  setOpenLogin: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 // type form login
 export interface FormData {
   username: string;
@@ -85,8 +95,9 @@ export interface Product {
   nameProduct: string;
   price: number;
   category1: string;
-  category: string;
+  category?: string;
   slug: string;
+  slug2: string;
   Inventory: number;
   description: string;
   image2?: string | undefined;
@@ -109,5 +120,26 @@ export interface Props {
   price: number;
   Inventory: number;
   nameProduct: string;
+  category: string | undefined;
+}
+
+export interface Productslider {
+  id: string;
+  image: string;
+  nameProduct: string;
+  price: number;
+  category1: string;
   category: string;
+  slug: string;
+  Inventory: number;
+  description: string;
+}
+
+export interface ProductSlider {
+  products: Productslider[];
+}
+
+export interface LaptoppartComponentProps {
+  initialProducts: Product[];
+  totalProducts: Product[];
 }

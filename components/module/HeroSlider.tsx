@@ -67,8 +67,8 @@ const HeroSlider = () => {
           ))}
         </Swiper>
         {/* خطوط بالا و پایین */}
-        <div className="absolute top-0 left-0 w-full h-[25px] bg-white z-20"></div>
-        <div className="absolute bottom-0 left-0 w-full h-[25px] bg-white z-20 flex items-center justify-center">
+        <div className="absolute top-0 left-0 w-full h-[25px] bg-white z-10"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[25px] bg-white z-10 flex items-center justify-center">
           <div className="custom-pagination flex gap-2 justify-center"></div>
         </div>
         {/* دکمه‌های سفارشی */}

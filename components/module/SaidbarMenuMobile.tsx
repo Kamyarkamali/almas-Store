@@ -24,6 +24,11 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
     }
   };
 
+  // تابع واسطه برای مدیریت تغییرات مقدار Range
+  const handleRangeChange = (newValues: number[]) => {
+    setValues([newValues[0], newValues[1]] as [number, number]);
+  };
+
   return (
     <div
       className={`fixed z-50 top-0 left-0 right-0 bottom-0 transition-all duration-300 ${
@@ -76,7 +81,7 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
                 max={max}
                 step={1}
                 values={values}
-                onChange={setValues}
+                onChange={handleRangeChange}
                 renderTrack={({ props, children }) => (
                   <div
                     {...props}

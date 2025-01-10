@@ -17,7 +17,7 @@ function MegaMenus() {
     timeoutRef.current = setTimeout(() => {
       setActiveMenu(null);
       setActiveSubmenu(null);
-    }, 300); // تأخیر 300 میلی‌ثانیه
+    }, 300);
   };
 
   const handleSubmenuMouseEnter = (id: number) => {
@@ -28,13 +28,13 @@ function MegaMenus() {
   const handleSubmenuMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setActiveSubmenu(null);
-    }, 300); // تأخیر 300 میلی‌ثانیه
+    }, 300);
   };
 
   return (
     <div className="w-full border-[1px] border-gray-300 h-[50px] mt-1">
       <div className="flex items-center h-full">
-        <ul className="flex gap-6 items-center z-50 mr-3 cursor-pointer text-[#333333] text-[13px]">
+        <ul className="flex gap-6 items-center z-20 mr-3 cursor-pointer text-[#333333] text-[13px]">
           {data.map((item: any) => (
             <div
               key={item.id}

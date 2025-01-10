@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // component like-module
-import LikeSvg from "@/components/icon/SearchSvg";
+import LikeSvg from "@/components/icon/SearchSvg2";
 
 const SearchTopMenu = () => {
   const [search, setSearch] = useState<string>("");
