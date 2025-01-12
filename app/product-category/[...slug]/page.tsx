@@ -7,8 +7,6 @@ import Link from "next/link";
 async function page({ params }: { params: { slug: string[] } }) {
   const slug = "/" + params.slug.join("/");
 
-  console.log("Slug:", slug); // بررسی مقدار slug برای اطمینان از صحیح بودن آن
-
   // اگر مسیر برابر با /product-category/laptoppart بود، تمام داده‌ها را بدون فیلتر نمایش بده
   let filteredProducts: Product[] = [];
 

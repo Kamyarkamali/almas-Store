@@ -78,8 +78,8 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
 
   const addFavorite = (item: Productadd) => {
     setFavorites((prevFavorites) => {
+      toast.success(Altet.ADDEDTOFAIVERITS);
       if (!prevFavorites.includes(item)) {
-        toast.success(Altet.ADDEDTOFAIVERITS);
         return [...prevFavorites, item];
       }
       return prevFavorites;

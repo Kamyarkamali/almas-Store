@@ -1,3 +1,4 @@
+import FooterMessege from "@/components/element/FooterMessege";
 import FooterComponents from "../module/FooterComponents";
 
 function Footer() {
@@ -12,6 +13,10 @@ function Footer() {
           طراحی و اجرا توسط سامانه رایان وب نور
         </p>
       </div>
+      {/* پیام انتهایی فوتر */}
+      <section>
+        <FooterMessege />
+      </section>
     </aside>
   );
 }

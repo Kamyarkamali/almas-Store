@@ -3,8 +3,10 @@ import MarketSvg from "../icon/MarketSvg";
 import ShopSvg from "../icon/ShopSvg";
 import UserSvg from "../icon/UserSvg";
 import Link from "next/link";
+import { useFavorites } from "@/context/FavoritesProvider";
 
 function ItemBottomMenu() {
+  const { favorites } = useFavorites();
   return (
     <div className="w-full flex justify-around">
       <Link
@@ -24,12 +26,16 @@ function ItemBottomMenu() {
               alt="faiverite"
             />
             <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
+              <span className="text-[9px]">
+                {favorites ? favorites.length : 0}
+              </span>
             </div>
           </Link>
-          <p className="text-[11px] text-[#333333] font-bold group-hover:text-[#453939be] transition-colors cursor-pointer">
-            علاقه مندی ها
-          </p>
+          <Link href={"/wishlist"}>
+            <p className="text-[11px] text-[#333333] font-bold group-hover:text-[#453939be] transition-colors cursor-pointer">
+              علاقه مندی ها
+            </p>
+          </Link>
         </div>
       </div>
 

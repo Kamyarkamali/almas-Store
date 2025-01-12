@@ -58,11 +58,6 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
         <Link href={"/"}>
           <p className="text-gray-500 text-[12px] lg:text-[14px]">خانه</p>
         </Link>
-        {/* <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p> */}
-
-        {/* <p className="text-gray-500 text-[12px] lg:text-[14px]">
-          {category ? category : ""}
-        </p> */}
 
         <p className="text-gray-500 text-[12px] lg:text-[14px]">/</p>
         <p className="text-gray-500 text-[12px] lg:text-[14px]">{category1}</p>
@@ -196,13 +191,13 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
             </div>
             <div className="flex items-center gap-2 mt-4 pr-5">
               <img
-                onClick={() => addFavorite(product.nameProduct)}
+                onClick={() => addFavorite(product)}
                 src="/svgs/like.svg"
                 alt="like"
                 className="w-[20px] cursor-pointer"
               />
               <p
-                onClick={() => addFavorite(product.nameProduct)}
+                onClick={() => addFavorite(product)}
                 className="text-[14px] font-bold"
               >
                 افزدون به علاقه مندی ها

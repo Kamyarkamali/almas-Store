@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Toaster } from "react-hot-toast";
 
 // interface
 import { Product } from "@/types/interFace";
@@ -10,6 +11,7 @@ import formatNumber from "@/helpers/replaceNumber";
 
 // component
 import ModaProducts from "../element/ModaProducts";
+import { useFavorites } from "@/context/FavoritesProvider";
 
 const ProductCard = ({
   product,
@@ -21,6 +23,8 @@ const ProductCard = ({
   setOpenModal: (value: boolean) => void;
 }) => {
   const [currentImage, setCurrentImage] = useState(product.image);
+  // افزودن به لیست علاقه مندی ها
+  const { addFavorite } = useFavorites();
 
   return (
     <div
@@ -63,7 +67,10 @@ const ProductCard = ({
 
       {/* دکمه‌های  (نمایش هنگام هاور) */}
       <div className="absolute bottom-4 items-center left-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-around gap-2">
-        <button className="py-2 transition-colors">
+        <button
+          className="py-2 transition-colors"
+          onClick={() => addFavorite(product)}
+        >
           <img
             className="w-[20px] h-[20px]"
             src="/svgs/like.svg"
@@ -127,6 +134,7 @@ const MainProducts = ({ products }: { products: Product[] }) => {
           setOpenModal={setOpenModal}
         />
       )}
+      <Toaster />
     </div>
   );
 };

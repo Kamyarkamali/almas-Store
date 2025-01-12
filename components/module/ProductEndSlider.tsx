@@ -165,7 +165,7 @@ const ProductEndSlider = () => {
       </div>
 
       {/* فلش‌های ناوبری کاستوم */}
-      <div className="absolute flex items-center justify-between w-full top-0 left-0 z-10 space-x-2 p-2 border-b-[1px]">
+      <div className="absolute flex items-center justify-between w-full top-0 left-0 space-x-2 p-2 border-b-[1px]">
         <div className="p-3">
           <h3 className="text-[22px] font-bold">آخرین محصولات</h3>
         </div>
