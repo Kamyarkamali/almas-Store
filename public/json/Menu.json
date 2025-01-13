@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "صفحه نخست",
+    "href": "/",
     "submenu": []
   },
   {
@@ -19,11 +20,13 @@
       {
         "id": 22,
         "title": "اسپیکر لپ تاپ",
+        "href": "/product-category/speaker-laptop",
         "submenu": []
       },
       {
         "id": 23,
         "title": "ال سی دی و اد ای دی لپ تاپ",
+        "href": "/product-category/laptoppart/laptop-lcdled",
         "submenu": []
       },
       {

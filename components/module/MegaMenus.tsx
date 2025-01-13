@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import ArrowDown from "../icon/ArrowDown";
 import data from "@/public/json/Menu.json";
 import ArrowLeftSvg from "../icon/ArrowLeftSvg";
+import Link from "next/link";
 
 function MegaMenus() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
@@ -43,7 +44,7 @@ function MegaMenus() {
               onMouseLeave={handleMouseLeave}
             >
               <li className="flex items-center text-[13px]">
-                {item.title}
+                <Link href={item.href ? item.href : "#"}>{item.title}</Link>
                 {item.submenu.length > 0 && <ArrowDown />}
               </li>
 
@@ -63,7 +64,9 @@ function MegaMenus() {
                               handleSubmenuMouseEnter(subItem.id)
                             }
                           >
-                            {subItem?.title}
+                            <Link href={subItem.href ? subItem.href : "#"}>
+                              {subItem?.title}
+                            </Link>
                           </p>
                           {subItem?.submenu?.length > 0 && (
                             <ArrowLeftSvg width="13px" height="13px" />

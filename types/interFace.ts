@@ -144,9 +144,14 @@ export interface LaptoppartComponentProps {
   initialProducts?: Product[];
   totalProducts?: Product[];
   filteredLaptop?: Product[];
+  filteredProducts?: Product[];
 }
 
 export interface dataLabale {
   id: number;
   image: string;
+}
+
+export interface FilteredData {
+  filteredProducts: Product[];
 }
