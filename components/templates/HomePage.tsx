@@ -7,6 +7,8 @@ import SectionMotherBoard from "../module/SectionMotherBoard";
 import SectionLabale from "../module/SectionLabale";
 import SectionGrapgic from "../module/SectionGraphic";
 import Pardazandeh from "../module/Pardazandeh";
+import RamSection from "../module/RamSection";
+import PowerSection from "../module/PowerCompiuter";
 
 function HomePage() {
   return (
@@ -21,6 +23,8 @@ function HomePage() {
       <SectionGrapgic />
       <Pardazandeh />
       <SectionLabale />
+      <RamSection />
+      <PowerSection />
     </div>
   );
 }
