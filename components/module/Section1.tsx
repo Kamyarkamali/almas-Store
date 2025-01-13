@@ -12,7 +12,7 @@ function Section1() {
         >
           <Link href={`/product-category/${item.paths}`}>
             <Image
-              className="rounded-lg md:h-full md:w-full sm:w-[532px] w-[315px]"
+              className=" rounded-lg md:h-full md:w-full sm:w-[532px] w-[315px]"
               src={item.image}
               width={325}
               height={235}

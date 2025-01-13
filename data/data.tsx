@@ -1,4 +1,4 @@
-import { Boxs } from "@/types/interFace";
+import { Boxs, dataLabale } from "@/types/interFace";
 
 export const Box: Boxs[] = [
   {
@@ -24,5 +24,53 @@ export const Box: Boxs[] = [
     title: "تحویل اکسپرس",
     image: "/images/box/4.webp",
     desc: "حمل رایگان سفارشات بالای 10 میلیون تومان",
+  },
+];
+
+export const dataLabales: dataLabale[] = [
+  { id: 1, image: "/images/labaleLaptops/1.webp" },
+  { id: 2, image: "/images/labaleLaptops/2.webp" },
+  { id: 3, image: "/images/labaleLaptops/3.webp" },
+  { id: 4, image: "/images/labaleLaptops/4.webp" },
+  { id: 5, image: "/images/labaleLaptops/5.webp" },
+  { id: 6, image: "/images/labaleLaptops/6.webp" },
+  { id: 7, image: "/images/labaleLaptops/7.webp" },
+  { id: 8, image: "/images/labaleLaptops/8.webp" },
+  { id: 9, image: "/images/labaleLaptops/9.webp" },
+  {
+    id: 11,
+    image: "/images/labaleLaptops/11.webp",
+  },
+  {
+    id: 12,
+    image: "/images/labaleLaptops/12.webp",
+  },
+  {
+    id: 13,
+    image: "/images/labaleLaptops/13.webp",
+  },
+  {
+    id: 14,
+    image: "/images/labaleLaptops/14.webp",
+  },
+  {
+    id: 15,
+    image: "/images/labaleLaptops/15.webp",
+  },
+  {
+    id: 16,
+    image: "/images/labaleLaptops/16.webp",
+  },
+  {
+    id: 17,
+    image: "/images/labaleLaptops/17.webp",
+  },
+  {
+    id: 18,
+    image: "/images/labaleLaptops/18.webp",
+  },
+  {
+    id: 19,
+    image: "/images/labaleLaptops/19.webp",
   },
 ];

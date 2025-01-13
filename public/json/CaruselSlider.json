@@ -138,29 +138,5 @@
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
-  },
-  {
-    "id": "78",
-    "image": "/images/EndProducts/78.jpg",
-    "image2": "/images/EndProducts/78.jpg",
-    "nameProduct": "فلت تصویر لپ تاپ Acer Aspire ES1-531",
-    "price": 2100000,
-    "category1": "قطعات لپ تاپ",
-    "category": "بردهای داخلی",
-    "slug": "/laptoppart/laptopflat",
-    "Inventory": 10,
-    "description": "فلت تصویر لپ تاپ Acer Aspire ES1-531 اورجینال باز شده از روی دستگاه"
-  },
-  {
-    "id": "70",
-    "image": "/images/EndProducts/70.jpg",
-    "image2": "/images/EndProducts/70.jpg",
-    "nameProduct": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050",
-    "price": 170000,
-    "category1": "قطعات لپ تاپ",
-    "category": "بردهای داخلی",
-    "slug": "/laptoppart/socketlaptop",
-    "Inventory": 10,
-    "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   }
 ]

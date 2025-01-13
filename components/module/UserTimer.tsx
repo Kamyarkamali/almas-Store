@@ -25,7 +25,7 @@ const Statistics = () => {
             className={`text-[48px] sm:text-[60px] lg:text-[77px] font-bold ${stat.color}`}
           />
           <p
-            className={`mt-2 text-[18px] sm:text-[22px] lg:text-[25px] font-medium ${stat.color}`}
+            className={`mt-2 text-[18px] sm:text-[22px] lg:text-[25px] font-bold ${stat.color}`}
           >
             {stat.label}
           </p>

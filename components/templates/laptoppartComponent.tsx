@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { Product } from "@/types/interFace";
+import { LaptoppartComponentProps, Product } from "@/types/interFace";
 
 // Helper function for formatting numbers
 import formatNumber from "@/helpers/replaceNumber";
@@ -30,7 +30,7 @@ const ProductCard = ({
       onMouseLeave={() => setCurrentImage(product.image)}
     >
       <div className="overflow-hidden rounded-md">
-        <Link href={`/product-category/${product.id}`}>
+        <Link href={`/product/${product.id}`}>
           <Image
             src={currentImage}
             alt={product.nameProduct}
@@ -88,25 +88,25 @@ const ProductCard = ({
   );
 };
 
-interface LaptoppartComponentProps {
-  initialProducts: Product[];
-  totalProducts: Product[];
-}
-
 const LaptoppartComponent: React.FC<LaptoppartComponentProps> = ({
   initialProducts,
   totalProducts,
 }) => {
-  const [visibleProducts, setVisibleProducts] =
-    useState<Product[]>(initialProducts);
+  const [visibleProducts, setVisibleProducts] = useState<Product[]>(
+    initialProducts || []
+  );
   const [itemsToShow, setItemsToShow] = useState(8);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [openModal, setOpenModal] = useState(false);
 
   const loadMoreProducts = () => {
-    const newItemsToShow = itemsToShow + 8;
-    setItemsToShow(newItemsToShow);
-    setVisibleProducts(totalProducts.slice(0, newItemsToShow));
+    if (totalProducts) {
+      const newItemsToShow = itemsToShow + 8;
+      setItemsToShow(newItemsToShow);
+      setVisibleProducts(totalProducts.slice(0, newItemsToShow));
+    } else {
+      console.error("Total products is undefined.");
+    }
   };
 
   return (
@@ -128,7 +128,7 @@ const LaptoppartComponent: React.FC<LaptoppartComponentProps> = ({
           </div>
 
           {/* دکمه بارگیری بیشتر */}
-          {visibleProducts.length < totalProducts.length && (
+          {visibleProducts.length < (totalProducts?.length || 0) && (
             <div className="text-center mt-6">
               <button
                 onClick={loadMoreProducts}

@@ -2,6 +2,11 @@ import HeroSlider from "@/components/module/HeroSlider";
 import Section1 from "../module/Section1";
 import ProductEndSlider from "../module/ProductEndSlider";
 import UserTime from "../module/UserTimer";
+import SectionLaptop from "../module/SectionLaptop";
+import SectionMotherBoard from "../module/SectionMotherBoard";
+import SectionLabale from "../module/SectionLabale";
+import SectionGrapgic from "../module/SectionGraphic";
+import Pardazandeh from "../module/Pardazandeh";
 
 function HomePage() {
   return (
@@ -10,6 +15,12 @@ function HomePage() {
       <Section1 />
       <ProductEndSlider />
       <UserTime />
+      <SectionLaptop />
+      <SectionMotherBoard />
+      <SectionLabale />
+      <SectionGrapgic />
+      <Pardazandeh />
+      <SectionLabale />
     </div>
   );
 }

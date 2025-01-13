@@ -1,11 +1,7 @@
 import { Product } from "@/types/interFace";
 import LaptoppartComponent from "@/components/templates/laptoppartComponent";
 import data from "@/public/json/endproduct.json";
-
-interface LaptoppartPageProps {
-  initialProducts: Product[];
-  totalProducts: Product[];
-}
+import SectionLaptop from "@/components/module/SectionLaptop";
 
 const LaptoppartPage = async (): Promise<JSX.Element> => {
   const filteredProducts: Product[] = data.filter(

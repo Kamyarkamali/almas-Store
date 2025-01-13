@@ -15,7 +15,10 @@ import DesctComments from "../module/DesctComments";
 
 import { Box } from "@/data/data";
 
-const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
+const DetailseCategory: FC<DetailseCategoryProps> = ({
+  product,
+  productLaptop,
+}) => {
   const { shareLink } = useShareLink();
 
   const { addFavorite } = useFavorites();
@@ -30,7 +33,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({ product }) => {
     image4,
     price,
     Inventory,
-  } = product || {};
+  } = product || productLaptop || {};
 
   const [mainImage, setMainImage] = useState(image);
   const [isModalOpen, setIsModalOpen] = useState(false);

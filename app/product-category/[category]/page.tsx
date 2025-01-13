@@ -1,17 +1,7 @@
-import DetailseCategory from "@/components/templates/DetailseCategory";
-import data from "@/public/json/endproduct.json";
-import { Product } from "@/types/interFace";
+import React from "react";
 
-function page({ params }: { params: { category: number } }) {
-  const { category } = params;
-
-  const product: Product = data[category - 1];
-
-  return (
-    <div>
-      <DetailseCategory product={product} />
-    </div>
-  );
+function page() {
+  return <div>page</div>;
 }
 
 export default page;

@@ -8,6 +8,7 @@ import { FavoritesProvider } from "@/context/FavoritesProvider";
 export const metadata: Metadata = {
   title: "فروشگاه اینترنتی الماس- مرجع تخصصی قطعات لپ تاپ و کامپیوتر",
   description: "فروشگاه اینترنتی الماس- مرجع تخصصی قطعات لپ تاپ و کامپیوتر ",
+  icons: "/images/section1/logo.png",
 };
 
 export default function RootLayout({

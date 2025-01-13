@@ -97,7 +97,7 @@ export interface Product {
   category1: string;
   category?: string;
   slug: string;
-  slug2: string;
+  slug2?: string;
   Inventory: number;
   description: string;
   image2?: string | undefined;
@@ -107,6 +107,7 @@ export interface Product {
 
 export interface DetailseCategoryProps {
   product: Product;
+  productLaptop?: Product[];
 }
 
 export interface Boxs {
@@ -140,6 +141,12 @@ export interface ProductSlider {
 }
 
 export interface LaptoppartComponentProps {
-  initialProducts: Product[];
-  totalProducts: Product[];
+  initialProducts?: Product[];
+  totalProducts?: Product[];
+  filteredLaptop?: Product[];
+}
+
+export interface dataLabale {
+  id: number;
+  image: string;
 }

@@ -65,7 +65,7 @@ const ProductEndSlider = () => {
   };
 
   return (
-    <div className="w-full max-w-[1367px] rounded-md shadow-lg mx-auto mt-[71px] h-auto bg-[#FFFFFF] flex justify-center items-center relative px-4">
+    <div className="w-full  rounded-md shadow-lg mx-auto mt-[71px] h-auto bg-[#FFFFFF] flex justify-center items-center relative px-4">
       <Swiper
         slidesPerView={5}
         spaceBetween={10}
@@ -106,7 +106,7 @@ const ProductEndSlider = () => {
             <div className="bg-white p-8 mt-16 flex flex-col items-center relative group">
               {/* تصویر محصول */}
               <div className="relative overflow-hidden w-[171px] h-[171px]">
-                <Link href={`/product-category/${product.id}`}>
+                <Link href={`/product/${product.id}`}>
                   <img
                     src={product.image}
                     alt={product.nameProduct}
@@ -165,7 +165,7 @@ const ProductEndSlider = () => {
       </div>
 
       {/* فلش‌های ناوبری کاستوم */}
-      <div className="absolute flex items-center justify-between w-full top-0 left-0 space-x-2 p-2 border-b-[1px]">
+      <div className="absolute flex items-center justify-between w-full top-0 left-0 space-x-2 p-2 border-b-[1px] z-10">
         <div className="p-3">
           <h3 className="text-[22px] font-bold">آخرین محصولات</h3>
         </div>

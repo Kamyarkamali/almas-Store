@@ -34,7 +34,7 @@ const ProductCard = ({
     >
       {/* تصویر محصول */}
       <div className="overflow-hidden rounded-md">
-        <Link href={`/product-category/${product.id}`}>
+        <Link href={`/product/${product.id}`}>
           <Image
             src={currentImage}
             alt={product.nameProduct}

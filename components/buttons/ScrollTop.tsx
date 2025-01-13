@@ -29,7 +29,7 @@ function ScrollTop() {
   return (
     <button
       onClick={scrollTop}
-      className={`fixed lg:bottom-5 z-10 bottom-16 flex justify-center items-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] cursor-pointer shadow-md shadow-gray-300 rounded-full bg-white text-white
+      className={`fixed lg:bottom-5 z-20 bottom-16 flex justify-center items-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] cursor-pointer shadow-md shadow-gray-300 rounded-full bg-white text-white
         transition-all duration-500 ease-in-out ${
           show ? "left-3 opacity-100" : "left-[-60px] opacity-0"
         }`}
