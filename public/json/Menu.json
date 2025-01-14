@@ -12,6 +12,7 @@
       {
         "id": 21,
         "title": "هارد لپ تاپ",
+        "href": "/product-category/laptoppart/laptophard/",
         "submenu": [
           { "id": 211, "title": "HDD" },
           { "id": 212, "title": "SDD" }
@@ -98,6 +99,7 @@
       {
         "id": 212,
         "title": "رم لپ تاپ",
+        "href": "/product-category/laptoppart/laptop-ram/",
         "submenu": [
           { "id": 213, "title": "رم لپ تاپ DDR" },
           { "id": 214, "title": "رم DDR2 لپ تاپ" },
@@ -122,11 +124,31 @@
       {
         "id": 36,
         "title": "قاب لپ تاپ",
+        "href": "/product-category/laptoppart/laptopframe/",
         "submenu": []
       },
       {
         "id": 37,
         "title": "کابل آداپتور لپ تاپ",
+        "href": "/product-category/laptoppart/adaptorcable/",
+        "submenu": []
+      },
+      {
+        "id": 38,
+        "title": "کیبورد لپ تاپ",
+        "href": "/product-category/laptoppart/lapopkeyboard/",
+        "submenu": []
+      },
+      {
+        "id": 39,
+        "title": "مادربرد لپ تاپ",
+        "href": "/product-category/laptoppart/laptopmainboard/",
+        "submenu": []
+      },
+      {
+        "id": "40",
+        "title": "لولا لپ ناپ",
+        "href": "/product-category/laptoppart/lolalaptop/",
         "submenu": []
       }
     ]
@@ -135,7 +157,11 @@
     "id": 3,
     "title": "قطعات کامپیوتر",
     "submenu": [
-      { "id": 31, "title": "کامپیوتر اسمبل شده" },
+      {
+        "id": 31,
+        "title": "کامپیوتر اسمبل شده",
+        "href": "/product-category/computerpart/case-asembely/"
+      },
       { "id": 32, "title": "اپتیکال (DVD RAM)" },
       { "id": 33, "title": "اسپیکر" },
       { "id": 34, "title": "پاور" },

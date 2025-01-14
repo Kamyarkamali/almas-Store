@@ -5,6 +5,7 @@ import { Product } from "@/types/interFace";
 import Link from "next/link";
 
 async function page({ params }: { params: { slug: string[] } }) {
+  console.log(params);
   const slug = "/" + params.slug.join("/");
 
   // اگر مسیر برابر با /product-category/laptoppart بود، تمام داده‌ها را بدون فیلتر نمایش بده

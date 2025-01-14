@@ -64,7 +64,10 @@ function MegaMenus() {
                               handleSubmenuMouseEnter(subItem.id)
                             }
                           >
-                            <Link href={subItem.href ? subItem.href : "#"}>
+                            <Link
+                              onClick={() => setActiveMenu(null)}
+                              href={subItem.href ? subItem.href : "#"}
+                            >
                               {subItem?.title}
                             </Link>
                           </p>
@@ -78,6 +81,7 @@ function MegaMenus() {
                             <div className="absolute left-[-307px] z-20 top-0 bg-white border border-gray-300 shadow-lg p-2 rounded-md w-[300px]">
                               {subItem.submenu.map((subSubItem: any) => (
                                 <div
+                                  onClick={() => setActiveMenu(null)}
                                   key={subSubItem.id}
                                   className="p-2 text-[13px] hover:bg-gray-100 cursor-pointer"
                                 >
