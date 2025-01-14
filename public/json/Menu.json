@@ -20,7 +20,7 @@
       {
         "id": 22,
         "title": "اسپیکر لپ تاپ",
-        "href": "/product-category/speaker-laptop",
+        "href": "/product-category/laptoppart/speaker-laptop",
         "submenu": []
       },
       {
@@ -32,6 +32,7 @@
       {
         "id": 24,
         "title": "انواع شارژر لپ تاپ",
+        "href": "/product-category/laptoppart/laptopadapert",
         "submenu": [
           { "id": 213, "title": "شارژر ایسوس" },
           { "id": 214, "title": "شارژر HP" },
@@ -66,32 +67,32 @@
       },
       {
         "id": 26,
-        "title": "برند های  داخلی لپ تاپ",
+        "title": "بردهای داخلی لپ تاپ",
+        "href": "/product-category/laptoppart/mini-boardlaptop",
         "submenu": []
       },
       {
         "id": 27,
-        "title": "پردازنده های داخلی لپ تاپ",
-        "submenu": []
-      },
-      {
-        "id": 28,
         "title": "پردازنده لپ تاپ",
+        "href": "/product-category/laptoppart/cpulaptop",
         "submenu": []
       },
       {
         "id": 29,
-        "title": "تاپ پد و کلیک لپ تاپ",
+        "title": "تایپ پد و کلیک لپ تاپ",
+        "href": "/product-category/laptoppart/tochpad-laptop/",
         "submenu": []
       },
       {
         "id": 210,
         "title": "جک و سوکت و دکمه لپ تاپ",
+        "href": "/product-category/laptoppart/socketlaptop/",
         "submenu": []
       },
       {
         "id": 211,
         "title": "درایو لپ تاپ",
+        "href": "/product-category/laptoppart/laptopdrive/",
         "submenu": []
       },
       {
@@ -108,12 +109,14 @@
       {
         "id": 31,
         "title": "فلت لپ تاپ",
+        "href": "/product-category/laptoppart/laptopflat/",
         "submenu": []
       },
 
       {
         "id": 33,
         "title": "فن لپ تاپ",
+        "href": "/product-category/laptoppart/fanlaptop/",
         "submenu": []
       },
       {
