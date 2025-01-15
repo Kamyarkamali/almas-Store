@@ -96,6 +96,8 @@ export interface Product {
   price: number;
   category1: string;
   category?: string;
+  category3?: string;
+  category4?: string;
   slug: string;
   slug2?: string;
   Inventory: number;

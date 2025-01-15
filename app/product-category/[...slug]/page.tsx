@@ -1,24 +1,31 @@
 import SaidbarMobile from "@/components/module/SaidbarMobile";
 import MainProducts from "@/components/templates/MainProducts";
-import data from "@/public/json/endproduct.json";
 import { Product } from "@/types/interFace";
 import Link from "next/link";
+import data from "@/public/json/endproduct.json";
 
 async function page({ params }: { params: { slug: string[] } }) {
-  console.log(params);
   const slug = "/" + params.slug.join("/");
 
-  // اگر مسیر برابر با /product-category/laptoppart بود، تمام داده‌ها را بدون فیلتر نمایش بده
+  // تعیین دسته و زیر دسته
+  const mainCategory = params.slug[1];
+  const subCategory = params.slug[2]; // laptophard یا ssd یا hhd
+
+  // فیلتر محصولات
   let filteredProducts: Product[] = [];
 
   if (slug === "/product-category/laptoppart") {
     // نمایش تمام داده‌ها در این مسیر
     filteredProducts = data;
-    console.log("Filtered Products:", filteredProducts); // بررسی داده‌های فیلتر شده
+  } else if (subCategory === "ssd" || subCategory === "hdd") {
+    // فیلتر بر اساس زیر دسته‌ها
+    filteredProducts = data.filter(
+      (item: Product) =>
+        item.category3 === "laptophard" && item.category4 === subCategory
+    );
   } else {
-    // فیلتر محصولات با استفاده از slug دقیق در سایر مسیرها
+    // فیلتر محصولات با استفاده از slug دقیق
     filteredProducts = data.filter((item: Product) => item.slug === slug);
-    console.log("Filtered Products based on slug:", filteredProducts); // بررسی داده‌های فیلتر شده بر اساس slug
   }
 
   // گرفتن دسته‌بندی مرتبط

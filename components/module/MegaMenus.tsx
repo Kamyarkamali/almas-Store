@@ -85,7 +85,9 @@ function MegaMenus() {
                                   key={subSubItem.id}
                                   className="p-2 text-[13px] hover:bg-gray-100 cursor-pointer"
                                 >
-                                  {subSubItem.title}
+                                  <Link href={`${subSubItem.href}`}>
+                                    {subSubItem.title}
+                                  </Link>
                                 </div>
                               ))}
                             </div>

@@ -14,8 +14,16 @@
         "title": "هارد لپ تاپ",
         "href": "/product-category/laptoppart/laptophard/",
         "submenu": [
-          { "id": 211, "title": "HDD" },
-          { "id": 212, "title": "SDD" }
+          {
+            "id": 211,
+            "title": "HDD",
+            "href": "/product-category/laptoppart/laptophard/hdd"
+          },
+          {
+            "id": 212,
+            "title": "SDD",
+            "href": "/product-category/laptoppart/laptophard/ssd"
+          }
         ]
       },
       {
@@ -162,21 +170,76 @@
         "title": "کامپیوتر اسمبل شده",
         "href": "/product-category/computerpart/case-asembely/"
       },
-      { "id": 32, "title": "اپتیکال (DVD RAM)" },
-      { "id": 33, "title": "اسپیکر" },
-      { "id": 34, "title": "پاور" },
-      { "id": 35, "title": "پردازنده (CPU)" },
-      { "id": 36, "title": "رم" },
-      { "id": 37, "title": "کارت صدا" },
-      { "id": 38, "title": "صفحه نمایش (مانیتور)" },
-      { "id": 39, "title": "خنک کننده" },
-      { "id": 310, "title": "کیبورد" },
-      { "id": 311, "title": "کیس" },
-      { "id": 312, "title": "کارت گرافیک" },
-      { "id": 312, "title": "موس" },
-      { "id": 312, "title": "مادربرد" },
-      { "id": 312, "title": "موس" },
-      { "id": 312, "title": "هارد" }
+      {
+        "id": 32,
+        "title": "اپتیکال (DVD RAM)",
+        "href": "/product-category/computerpart/optical-drive/"
+      },
+      {
+        "id": 33,
+        "title": "اسپیکر",
+        "href": "/product-category/computerpart/speaker/"
+      },
+      {
+        "id": 34,
+        "title": "پاور",
+        "href": "/product-category/computerpart/power/"
+      },
+      {
+        "id": 35,
+        "title": "پردازنده (CPU)",
+        "href": "/product-category/computerpart/cpu/"
+      },
+      {
+        "id": 36,
+        "title": "رم",
+        "href": "/product-category/computerpart/ram/"
+      },
+      {
+        "id": 37,
+        "title": "کارت صدا",
+        "href": "/product-category/computerpart/sound-card/"
+      },
+      {
+        "id": 38,
+        "title": "صفحه نمایش (مانیتور)",
+        "href": "/product-category/computerpart/lcd/"
+      },
+      {
+        "id": 39,
+        "title": "خنک کننده",
+        "href": "/product-category/computerpart/cooling/"
+      },
+      {
+        "id": 310,
+        "title": "کیبورد",
+        "href": "/product-category/computerpart/keyboard/"
+      },
+      {
+        "id": 311,
+        "title": "کیس",
+        "href": "/product-category/computerpart/case/"
+      },
+      {
+        "id": 312,
+        "title": "کارت گرافیک",
+        "href": "/product-category/computerpart/vga/"
+      },
+      {
+        "id": 313,
+        "title": "موس",
+        "href": "/product-category/computerpart/mouse/"
+      },
+      {
+        "id": 314,
+        "title": "مادربرد",
+        "href": "/product-category/computerpart/mainboard/"
+      },
+      {
+        "id": 315,
+        "title": "هارد",
+        "href": "/product-category/computerpart/hard/"
+      }
     ]
   },
   {
