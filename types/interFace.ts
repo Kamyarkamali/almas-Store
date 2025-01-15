@@ -93,7 +93,7 @@ export interface Product {
   id: string;
   image: string;
   nameProduct: string;
-  price: number;
+  price: number |;
   category1: string;
   category?: string;
   category3?: string;
@@ -155,5 +155,6 @@ export interface dataLabale {
 }
 
 export interface FilteredData {
-  filteredProducts: Product[];
+  filteredProducts: any[];
+  datas:any[]
 }

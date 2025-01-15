@@ -43,18 +43,66 @@
         "title": "انواع شارژر لپ تاپ",
         "href": "/product-category/laptoppart/laptopadapert",
         "submenu": [
-          { "id": 213, "title": "شارژر ایسوس" },
-          { "id": 214, "title": "شارژر HP" },
-          { "id": 215, "title": "شارژر لنوو" },
-          { "id": 216, "title": "شارژر دل" },
-          { "id": 217, "title": "شارژر ACER" },
-          { "id": 218, "title": "شارژر سونی" },
-          { "id": 219, "title": "شارژر MSI" },
-          { "id": 220, "title": "شارژر سامسونگ" },
-          { "id": 221, "title": "شارژر APPLE" },
-          { "id": 222, "title": "شارژر توشیبا" },
-          { "id": 223, "title": "شارژر MICROSOFT" },
-          { "id": 224, "title": "شارژر FUJITSO" }
+          {
+            "id": 213,
+            "title": "شارژر ایسوس",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-ausus"
+          },
+          {
+            "id": 214,
+            "title": "شارژر HP",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-hp"
+          },
+          {
+            "id": 215,
+            "title": "شارژر لنوو",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-lenovo"
+          },
+          {
+            "id": 216,
+            "title": "شارژر دل",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-dell"
+          },
+          {
+            "id": 217,
+            "title": "شارژر ACER",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-acer"
+          },
+          {
+            "id": 218,
+            "title": "شارژر سونی",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-sony"
+          },
+          {
+            "id": 219,
+            "title": "شارژر MSI",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-msi"
+          },
+          {
+            "id": 220,
+            "title": "شارژر سامسونگ",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-samsung"
+          },
+          {
+            "id": 221,
+            "title": "شارژر APPLE",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-apple"
+          },
+          {
+            "id": 222,
+            "title": "شارژر توشیبا",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-toshiba"
+          },
+          {
+            "id": 223,
+            "title": "شارژر MICROSOFT",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-microsoft"
+          },
+          {
+            "id": 224,
+            "title": "شارژر FUJITSO",
+            "href": "/product-category/laptoppart/laptopadapert/sharjer-fujitso"
+          }
         ]
       },
       {

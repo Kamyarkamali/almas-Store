@@ -2,33 +2,30 @@
 
 import menu from "@/public/json/Menu.json";
 import { useState } from "react";
-import { Range } from "react-range";
 import ArrowDown from "../icon/ArrowDown";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Sidebar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
-  const [values, setValues] = useState<[number, number]>([20, 80]);
+  const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
 
   const pathname = usePathname();
 
   const isDynamicRoute = /^\/product-category\/\d+$/.test(pathname);
 
-  //  مخفی کردن سایدبار در بخش داینامیک
+  // مخفی کردن سایدبار در بخش داینامیک
   if (isDynamicRoute) {
     return null;
   }
-
-  const min = 0;
-  const max = 100;
 
   // برای باز و بسته کردن منوها
   const toggleMenu = (id: number) => {
     setActiveMenu((prev) => (prev === id ? null : id));
   };
 
-  const handleRangeChange = (values: number[]) => {
-    setValues([values[0], values[1]]);
+  const toggleSubmenu = (id: number) => {
+    setActiveSubmenu((prev) => (prev === id ? null : id));
   };
 
   return (
@@ -59,49 +56,7 @@ export default function Sidebar() {
           <div className="flex flex-col h-full mt-[23px]">
             {/* اسلایدر */}
             <div className="flex flex-col items-center gap-4">
-              <Range
-                min={min}
-                max={max}
-                step={1}
-                values={values}
-                onChange={handleRangeChange}
-                renderTrack={({ props, children }) => (
-                  <div
-                    {...props}
-                    style={{
-                      ...props.style,
-                      height: "6px",
-                      width: "100%",
-                      background: "#ddd",
-                      position: "relative",
-                      borderRadius: "4px",
-                    }}
-                  >
-                    {children}
-                  </div>
-                )}
-                renderThumb={({ props }) => (
-                  <div
-                    {...props}
-                    style={{
-                      ...props.style,
-                      height: "20px",
-                      width: "20px",
-                      borderRadius: "50%",
-                      background: "#4CAF50",
-                    }}
-                  />
-                )}
-              />
-              {/* مقادیر حداقل و حداکثر */}
-              <div className="flex justify-between w-full">
-                <span className="text-[14px] text-[#777777]">
-                  حداقل: {values[0]}
-                </span>
-                <span className="text-[14px] text-[#777777]">
-                  حداکثر: {values[1]}
-                </span>
-              </div>
+              {/* slider component */}
             </div>
           </div>
         </div>
@@ -118,10 +73,12 @@ export default function Sidebar() {
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => toggleMenu(item.id)}
               >
-                <p className="text-[14px] text-[#777777]">{item.title}</p>
+                <Link href={`${item.title === "صفحه نخست" && "/"}`}>
+                  <p className="text-[14px] text-[#777777]">{item.title}</p>
+                </Link>
                 {item.submenu.length > 0 && (
                   <ArrowDown
-                    className={`transform transition-transform duration-300 ${
+                    className={`transform transition-transform duration-300 ml-2 ${
                       activeMenu === item.id ? "rotate-180" : "rotate-0"
                     }`}
                   />
@@ -132,13 +89,45 @@ export default function Sidebar() {
                   activeMenu === item.id ? "max-h-[200px]" : "max-h-0"
                 }`}
               >
-                {item.submenu.map((subitem) => (
-                  <p
-                    key={subitem.id}
-                    className="text-[14px] text-[#777777] mt-2 pl-4"
-                  >
-                    {subitem.title}
-                  </p>
+                {item.submenu.map((subitem: any) => (
+                  <div key={subitem.id}>
+                    <div
+                      className="flex items-center justify-between cursor-pointer pl-4 mt-2"
+                      onClick={() => toggleSubmenu(Number(subitem.id))}
+                    >
+                      <Link href={subitem?.href || "#"}>
+                        <p className="text-[14px] text-[#777777]">
+                          {subitem.title}
+                        </p>
+                      </Link>
+                      {subitem.submenu?.length > 0 && (
+                        <ArrowDown
+                          className={`transform transition-transform duration-300 ml-2 ${
+                            activeSubmenu === subitem.id
+                              ? "rotate-180"
+                              : "rotate-0"
+                          }`}
+                        />
+                      )}
+                    </div>
+
+                    <div
+                      className={`overflow-hidden transition-[max-height] duration-300 ${
+                        activeSubmenu === subitem.id
+                          ? "max-h-[200px]"
+                          : "max-h-0"
+                      }`}
+                    >
+                      {subitem.submenu?.map((subSubitem: any) => (
+                        <p
+                          key={subSubitem.id}
+                          className="text-[14px] text-[#777777] mt-2 pl-8"
+                        >
+                          {subSubitem.title}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
