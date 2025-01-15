@@ -12,20 +12,29 @@ async function page({ params }: { params: { slug: string[] } }) {
   const subCategory = params.slug[2]; // laptophard یا ssd یا hhd
 
   // فیلتر محصولات
-  let filteredProducts: Product[] = [];
+  let filteredProducts: any[] = [];
 
   if (slug === "/product-category/laptoppart") {
     // نمایش تمام داده‌ها در این مسیر
     filteredProducts = data;
+  } else if (
+    mainCategory === "printer" &&
+    subCategory === "consuming-materials"
+  ) {
+    // فیلتر محصولات مربوط به مسیر "printer/consuming-materials"
+    filteredProducts = data.filter(
+      (item: any) =>
+        item.category1 === "printer" && item.category3 === "consuming-materials"
+    );
   } else if (subCategory === "ssd" || subCategory === "hdd") {
     // فیلتر بر اساس زیر دسته‌ها
     filteredProducts = data.filter(
-      (item: Product) =>
+      (item: any) =>
         item.category3 === "laptophard" && item.category4 === subCategory
     );
   } else {
     // فیلتر محصولات با استفاده از slug دقیق
-    filteredProducts = data.filter((item: Product) => item.slug === slug);
+    filteredProducts = data.filter((item) => item.slug === slug);
   }
 
   // گرفتن دسته‌بندی مرتبط

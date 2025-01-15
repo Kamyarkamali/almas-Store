@@ -304,8 +304,12 @@
     "id": 7,
     "title": "ماشین های اداری",
     "submenu": [
-      { "id": 71, "title": "پرینتر" },
-      { "id": 72, "title": "مواد مصرفی" }
+      { "id": 71, "title": "پرینتر", "href": "/product-category/printer" },
+      {
+        "id": 72,
+        "title": "مواد مصرفی",
+        "href": "/product-category/printer/consuming-materials"
+      }
     ]
   },
   {
