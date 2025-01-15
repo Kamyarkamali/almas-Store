@@ -261,16 +261,41 @@
     "id": 6,
     "title": "لوازم جانبی",
     "submenu": [
-      { "id": 61, "title": "لوازم جانبی کامپیوتر" },
-      { "id": 62, "title": "هارد اکسترنال" },
-      { "id": 63, "title": "لوازم جانبی لپ تاپ" },
+      {
+        "id": 61,
+        "title": "لوازم جانبی کامپیوتر",
+        "href": "/product-category/acsessory/pc-acess"
+      },
+      {
+        "id": 62,
+        "title": "هارد اکسترنال",
+        "href": "/product-category/acsessory/pc-acess/hard-external/"
+      },
+      {
+        "id": 63,
+        "title": "لوازم جانبی لپ تاپ",
+        "href": "/product-category/acsessory/laptop-acess/"
+      },
       {
         "id": 64,
         "title": "لوازم جانبی موبایل و تبلت",
+        "href": "/product-category/acsessory/mobile/",
         "submenu": [
-          { "id": 641, "title": "شارژر موبایل" },
-          { "id": 642, "title": "قاب موبایل و تبلت" },
-          { "id": 643, "title": "کابل شارژ موبایل" }
+          {
+            "id": 641,
+            "title": "شارژر موبایل",
+            "href": "/product-category/acsessory/mobile/charger-mobile"
+          },
+          {
+            "id": 642,
+            "title": "قاب موبایل و تبلت",
+            "href": "/product-category/acsessory/mobile/cover-mobile/"
+          },
+          {
+            "id": 643,
+            "title": "کابل شارژ موبایل",
+            "href": "/product-category/acsessory/mobile/cable-charge/"
+          }
         ]
       }
     ]

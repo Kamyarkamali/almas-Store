@@ -42,15 +42,38 @@ async function page({ params }: { params: { slug: string[] } }) {
     );
   }
 
+  // گرفتن مقادیر دیتاها شامل دسته بندی ها و اسم محصولات و ...
+
+  const categorys = filteredProducts.map((product) => ({
+    category1: product.category1,
+    category3: product.category3,
+    category4: product.category4,
+    category: product.category,
+  }));
+
+  console.log(categorys);
+
   return (
     <div className="mt-[2.3rem]">
       <div className="flex items-center lg:text-[14px] text-[12px] mb-2 gap-2 cursor-pointer justify-between">
-        <div className="flex items-center gap-2">
-          <Link href={"/"}>
-            <p className="text-[#777777]">خانه</p>
-          </Link>
-          <p className="text-[#777777]">/</p>
-          <p className="text-[#777777]">{category}</p>
+        <div className="flex items-center gap-2 lg:*:text-[14px] *:text-[12px] *:text-[#777777]">
+          <Link href={"/"}>خانه</Link>
+          <p>/</p>
+          {categorys[0]?.category1 && (
+            <Link href={"/"}>{categorys[0].category1}</Link>
+          )}
+          {categorys[2]?.category4 && (
+            <>
+              <p>/</p>
+              <Link href={"/"}>{categorys[2].category4}</Link>
+            </>
+          )}
+          {categorys[1]?.category && (
+            <>
+              <p>/</p>
+              <Link href={"/"}>{categorys[1].category}</Link>
+            </>
+          )}
         </div>
         <div>{filteredProducts.length}</div>
       </div>
