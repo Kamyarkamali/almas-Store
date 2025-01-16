@@ -11,7 +11,7 @@ export default function Sidebar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
 
-  const { toggleCheckbox } = useFavorites();
+  const { toggleCheckbox, toggleChebox2 } = useFavorites();
 
   const pathname = usePathname();
 
@@ -45,7 +45,7 @@ export default function Sidebar() {
               <p className="text-[14px] text-[#777777]">فروش ویژه</p>
             </div>
             <div className="flex items-center gap-2 mt-[22px]">
-              <input type="checkbox" />
+              <input onChange={toggleChebox2} type="checkbox" />
               <p className="text-[14px] text-[#777777]">موجود در انبار</p>
             </div>
           </div>

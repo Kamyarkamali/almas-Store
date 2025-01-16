@@ -24,7 +24,7 @@ const ProductCard = ({
   setOpenModal: (value: boolean) => void;
 }) => {
   const [currentImage, setCurrentImage] = useState(product.image);
-  const { addFavorite, checkbox } = useFavorites();
+  const { addFavorite } = useFavorites();
 
   return (
     <div className="p-4 relative flex flex-col items-center bg-white border shadow-sm hover:shadow-lg rounded-md cursor-pointer transition-all duration-300 group">
@@ -45,6 +45,15 @@ const ProductCard = ({
       <p className="text-center text-[14px] text-[#333333] leading-7 mt-4 hover:text-[#777777] cursor-pointer duration-150">
         {product.nameProduct}
       </p>
+      <div
+        className={`${
+          product.discount
+            ? "text-[10px] bg-green-600 text-white py-1 px-2 rounded-md"
+            : ""
+        } `}
+      >
+        <p>{product.discount === true ? "تخفیف 10 %" : ""}</p>
+      </div>
       {/* قیمت */}
       <p
         className={
@@ -97,14 +106,21 @@ const ProductCard = ({
 const MainProducts = ({ products }: { products: Product[] }) => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [show, setShow] = useState<Product[]>([]);
-  const { checkbox } = useFavorites();
+  const [show, setShow] = useState<Product[]>(products); // مقدار اولیه برابر با تمام محصولات
+  const { checkbox, checkbox2 } = useFavorites();
 
-  // فیلتر کردن داده‌ها بر اساس تخفیف
   useEffect(() => {
-    const filtered = products.filter((item) => item.discount === checkbox);
-    setShow(filtered);
-  }, [checkbox, products]);
+    if (checkbox || checkbox2) {
+      const filtered = products.filter(
+        (item) =>
+          (checkbox ? item.discount === checkbox : true) &&
+          (checkbox2 ? item.Inventory > 0 : true)
+      );
+      setShow(filtered);
+    } else {
+      setShow(products);
+    }
+  }, [checkbox, checkbox2, products]);
 
   if (!show || show.length === 0) {
     return (

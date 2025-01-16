@@ -2947,8 +2947,8 @@
     "category": "فن لپ تاپ",
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
-    "Inventory": 10,
-    "discount": false,
+    "Inventory": 0,
+    "discount": true,
     "description": "فن لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -4181,7 +4181,7 @@
     "category": "خنک کننده",
     "category3": "cooling",
     "slug": "/computerpart/cooling",
-    "Inventory": 10,
+    "Inventory": 0,
     "discount": true,
     "description": "مشخصات مشخصات وزن ۳۲۶ گرم جنس لوله‌ها مس قطر لوله‌ها ۶ میلی‌متر کانکتور برق پمپ ۴ پین میزان نویز فن"
   },

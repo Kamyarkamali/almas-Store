@@ -46,7 +46,7 @@ const ModaProducts: FC<ModaProductsProps> = ({
         <div className="w-full border-t-[1px] border-[#000000] mt-2 py-2"></div>
         <div className="w-full">
           <Link
-            href={`/product-category/${id}`}
+            href={`/product/${id}`}
             className="bg-[#D60444] w-full inline-block text-center text-white py-2 px-4 rounded-md"
           >
             دیدن جزئیات
