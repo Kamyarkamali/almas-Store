@@ -5,10 +5,13 @@ import { Opens } from "@/types/interFace";
 import { Range } from "react-range";
 import ArrowDown from "../icon/ArrowDown";
 import menu from "@/public/json/Menu.json";
+import { useFavorites } from "@/context/FavoritesProvider";
+import Link from "next/link";
 
 const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
   const [values, setValues] = useState<[number, number]>([20, 80]);
+  const { toggleCheckbox, toggleChebox2 } = useFavorites();
 
   const min = 0;
   const max = 100;
@@ -27,6 +30,12 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
   // تابع واسطه برای مدیریت تغییرات مقدار Range
   const handleRangeChange = (newValues: number[]) => {
     setValues([newValues[0], newValues[1]] as [number, number]);
+  };
+
+  const clickTitle = (title: string) => {
+    if (title === "صفحه نخست") {
+      setOpen(false);
+    }
   };
 
   return (
@@ -60,11 +69,11 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
           </div>
           <div className="flex flex-col h-full mt-[23px]">
             <div className="flex items-center gap-2">
-              <input type="checkbox" />
+              <input onChange={toggleCheckbox} type="checkbox" />
               <p className="text-[14px] text-[#777777]">فروش ویژه</p>
             </div>
             <div className="flex items-center gap-2 mt-[22px]">
-              <input type="checkbox" />
+              <input type="checkbox" onChange={toggleChebox2} />
               <p className="text-[14px] text-[#777777]">موجود در انبار</p>
             </div>
           </div>
@@ -122,7 +131,7 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
             </div>
           </div>
 
-          <div className="border-[2px] w-full h-fit overflow-hidden p-5 flex  flex-col">
+          <div className="border-[2px] w-full h-fit overflow-y-auto p-5 flex  flex-col">
             <div className="bg-[#ECECEC] h-[40px] flex items-center justify-start p-4">
               <h2 className="font-bold">دسته های محصولات</h2>
             </div>
@@ -133,7 +142,13 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
                   className="flex items-center justify-between cursor-pointer"
                   onClick={() => toggleMenu(item.id)}
                 >
-                  <p className="text-[14px] text-[#777777]">{item.title}</p>
+                  <Link
+                    onClick={() => clickTitle(item.title)}
+                    href={item.title === "صفحه نخست" ? "/" : "#"}
+                    className="text-[14px] text-[#777777]"
+                  >
+                    {item.title}
+                  </Link>
                   {item.submenu.length > 0 && (
                     <ArrowDown
                       className={`transform transition-transform duration-300 ${
@@ -147,12 +162,12 @@ const SaidbarMenuMobile: FC<Opens> = ({ open, setOpen }) => {
                     activeMenu === item.id ? "max-h-[200px]" : "max-h-0"
                   }`}
                 >
-                  {item.submenu.map((subitem) => (
+                  {item?.submenu?.map((subitem: any) => (
                     <p
-                      key={subitem.id}
+                      key={subitem?.id}
                       className="text-[14px] text-[#777777] mt-2 pl-4"
                     >
-                      {subitem.title}
+                      <Link href={subitem?.href || "#"}>{subitem?.title}</Link>
                     </p>
                   ))}
                 </div>

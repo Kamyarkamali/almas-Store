@@ -30,13 +30,22 @@
         "id": 22,
         "title": "اسپیکر لپ تاپ",
         "href": "/product-category/laptoppart/speaker-laptop",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/speaker-laptop"
+          }
+        ]
       },
       {
         "id": 23,
         "title": "ال سی دی و اد ای دی لپ تاپ",
         "href": "/product-category/laptoppart/laptop-lcdled",
-        "submenu": []
+        "submenu": [
+          {
+            "id": 211,
+            "href": "/product-category/laptoppart/laptop-lcdled"
+          }
+        ]
       },
       {
         "id": 24,
@@ -167,7 +176,11 @@
         "id": 26,
         "title": "بردهای داخلی لپ تاپ",
         "href": "/product-category/laptoppart/mini-boardlaptop",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/mini-boardlaptop"
+          }
+        ]
       },
       {
         "id": 27,
@@ -179,19 +192,31 @@
         "id": 29,
         "title": "تایپ پد و کلیک لپ تاپ",
         "href": "/product-category/laptoppart/tochpad-laptop/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/tochpad-laptop/"
+          }
+        ]
       },
       {
         "id": 210,
         "title": "جک و سوکت و دکمه لپ تاپ",
         "href": "/product-category/laptoppart/socketlaptop/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/socketlaptop/"
+          }
+        ]
       },
       {
         "id": 211,
         "title": "درایو لپ تاپ",
         "href": "/product-category/laptoppart/laptopdrive/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/laptopdrive/"
+          }
+        ]
       },
       {
         "id": 212,
@@ -209,44 +234,72 @@
         "id": 31,
         "title": "فلت لپ تاپ",
         "href": "/product-category/laptoppart/laptopflat/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/laptopflat/"
+          }
+        ]
       },
 
       {
         "id": 33,
         "title": "فن لپ تاپ",
         "href": "/product-category/laptoppart/fanlaptop/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/fanlaptop/"
+          }
+        ]
       },
       {
         "id": 36,
         "title": "قاب لپ تاپ",
         "href": "/product-category/laptoppart/laptopframe/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/laptopframe/"
+          }
+        ]
       },
       {
         "id": 37,
         "title": "کابل آداپتور لپ تاپ",
         "href": "/product-category/laptoppart/adaptorcable/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/adaptorcable/"
+          }
+        ]
       },
       {
         "id": 38,
         "title": "کیبورد لپ تاپ",
         "href": "/product-category/laptoppart/lapopkeyboard/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/lapopkeyboard/"
+          }
+        ]
       },
       {
         "id": 39,
         "title": "مادربرد لپ تاپ",
         "href": "/product-category/laptoppart/laptopmainboard/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/laptopmainboard/"
+          }
+        ]
       },
       {
         "id": "40",
         "title": "لولا لپ ناپ",
         "href": "/product-category/laptoppart/lolalaptop/",
-        "submenu": []
+        "submenu": [
+          {
+            "href": "/product-category/laptoppart/lolalaptop/"
+          }
+        ]
       }
     ]
   },

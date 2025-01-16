@@ -71,12 +71,12 @@ function MegaMenus() {
                               {subItem?.title}
                             </Link>
                           </p>
-                          {subItem?.submenu?.length > 0 && (
+                          {subItem?.submenu?.length > 1 && (
                             <ArrowLeftSvg width="13px" height="13px" />
                           )}
                         </div>
 
-                        {subItem.submenu?.length > 0 &&
+                        {subItem.submenu?.length > 1 &&
                           activeSubmenu === subItem.id && (
                             <div className="absolute left-[-307px] z-20 top-0 bg-white border border-gray-300 shadow-lg p-2 rounded-md w-[300px]">
                               {subItem.submenu.map((subSubItem: any) => (
