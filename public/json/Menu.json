@@ -109,17 +109,58 @@
         "id": 25,
         "title": "باتری لپ تاپ",
         "submenu": [
-          { "id": 225, "title": "باتری ASUS" },
-          { "id": 226, "title": "باتری HP" },
-          { "id": 227, "title": "باتری LENOVO" },
-          { "id": 228, "title": "باتری DELL" },
-          { "id": 229, "title": "باتری ACER" },
-          { "id": 230, "title": "باتری MICROSOFT" },
+          {
+            "id": 225,
+            "title": "باتری ASUS",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-asus"
+          },
+          {
+            "id": 226,
+            "title": "باتری HP",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-hp"
+          },
+          {
+            "id": 227,
+            "title": "باتری LENOVO",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-lenovo"
+          },
+          {
+            "id": 228,
+            "title": "باتری DELL",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-dell"
+          },
+          {
+            "id": 229,
+            "title": "باتری ACER",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-acer"
+          },
+          {
+            "id": 230,
+            "title": "باتری MICROSOFT",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-maicrosoft"
+          },
           { "id": 231, "title": "باتری FUJITSO" },
-          { "id": 232, "title": "باتری TOSHIBA" },
-          { "id": 233, "title": "باتری APPLE" },
-          { "id": 234, "title": "باتری SONY" },
-          { "id": 235, "title": "باتری SAMSUNG" }
+          {
+            "id": 232,
+            "title": "باتری TOSHIBA",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-toshiba"
+          },
+          {
+            "id": 233,
+            "title": "باتری APPLE",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-apple"
+          },
+          {
+            "id": 234,
+            "title": "باتری SONY",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-sony"
+          },
+          { "id": 235, "title": "باتری SAMSUNG" },
+          {
+            "id": 236,
+            "title": "باتری MSI",
+            "href": "/product-category/laptoppart/laptop-battery/batrry-msi"
+          }
         ]
       },
       {

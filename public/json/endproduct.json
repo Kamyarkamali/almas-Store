@@ -10,6 +10,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "هارد لپ تاپ ۱۲۰GB مدل Samsung HM121HC Part : HM121HC اورجینال باز شده از روی دستگاه"
   },
   {
@@ -24,6 +25,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : ۴۸۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -38,6 +40,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "هارد لپ تاپ ۱۰۰GB مدل Seagate Momentus 5400.2 Part : st9100023a اورجینال باز شده از روی دستگاه"
   },
   {
@@ -52,6 +55,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "هارد لپ تاپ ۱۰۰GB مدل Fujitsu-MHV2100AH"
   },
   {
@@ -66,6 +70,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هارد لپ تاپ ۱۲۰GB مدل Toshiba MK1234GAX Part : MK1234GAX اورجینال باز شده از روی دستگاه"
   },
   {
@@ -80,6 +85,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "فرم ظاهری : ۲.۵ اینچ ظرفیت : ۱۲۸ گیگابایت درگاه اتصال : SATA 6Gb/s سرعت خواندن : ۵۴۵ مگابایت بر"
   },
   {
@@ -94,6 +100,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "اس اس دی اینترنال سامسونگ مدل mz-jpv256r/0A2 ظرفیت ۲۵۶ گیگابایت Part : MZ-JPV256R استوک اورجینال"
   },
   {
@@ -108,6 +115,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هارد لپ تاپ ۱۰۰GB مدل ST9100822A Part : ST9100822A اورجینال باز شده از روی دستگاه"
   },
   {
@@ -122,6 +130,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "مشخصات وزن ۳۵ گرم ظرفیت ۱۲۸ گیگابایت میانگین عمر ۳,۰۰۰,۰۰۰ سرعت نوشتن اطلاعات به صورت ترتیبی ۵۵۰ مگابایت بر ثانیه"
   },
   {
@@ -136,6 +145,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "مشخصات مشخصات فنی نوع رابطSATA 3.0 ظرفیت۳۲۰ گیگابایت سایر مشخصات سایز هد۲.۵ اینچ بافر (حافظه کش)۸ مگابایت سرعت چرخش۵۴۰۰ دور"
   },
   {
@@ -150,6 +160,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "مشخصات مشخصات فنی نوع رابطSATA 3.0 ظرفیت۳۲۰ گیگابایت سایر مشخصات سایز هد۲.۵ اینچ بافر (حافظه کش)۸ مگابایت"
   },
   {
@@ -166,6 +177,7 @@
     "category4": "ssd",
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
+    "discount": false,
     "Inventory": 10,
     "description": "اس اس دی اینترنال هایک ویژن مدل E100 ظرفیت ۲۵۶ گیگابایت"
   },
@@ -183,6 +195,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "مشخصات ظرفیت ۱۲۸ گیگابایت نوع فلش TLC سرعت نوشتن اطلاعات به صورت ترتیبی ۴۳۰ مگابایت بر ثانیه سرعت خواندن اطلاعات"
   },
   {
@@ -199,6 +212,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "مشخصات ظرفیت ۱۲۸ گیگابایت نوع فلش TLC سرعت نوشتن اطلاعات به صورت ترتیبی ۴۳۰ مگابایت بر ثانیه سرعت خواندن اطلاعات"
   },
   {
@@ -215,6 +229,7 @@
     "slug": "/laptoppart/laptophard",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "مشخصات وزن ۱۰ گرم سایر قابلیت‌ها رابط SATA۳ (۶ گیگابایت بر ثانیه) M.۲ ۲۲۸۰ فرم فاکتور حداکثر سرعت متوالی ۵۸۰"
   },
   {
@@ -228,6 +243,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "دی وی دی رایتر لپ تاپ Toshiba مدل Satellite C850"
   },
   {
@@ -241,6 +257,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد FAT 12.7mm وزن ۱۰۰ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -254,6 +271,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "ابعاد FAT 12.7mm وزن ۱۰۰ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -267,6 +285,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "به همراه لیبل کیبورد فارسی جدا گانه مشکی – اینتر کوچک – با فریم مهلت تست سلامت فیزیکی و فنی"
   },
   {
@@ -282,6 +301,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "کیفیت ساخت : اورجینال گارانتی : شش ماه تعویض پورت : SATA ابعاد : ۱۲۵ * ۱۲۷ * ۱۲.۷ میلیمتر"
   },
   {
@@ -297,6 +317,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "ابعاد ۱۲۸*۱۲۶*۹.۵ میلیمتر وزن ۱۵۳ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -312,6 +333,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "ابعاد ۱۲۸*۱۲۶*۹.۵ میلیمتر وزن ۱۵۳ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -325,6 +347,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد ۱۲۸*۱۲۶*۹.۵ میلیمتر وزن ۱۵۳ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -338,6 +361,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد ۱۲۸*۱۲۶*۱۲.۵ میلیمتر وزن ۱۵۹ گرم نوع درایو DVD نوع درگاه IDE سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -352,6 +376,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "ابعاد SONY Sata Superslim وزن ۱۹۸ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD"
   },
   {
@@ -366,6 +391,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد SONY Sata Superslim وزن ۱۹۸ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD"
   },
   {
@@ -380,6 +406,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد SONY Sata Superslim وزن ۱۹۸ گرم نوع درایو DVD نوع درگاه SATA سرعت خواند"
   },
   {
@@ -393,6 +420,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "ابعاد FAT 12.7mm وزن ۱۹۸ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -406,6 +434,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ابعاد FAT 12.7mm وزن ۱۰۰ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD ۲۴X"
   },
   {
@@ -419,6 +448,7 @@
     "slug": "/laptoppart/laptopdrive",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "ابعاد SONY Sata Superslim وزن ۱۰۰ گرم نوع درایو DVD نوع درگاه SATA سرعت خواندن CD ۲۴X سرعت نوشتن CD"
   },
   {
@@ -433,6 +463,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -447,6 +478,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -460,6 +492,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن :  (۱۳۶۶×۷۶۸) – HD سایز : ۱۳.۳ اینچ نوع صفحه : براق نوع"
   },
   {
@@ -473,6 +506,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن :  (۱۳۶۶×۷۶۸) – HD سایز : ۱۳.۳ اینچ نوع صفحه : براق نوع"
   },
   {
@@ -487,6 +521,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -501,6 +536,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -515,6 +551,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -529,6 +566,7 @@
     "slug": "/laptoppart/laptop-lcdled",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "تست فنی : انجام شده،  بدون پیکسل سوخته رزولیشن : HD (1366×768) سایز : ۱۵.۶ اینچ نوع صفحه : شفاف نوع اتصال"
   },
   {
@@ -542,6 +580,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "مشخصات فرکانس ۱۶۰۰ مگاهرتز نوع حافظه DDR۳ ظرفیت کلی چهار گیگابایت ابعاد هر ماژول ۷۰*۳۰ میلی‌متر وزن هر ماژول ۳۰"
   },
   {
@@ -555,6 +594,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": false,
     "description": "ظرفیت ۴ گیگ ۱۲۸۰۰S"
   },
   {
@@ -568,6 +608,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "ظرفیت ۴ گیگ ۱۲۸۰۰S"
   },
   {
@@ -581,6 +622,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "ظرفیت ۴ گیگ ۱۲۸۰۰S"
   },
   {
@@ -594,6 +636,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "ظرفیت ۴ گیگ ۱۲۸۰۰S"
   },
   {
@@ -607,6 +650,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "GSKILL RIPJAWS FOR NOT BOOK F3-1600C9D-16GRSL ۸GB PC3L/CL9"
   },
   {
@@ -620,6 +664,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "ویژگی‌ها نوع حافظه : DDR3 ظرفیت کلی : یک گیگابایت"
   },
   {
@@ -633,6 +678,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "مشخصات اصلی فناوری حافظهDDR5نوع حافظهDDR5-4800نوع ماژول (فرم فکتور)SODIMMکاربریلپ‌تاپتعداد ماژول۱ظرفیت۸ گیگابایت مشخصات فنی سرعت۴۸۰۰ مگاهرتزپهنای باند انتقال داده۳۸۴۰۰ مگابایت بر ثانیهتعداد"
   },
   {
@@ -646,6 +692,7 @@
     "slug": "/laptoppart/laptop-ram",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "مشخصات سایر مشخصات کینگستون اصلی-دو رو چیپ فرکانس ۱۶۰۰ مگاهرتز نوع ماژول SO-DIMM نوع حافظه DDR۳ ظرفیت کلی چهار گیگابایت"
   },
   {
@@ -659,6 +706,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "قاب کف لپ تاپ Toshiba Satellite P875-S7200 رنگ نقره ای موجود اورجینال باز شده از روی دستگاه"
   },
   {
@@ -672,6 +720,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "قاب جلو ال سی دی لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -685,6 +734,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "قاب جلو ال سی دی لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -698,6 +748,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 0,
+    "discount": true,
     "description": "قاب دور کیبورد لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -711,6 +762,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "قاب کف لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -724,6 +776,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "قاب جلو ال سی دی لپ تاپ Acer Aspire ES1-512 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -737,6 +790,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "قاب پشت ال سی دی لپ تاپ Acer Aspire ES1-512 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -750,6 +804,7 @@
     "slug": "/laptoppart/laptopframe",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "شاسی لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -763,6 +818,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "برد های ولتاژ لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -776,6 +832,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "برد مدیا لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -789,6 +846,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "برد سوئیچ لپ تاپ HP Pavilion DV6-6000 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -802,6 +860,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "برد کلیک لپ تاپ Dell Latitude E5470"
   },
   {
@@ -815,6 +874,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "برد پاور لپ تاپ ASUS K52 / K52D / K52F / K52J / K52N اورجینال باز شده از روی دستگاه"
   },
   {
@@ -828,6 +888,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "برد USB لپ تاپ ASUS K52 / K52D / K52F / K52J / K52N"
   },
   {
@@ -841,6 +902,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "برد USB لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -854,6 +916,7 @@
     "slug": "/laptoppart/mini-boardlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "برد دکمه پاور لپ تاپ ASUS K53S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -867,6 +930,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژر لپ تاپ Acer Aspire ES1-512 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -880,6 +944,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژر لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -893,6 +958,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژر لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -906,6 +972,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژر لپ تاپ Acer Aspire ES1-531 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -919,6 +986,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژر لپ تاپ Sony SVF152 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -932,6 +1000,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -945,6 +1014,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -958,6 +1028,7 @@
     "slug": "/laptoppart/socketlaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "جک کابلی شارژر لپ تاپ Fujitso FMV-BIBLO اورجینال باز شده از روی دستگاه"
   },
   {
@@ -971,6 +1042,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "کابل فلت تصویر لپ تاپ Acer Aspire Es1-512 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -984,6 +1056,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "کابل فلت تصویر لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -997,6 +1070,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "کابل فلت تصویر لپ تاپ Lenovo IdeaPad 120S / IP120S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1010,6 +1084,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "کابل فلت تصویر لپ تاپ ASUS E402S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1023,6 +1098,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "کابل فلت تصویر لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1036,6 +1112,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "فلت تصویر لپ تاپ XPS 14Z-P24G اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1049,6 +1126,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "فلت تصویر لپ تاپ Acer Aspire ES1-531 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1062,6 +1140,7 @@
     "slug": "/laptoppart/laptopflat",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "کابل فلت تصویر لپ تاپ DELL XPS 15Z-L511Z"
   },
   {
@@ -1075,6 +1154,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ Acer Aspire ES1-512 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1088,6 +1168,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1101,6 +1182,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک و فن لپ تاپ XPS 14Z L412Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1114,6 +1196,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1127,6 +1210,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1140,6 +1224,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1153,6 +1238,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ ASUS K556 / K556U اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1166,6 +1252,7 @@
     "slug": "/laptoppart/hitsinklaptop",
     "slug2": "/laptoppart",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ Samsung NP300V5A اورجینال باز شده از روی دستگاه"
   },
 
@@ -1179,6 +1266,7 @@
     "category": "بردهای داخلی",
     "slug": "/laptoppart/laptopflat",
     "Inventory": 10,
+    "discount": false,
     "description": "فلت تصویر لپ تاپ Acer Aspire ES1-531 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1191,6 +1279,7 @@
     "category": "بردهای داخلی",
     "slug": "/laptoppart/socketlaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1204,6 +1293,7 @@
     "category": "ASUS",
     "slug": "لپ تاپ",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1217,6 +1307,7 @@
     "category": "ASUS",
     "slug": "لپ تاپ",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1230,6 +1321,7 @@
     "category": "LENOVO",
     "slug": "لپ تاپ",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1243,6 +1335,7 @@
     "category": "ASUS",
     "slug": "لپ تاپ",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1256,6 +1349,7 @@
     "category": "ASUS",
     "slug": "لپ تاپ",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1269,6 +1363,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1282,6 +1377,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1295,6 +1391,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1308,6 +1405,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1321,6 +1419,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1334,6 +1433,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1347,6 +1447,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1360,6 +1461,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1373,6 +1475,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1386,6 +1489,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1399,6 +1503,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1412,6 +1517,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": false,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1425,6 +1531,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1438,6 +1545,7 @@
     "category": "مادربرد",
     "slug": "/computerpart/mainboard",
     "Inventory": 0,
+    "discount": true,
     "description": "جک کابلی شارژ لپ تاپ Dell Inspiron N5050 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1451,6 +1559,7 @@
     "category": "کارت گرافیک",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1462,6 +1571,7 @@
     "category": "کارت گرافیک",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1475,6 +1585,7 @@
     "category": "کارت گرافیک",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1488,6 +1599,7 @@
     "category": "کارت گرافیک",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1500,6 +1612,7 @@
     "category": "کارت گرافیک",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1512,6 +1625,7 @@
     "category": "پردازنده (CPU)",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1524,6 +1638,7 @@
     "category": "پردازنده (CPU)",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1536,6 +1651,7 @@
     "category": "پردازنده (CPU)",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1548,6 +1664,7 @@
     "category": "پردازنده (CPU)",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1560,6 +1677,7 @@
     "category": "پردازنده (CPU)",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1572,6 +1690,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1585,6 +1704,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1598,6 +1718,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
 
@@ -1612,6 +1733,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1625,6 +1747,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1638,6 +1761,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1651,6 +1775,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1663,6 +1788,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1675,6 +1801,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1687,6 +1814,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1698,6 +1826,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1709,6 +1838,7 @@
     "category": "رم",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1721,6 +1851,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1732,6 +1863,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1743,6 +1875,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1755,6 +1888,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1766,6 +1900,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": false,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1777,6 +1912,7 @@
     "category": "پاور",
     "slug": "/laptoppart/hitsinklaptop",
     "Inventory": 10,
+    "discount": true,
     "description": "هیت سینک لپ تاپ DELL Inspiron N5040 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -1942,7 +2078,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "ایسوس",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -1973,7 +2109,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-apple",
     "labale": " شارژر APPLE",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "خصوصیات مشخصات فنی توان خروجی ۲۴۰ وات جریان خروجی ۱۲.۳ آمپر آداپتور ولتاژ خروجی آداپتور ۱۹.۵ ولت مشخصات فیزیکی ابعاد"
   },
   {
@@ -1989,7 +2125,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-apple",
     "labale": " شارژر APPLE",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۲۰.۳ ولت شدت جریان خروجی ۴.۳ آمپر توان خروجی ۸۷ وات ابعاد"
   },
   {
@@ -2005,7 +2141,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-hp",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2021,7 +2157,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-hp",
     "labale": "/شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2037,7 +2173,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-hp",
     "labale": "/شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2053,7 +2189,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-hp",
     "labale": "/شارژر-hp",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2068,7 +2204,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-hp",
     "labale": "/شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2083,7 +2219,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-lenovo",
     "labale": "شارژر لنوو",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2098,7 +2234,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-lenovo",
     "labale": "شارژر لنوو",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2113,7 +2249,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-lenovo",
     "labale": "شارژر لنوو",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2128,7 +2264,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-lenovo",
     "labale": "شارژر لنوو",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مدل : ۱۳۵W 19V 7.1A گارانتی : مهلت تست هفت روزه همراه کابل برق"
   },
   {
@@ -2144,7 +2280,7 @@
     "slug": "/laptoppart/laptopadapert",
     "labale": "شارژر دل",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "خصوصیات مشخصات فنی توان خروجی ۲۴۰ وات جریان خروجی ۱۲.۳ آمپر آداپتور ولتاژ خروجی آداپتور ۱۹.۵ ولت مشخصات فیزیکی ابعاد"
   },
   {
@@ -2160,7 +2296,7 @@
     "slug": "/laptoppart/laptopadapert",
     "labale": "شارژر دل",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال DELL ولتاژ : ۱۹.۵V آمپر : ۶.۷A توان : ۱۳۰W همراه کابل برق گارانتی : سه ما"
   },
   {
@@ -2175,7 +2311,7 @@
     "slug": "/laptoppart/laptopadapert",
     "labale": "شارژر دل",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال DELL ولتاژ : ۱۹.۵V آمپر : ۶.۷A توان : ۱۳۰W همراه کابل برق گارانتی : سه ما"
   },
   {
@@ -2190,7 +2326,7 @@
     "slug": "/laptoppart/laptopadapert",
     "labale": "شارژر دل",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال DELL ولتاژ : ۱۹.۵V آمپر : ۶.۷A توان : ۱۳۰W همراه کابل برق گارانتی : سه ما"
   },
   {
@@ -2205,7 +2341,7 @@
     "slug": "/laptoppart/laptopadapert",
     "labale": "شارژر دل",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال DELL ولتاژ : ۱۹.۵V آمپر : ۶.۷A توان : ۱۳۰W همراه کابل برق گارانتی : سه ما"
   },
   {
@@ -2219,7 +2355,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال DELL ولتاژ : ۱۹.۵V آمپر : ۶.۷A توان : ۱۳۰W همراه کابل برق گارانتی : سه ما"
   },
   {
@@ -2233,7 +2369,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2247,7 +2383,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2261,7 +2397,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2275,7 +2411,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2289,7 +2425,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-acer",
     "labale": "شارژر ACER",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2305,7 +2441,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-sony",
     "labale": "شارژر سونی",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2321,7 +2457,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-sony",
     "labale": "شارژر سونی",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2337,7 +2473,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-sony",
     "labale": "شارژر سونی",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2353,7 +2489,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-sony",
     "labale": "شارژر سونی",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2369,7 +2505,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-sony",
     "labale": "شارژر سونی",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال ACER گارانتی : ۶ ماه تعویض ولتاژ : ۱۹V آمپر : ۴.۷۴A توان : ۹۰W مناسب شارژرهای"
   },
   {
@@ -2384,7 +2520,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-msi",
     "labale": "شارژر MSI",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ : ۱۹.۵V آمپر : ۱۱.۸A توان : ۲۳۰W پارت نامبر : ADP-230CB B همراه کابل برق گارانتی : مهلت"
   },
   {
@@ -2399,7 +2535,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-msi",
     "labale": "شارژر MSI",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ : ۱۹.۵V آمپر : ۱۱.۸A توان : ۲۳۰W پارت نامبر : ADP-230CB B همراه کابل برق گارانتی : مهلت"
   },
   {
@@ -2414,7 +2550,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-msi",
     "labale": "شارژر MSI",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ : ۱۹.۵V آمپر : ۱۱.۸A توان : ۲۳۰W پارت نامبر : ADP-230CB B همراه کابل برق گارانتی : مهلت"
   },
   {
@@ -2429,7 +2565,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-msi",
     "labale": "شارژر MSI",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ : ۱۹.۵V آمپر : ۱۱.۸A توان : ۲۳۰W پارت نامبر : ADP-230CB B همراه کابل برق گارانتی : مهلت"
   },
   {
@@ -2444,7 +2580,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-samsung",
     "labale": "شارژر سامسونگ",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال SAMSUNG ولتاژ : ۱۹V آمپر : ۲.۱A توان : ۴۰ وات سوکت : ۳.۰×۱.۱mm گارانتی : ۶"
   },
   {
@@ -2459,7 +2595,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-samsung",
     "labale": "شارژر سامسونگ",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال SAMSUNG ولتاژ : ۱۹V آمپر : ۲.۱A توان : ۴۰ وات سوکت : ۳.۰×۱.۱mm گارانتی : ۶"
   },
   {
@@ -2474,7 +2610,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-samsung",
     "labale": "شارژر سامسونگ",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال SAMSUNG ولتاژ : ۱۹V آمپر : ۲.۱A توان : ۴۰ وات سوکت : ۳.۰×۱.۱mm گارانتی : ۶"
   },
   {
@@ -2489,7 +2625,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-samsung",
     "labale": "شارژر سامسونگ",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "برند : اورجینال SAMSUNG ولتاژ : ۱۹V آمپر : ۲.۱A توان : ۴۰ وات سوکت : ۳.۰×۱.۱mm گارانتی : ۶"
   },
   {
@@ -2504,7 +2640,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-samsung",
     "labale": "شارژر سامسونگ",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برند : اورجینال SAMSUNG ولتاژ : ۱۹V آمپر : ۲.۱A توان : ۴۰ وات سوکت : ۳.۰×۱.۱mm گارانتی : ۶"
   },
   {
@@ -2518,7 +2654,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد مدیا لپ تاپ Sony PCG-81312L / VPCF2 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2532,7 +2668,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد Touch Sensor لپ تاپ Sony PCG-81312L / VPCF2 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2546,7 +2682,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد پاور لپ تاپ Sony PCG-81312L اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2560,7 +2696,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد مدیا لپ تاپ SONY VGN-FW / VGNFW اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2574,7 +2710,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد سوئیچ لپ تاپ HP Pavilion DV6-6000 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2588,7 +2724,7 @@
     "category3": "mini-boardlaptop",
     "slug": "/laptoppart/laptopadapert",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد کلیک لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2602,7 +2738,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد پاور لپ تاپ ASUS K52 / K52D / K52F / K52J / K52N اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2616,7 +2752,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل Intel Pentium B970 Part : SR0J2 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2630,7 +2766,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ Haswell مدل Core i7-4700MQ Part : SR15H اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2644,7 +2780,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل Intel Core 2 Duo T6670 Part : SLGLK اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2658,7 +2794,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل AMD Athlon II Part : AMP320SGR22GM اورجینال باز شده از روی دستگ"
   },
   {
@@ -2672,7 +2808,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل AMD Athlon II Part : AMP320SGR22GM اورجینال باز شده از روی دستگ"
   },
   {
@@ -2686,7 +2822,7 @@
     "category3": "cpulaptop",
     "slug": "/laptoppart/cpulaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل AMD Athlon II Part : AMP320SGR22GM اورجینال باز شده از روی دستگ"
   },
   {
@@ -2700,7 +2836,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده لپ تاپ مدل AMD Athlon II Part : AMP320SGR22GM اورجینال باز شده از روی دستگ"
   },
   {
@@ -2714,7 +2850,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاچ پد لپ تاپ ASUS E402S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2728,7 +2864,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاپ پد لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2742,7 +2878,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاچ پد لپ تاپ XPS 14Z-P24G اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2756,7 +2892,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "برد کلیک تاچ پد لپ تاپ XPS 14Z-P24G اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2770,7 +2906,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاچ پد لپ تاپ Acer Aspire ES1-531 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2784,7 +2920,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاچ پد لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2798,7 +2934,7 @@
     "category3": "tochpad-laptop",
     "slug": "/laptoppart/tochpad-laptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تاچ پد لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2812,7 +2948,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "فن لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2826,7 +2962,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "فن لپ تاپ ASUS E402S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2840,7 +2976,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "فن لپ تاپ ASUS E402S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2854,7 +2990,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "فن لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2868,7 +3004,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "فن لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2882,7 +3018,7 @@
     "category3": "fanlaptop",
     "slug": "/laptoppart/fanlaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "فن لپ تاپ Lenovo Ideapad 330S-15IKB اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2897,7 +3033,7 @@
     "category3": "adaptorcable",
     "slug": "/laptoppart/adaptorcable",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2912,7 +3048,7 @@
     "category3": "adaptorcable",
     "slug": "/laptoppart/adaptorcable",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2927,7 +3063,7 @@
     "category3": "adaptorcable",
     "slug": "/laptoppart/adaptorcable",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2942,7 +3078,7 @@
     "category3": "adaptorcable",
     "slug": "/laptoppart/adaptorcable",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2956,7 +3092,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2970,7 +3106,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "Adapter Power Cable For Laptop Apple Daul Receptable"
   },
   {
@@ -2984,7 +3120,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "کیبورد لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -2998,7 +3134,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "کیبورد لپ تاپ DELL XPS 15Z-L511Z اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3012,7 +3148,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "کیبورد لپ تاپ ASUS X401 / X401A / X401U اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3026,7 +3162,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "کیبورد لپ تاپ ASUS X401 / X401A / X401U اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3040,7 +3176,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "کیبورد لپ تاپ LENOVO IdeaPad 320 / IP320 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3054,7 +3190,7 @@
     "category3": "lapopkeyboard",
     "slug": "/laptoppart/lapopkeyboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "کیبورد لپ تاپ LENOVO IdeaPad 320 / IP320 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3068,7 +3204,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مادربرد لپ تاپ Sony PCG-81312L / VPCF2 Part : V081_MP_MB Rev : 1.1 GPU : GT540M اورجینال باز شده از"
   },
   {
@@ -3082,7 +3218,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مادربرد لپ تاپ Sony PCG-81312L / VPCF2 Part : V081_MP_MB Rev : 1.1 GPU : GT540M اورجینال باز شده از"
   },
   {
@@ -3096,7 +3232,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مادربرد لپ تاپ Dell Latitude E5470 Part : ADM70 LA-C631P Rev : 1.0 CPU : I5-6300U اورجینال باز شده از"
   },
   {
@@ -3110,7 +3246,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مادربرد لپ تاپ Dell Latitude E5470 Part : ADM70 LA-C631P Rev : 1.0 CPU : I5-6300U اورجینال باز شده از"
   },
   {
@@ -3124,7 +3260,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مادربرد لپ تاپ Asus K52F بدون گرافیک Rev 2.2 Part : K52F MAIN BOARD    Rev : 2.2 اورجینال باز"
   },
   {
@@ -3138,7 +3274,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مادربرد لپ تاپ Asus K52F بدون گرافیک Rev 2.2 Part : K52F MAIN BOARD    Rev : 2.2 اورجینال باز"
   },
   {
@@ -3152,7 +3288,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مادربرد لپ تاپ E402SA Rev 2.1 Part : E402SA MAIN BOARD     Rev : 2.1 اورجینال باز شده از روی"
   },
   {
@@ -3166,7 +3302,7 @@
     "category3": "laptopmainboard",
     "slug": "/laptoppart/laptopmainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مادربرد لپ تاپ E402SA Rev 2.1 Part : E402SA MAIN BOARD     Rev : 2.1 اورجینال باز شده از روی"
   },
   {
@@ -3180,7 +3316,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "لولا لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3194,7 +3330,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "لولا لپ تاپ Dell Latitude E5470 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3208,7 +3344,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "لولا لپ تاپ Lenovo IdeaPad 120S / IP120S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3222,7 +3358,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "لولا لپ تاپ Lenovo IdeaPad 120S / IP120S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3236,7 +3372,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "لولا لپ تاپ Lenovo IdeaPad 120S / IP120S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3250,7 +3386,7 @@
     "category3": "lolalaptop",
     "slug": "/laptoppart/lolalaptop",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "لولا لپ تاپ Lenovo IdeaPad 120S / IP120S اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3264,7 +3400,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "نوع کیس های اسمبل شده خانگی صنعتی مخصوص بازی ابعاد ۴۲۰x۲۰۰x۴۶۰‌ میلی‌متر وزن ۱۳ کیلوگرم سازنده کیس فاطر مادربرد Asus"
   },
   {
@@ -3278,7 +3414,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ابعاد ۴۲۵x۱۹۵x۳۸۰ میلی‌متر وزن ۶ کیلوگرم سازنده کیس ایسوس مادربرد H۶۱۰M-k D۴ سازنده پردازنده مرکزی Intel مدل پردازنده مرکزی Intel"
   },
   {
@@ -3292,7 +3428,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ابعاد ۴۶۵x۲۲۵x۴۶۰ میلی‌متر وزن ۱۲ کیلوگرم سازنده کیس فاطر مادربرد B۶۶۰ سازنده پردازنده مرکزی Intel مدل پردازنده مرکزی Core i۵-۱۳۴۰۰"
   },
   {
@@ -3306,7 +3442,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ابعاد ۴۶۵x۲۲۵x۴۶۰ میلی‌متر وزن ۱۲ کیلوگرم سازنده کیس فاطر مادربرد B۶۶۰ سازنده پردازنده مرکزی Intel مدل پردازنده مرکزی Core i۵-۱۳۴۰۰"
   },
   {
@@ -3320,7 +3456,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ابعاد ۴۶۵x۲۲۵x۴۶۰ میلی‌متر وزن ۱۲ کیلوگرم سازنده کیس فاطر مادربرد B۶۶۰ سازنده پردازنده مرکزی Intel مدل پردازنده مرکزی Core i۵-۱۳۴۰۰"
   },
   {
@@ -3334,7 +3470,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ابعاد ۵۲۰×۲۵۰×۵۰۰ میلی‌متر وزن ۱۰ کیلوگرم سازنده کیس گرین مادربرد H۶۱۰ مدل پردازنده مرکزی INTEL CORE i۷ GEN۱۲ فرکانس پردازنده"
   },
   {
@@ -3348,7 +3484,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ابعاد ۵۲۰×۲۵۰×۵۰۰ میلی‌متر وزن ۱۰ کیلوگرم سازنده کیس گرین مادربرد H۶۱۰ مدل پردازنده مرکزی INTEL CORE i۷ GEN۱۲ فرکانس پردازنده"
   },
   {
@@ -3362,7 +3498,7 @@
     "category3": "case-asembely",
     "slug": "/computerpart/case-asembely",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ابعاد ۵۲۰×۲۵۰×۵۰۰ میلی‌متر وزن ۱۰ کیلوگرم سازنده کیس گرین مادربرد H۶۱۰ مدل پردازنده مرکزی INTEL CORE i۷ GEN۱۲ فرکانس پردازنده"
   },
   {
@@ -3376,7 +3512,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3390,7 +3526,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3405,7 +3541,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3420,7 +3556,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3435,7 +3571,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3450,7 +3586,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3464,7 +3600,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3478,7 +3614,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3492,7 +3628,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3506,7 +3642,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3520,7 +3656,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3534,7 +3670,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3548,7 +3684,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3562,7 +3698,7 @@
     "category3": "optical-drive",
     "slug": "/computerpart/optical-drive",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع درایو : DVD"
   },
   {
@@ -3577,7 +3713,7 @@
     "category3": "speaker",
     "slug": "/computerpart/speaker",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "این اسپیکر با ظاهر بسیار زیبا و چشمگیر و صدای با کیفیت یکی از بهترین مدل های خوش ساخت و"
   },
   {
@@ -3592,7 +3728,7 @@
     "category3": "speaker",
     "slug": "/computerpart/speaker",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "این اسپیکر با ظاهر بسیار زیبا و چشمگیر و صدای با کیفیت یکی از بهترین مدل های خوش ساخت و"
   },
   {
@@ -3607,7 +3743,7 @@
     "category3": "speaker",
     "slug": "/computerpart/speaker",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "این اسپیکر با ظاهر بسیار زیبا و چشمگیر و صدای با کیفیت یکی از بهترین مدل های خوش ساخت و"
   },
   {
@@ -3622,7 +3758,7 @@
     "category3": "speaker",
     "slug": "/computerpart/speaker",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "این اسپیکر با ظاهر بسیار زیبا و چشمگیر و صدای با کیفیت یکی از بهترین مدل های خوش ساخت و"
   },
   {
@@ -3636,7 +3772,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها گواهینامه ۸۰PLUS : پایه نوع پاور : غیر ماژولار کانکتور ۱۵ پین SATA : سه عدد تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3650,7 +3786,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع پاور : غیر ماژولار کانکتور ۱۵ پین SATA : دو عدد تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3664,7 +3800,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع پاور : غیر ماژولار کانکتور ۱۵ پین SATA : دو عدد تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3678,7 +3814,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها گواهینامه ۸۰PLUS : پایه نوع پاور : غیر ماژولار قابلیت‌های منبع تغذیه کامپیوتر : Active PFC کانکتور ۱۵ پین SATA : سه عدد"
   },
   {
@@ -3692,7 +3828,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها گواهینامه ۸۰PLUS : پایه نوع پاور : غیر ماژولار قابلیت‌های منبع تغذیه کامپیوتر : Active PFC کانکتور ۱۵ پین SATA : سه عدد"
   },
   {
@@ -3706,7 +3842,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها گواهینامه ۸۰PLUS : پایه نوع پاور : غیر ماژولار قابلیت‌های منبع تغذیه کامپیوتر : Active PFC کانکتور ۱۵ پین SATA : سه عدد"
   },
   {
@@ -3720,7 +3856,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع پاور : نیمه ماژولار تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3734,7 +3870,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع پاور : غیر ماژولار کانکتور ۱۵ پین SATA : چهار عدد تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3748,7 +3884,7 @@
     "category3": "power",
     "slug": "/computerpart/power",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع پاور : غیر ماژولار کانکتور ۱۵ پین SATA : چهار عدد تعداد ریل ۱۲ ولت : یک عدد"
   },
   {
@@ -3762,7 +3898,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده کامپیوتر مدل Intel Xeon Processor E5506 Part : SLBF8 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3776,7 +3912,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردازنده کامپیوتر مدل Intel Xeon Processor E5506 Part : SLBF8 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3790,7 +3926,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردازنده کامپیوتر مدل Intel Xeon Processor E5506 Part : SLBF8 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3804,7 +3940,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردازنده کامپیوتر مدل Intel Xeon Processor E5506 Part : SLBF8 اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3818,7 +3954,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردارنده کامپیوتر مدل Intel Celeron D 336 Part : SL98W اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3832,7 +3968,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردارنده کامپیوتر مدل Intel Celeron D 336 Part : SL98W اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3846,7 +3982,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "پردارنده کامپیوتر مدل Intel Celeron D 336 Part : SL98W اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3860,7 +3996,7 @@
     "category3": "cpu",
     "slug": "/computerpart/cpu",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردازنده کامپیوتر مدل Intel Core i3-6100 Part : SR2HG اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3874,7 +4010,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پردازنده کامپیوتر مدل Intel Core i3-6100 Part : SR2HG اورجینال باز شده از روی دستگاه"
   },
   {
@@ -3888,7 +4024,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۳۲۰۰ مگاهرتز نوع ماژول U-DIMM نوع حافظه DDR۴ ظرفیت کلی ۳۲ گیگابایت تایمینگ cl۱۶"
   },
   {
@@ -3902,7 +4038,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۶۴۰۰ مگاهرتز نوع ماژول DIMM نوع حافظه DDR۵ ظرفیت کلی ۶۴ گیگابایت تایمینگ"
   },
   {
@@ -3916,7 +4052,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۶۴۰۰ مگاهرتز نوع ماژول DIMM نوع حافظه DDR۵ ظرفیت کلی ۶۴ گیگابایت تایمینگ"
   },
   {
@@ -3930,7 +4066,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۶۴۰۰ مگاهرتز نوع ماژول DIMM نوع حافظه DDR۵ ظرفیت کلی ۶۴ گیگابایت تایمینگ"
   },
   {
@@ -3944,7 +4080,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۱۳۳۳ مگاهرتز نوع ماژول DIMM نوع حافظه DDR۳ ظرفیت کلی چهار گیگابایت تایمینگ CL۹"
   },
   {
@@ -3958,7 +4094,7 @@
     "category3": "ram",
     "slug": "/computerpart/ram",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات سیستم خنک کننده هیت‌سینک فرکانس ۱۳۳۳ مگاهرتز نوع ماژول DIMM نوع حافظه DDR۳ ظرفیت کلی چهار گیگابایت تایمینگ CL۹"
   },
   {
@@ -3972,7 +4108,7 @@
     "category3": "lcd",
     "slug": "/computerpart/lcd",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات محدوده زمان پاسخ‌گویی ۱ تا ۳ میلی‌ثانیه نوع سیگنال ویدئویی آنالوگ دیجیتال شدت روشنایی ۲۵۰ نسبت تصویر ۱۶:۹"
   },
   {
@@ -3987,7 +4123,7 @@
     "category3": "lcd",
     "slug": "/computerpart/lcd",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع پنل : VA نور پس‌زمینه : LED نوع مانیتور : اداری، کاربری عمومی نوع صفحه‌نمایش : براق اقلام همراه : دفترچه‌ راهنما"
   },
   {
@@ -4002,7 +4138,7 @@
     "category3": "lcd",
     "slug": "/computerpart/lcd",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها نوع پنل : VA نور پس‌زمینه : LED نوع مانیتور : اداری، کاربری عمومی نوع صفحه‌نمایش : براق اقلام همراه : دفترچه‌ راهنما"
   },
   {
@@ -4017,7 +4153,7 @@
     "category3": "lcd",
     "slug": "/computerpart/lcd",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها محدوده زمان پاسخ‌گویی : ۳ تا ۶ میلی‌ثانیه نوع پنل : TN نور پس‌زمینه : WLED نوع مانیتور : کاربری عمومی نوع صفحه‌نمایش :"
   },
   {
@@ -4032,7 +4168,7 @@
     "category3": "lcd",
     "slug": "/computerpart/lcd",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها محدوده زمان پاسخ‌گویی : ۳ تا ۶ میلی‌ثانیه نوع پنل : TN نور پس‌زمینه : WLED نوع مانیتور : کاربری عمومی نوع صفحه‌نمایش :"
   },
   {
@@ -4046,7 +4182,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات وزن ۳۲۶ گرم جنس لوله‌ها مس قطر لوله‌ها ۶ میلی‌متر کانکتور برق پمپ ۴ پین میزان نویز فن"
   },
   {
@@ -4060,7 +4196,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات وزن ۳۲۶ گرم جنس لوله‌ها مس قطر لوله‌ها ۶ میلی‌متر کانکتور برق پمپ ۴ پین میزان نویز فن"
   },
   {
@@ -4075,7 +4211,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات وزن ۸۴۰ گرم جنس لوله‌ها مس قطر لوله‌ها ۶ میلی‌متر میزان نویز فن ۳۱ دسی‌بل سرعت گردش فن ۸۰۰"
   },
   {
@@ -4090,7 +4226,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات وزن ۸۴۰ گرم جنس لوله‌ها مس قطر لوله‌ها ۶ میلی‌متر میزان نویز فن ۳۱ دسی‌بل سرعت گردش فن ۸۰۰"
   },
   {
@@ -4104,7 +4240,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌های محصول  نوع خنک‌کننده: خنک‌کننده بادی مناسب جهت پردازنده های اینتل در تمامی نسل ها تا نسل ۱۴  توان خنک‌کنندگی:"
   },
   {
@@ -4118,7 +4254,7 @@
     "category3": "cooling",
     "slug": "/computerpart/cooling",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌های محصول  نوع خنک‌کننده: خنک‌کننده بادی مناسب جهت پردازنده های اینتل در تمامی نسل ها تا نسل ۱۴  توان خنک‌کنندگی:"
   },
   {
@@ -4132,7 +4268,7 @@
     "category3": "keyboard",
     "slug": "/computerpart/keyboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "معرفی برند جهانی و ارزلی جدیدترین محصول گیم که تمام نیاز های گمیر را ارزلی در این طراحی لحاظ کرده.این"
   },
   {
@@ -4146,7 +4282,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات گارانتی: الماس رایان ایرانیان جایگاه اسلات توسعه ۷ عدد جایگاه فن در پنل جلویی سه عدد (۱۴۰ میلی‌متری)"
   },
   {
@@ -4160,7 +4296,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات گارانتی: الماس رایان ایرانیان جایگاه اسلات توسعه ۷ عدد جایگاه فن در پنل جلویی سه عدد (۱۴۰ میلی‌متری)"
   },
   {
@@ -4174,7 +4310,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات کیس سازنده اوست (Awest) فرم ظاهری Mid Tower ابعاد ۴۴۸×۲۰۸×۳۸۷ میلی‌متر وزن ۴۵۰۰ کیلوگرم رنگ اصلی مشکی جنس شاسی"
   },
   {
@@ -4188,7 +4324,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات کیس سازنده اوست (Awest) فرم ظاهری Mid Tower ابعاد ۴۴۸×۲۰۸×۳۸۷ میلی‌متر وزن ۴۵۰۰ کیلوگرم رنگ اصلی مشکی جنس شاسی"
   },
   {
@@ -4202,7 +4338,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات توضیحات سیستم خنک‌کننده کیس اوست Rodin قابلیت نصب ۵ عدد فن ۱۲۰ میلی‌متری را نیز دارد که دو"
   },
   {
@@ -4216,7 +4352,7 @@
     "category3": "case",
     "slug": "/computerpart/case",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات توضیحات سیستم خنک‌کننده کیس اوست Rodin قابلیت نصب ۵ عدد فن ۱۲۰ میلی‌متری را نیز دارد که دو"
   },
   {
@@ -4230,7 +4366,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR3 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4244,7 +4380,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4258,7 +4394,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4272,7 +4408,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4286,7 +4422,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4300,7 +4436,7 @@
     "category3": "vga",
     "slug": "/computerpart/vga",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4315,7 +4451,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4330,7 +4466,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها رابط‌ها : PCI Express 2.0 نوع حافظه : GDDR5 DVI-I : یک عدد HDMI : یک عدد فضای نصب مورد نیاز : یک اسلات"
   },
   {
@@ -4345,7 +4481,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "وزن: ۸۵ گرم طول کابل: ۲۴۰ سانتی متر درگاه اتصال: USB رابط: باسیم جهت دست: قابل استفاده با هر دو"
   },
   {
@@ -4360,7 +4496,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "وزن: ۸۵ گرم طول کابل: ۲۴۰ سانتی متر درگاه اتصال: USB رابط: باسیم جهت دست: قابل استفاده با هر دو"
   },
   {
@@ -4375,7 +4511,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "وزن: ۸۵ گرم طول کابل: ۲۴۰ سانتی متر درگاه اتصال: USB رابط: باسیم جهت دست: قابل استفاده با هر دو"
   },
   {
@@ -4390,7 +4526,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "وزن: ۹۴ گرم طول کابل: ۱۵۰ سانتی متر درگاه اتصال: USB رابط: باسیم جهت دست: قابل استفاده با هر دو"
   },
   {
@@ -4405,7 +4541,7 @@
     "category3": "mouse",
     "slug": "/computerpart/mouse",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "وزن: ۹۴ گرم طول کابل: ۱۵۰ سانتی متر درگاه اتصال: USB رابط: باسیم جهت دست: قابل استفاده با هر دو"
   },
   {
@@ -4419,7 +4555,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4433,7 +4569,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4447,7 +4583,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4461,7 +4597,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4475,7 +4611,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4489,7 +4625,7 @@
     "category3": "mainboard",
     "slug": "/computerpart/mainboard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4503,7 +4639,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها فرم فاکتور : microATX تعداد اسلات حافظه : دو عدد چیپ‌ست : Intel H61 نوع سوکت"
   },
   {
@@ -4517,7 +4653,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4531,7 +4667,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4545,7 +4681,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4559,7 +4695,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4573,7 +4709,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4587,7 +4723,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4601,7 +4737,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4615,7 +4751,7 @@
     "category3": "hard",
     "slug": "/computerpart/hard",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : ۹۶۰ گیگابایت قابلیت‌های حافظه : پشتیبانی از TRIM نوع رابط : SATA 3.0"
   },
   {
@@ -4629,7 +4765,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات ابعاد ۲۸۰x۳۰۰x۹۰ وزن ۳۰۰ گرم مشخصات فنی جنس : پلاستیک با کیفیت دارای قابلیت چرخش ۳۶۰ درجه"
   },
   {
@@ -4643,7 +4779,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات ابعاد ۲۸۰x۳۰۰x۹۰ وزن ۳۰۰ گرم مشخصات فنی جنس : پلاستیک با کیفیت دارای قابلیت چرخش ۳۶۰ درجه"
   },
   {
@@ -4657,7 +4793,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات سیستم عامل مورد نیاز نصب ویندوز ۷ ویندوز ۸.۱ ویندوز ۱۰ ویندوز ۱۱ تعداد ۱۶ شماره پروانه یا مجوز"
   },
   {
@@ -4671,7 +4807,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات سیستم عامل مورد نیاز نصب ویندوز ۷ ویندوز ۸.۱ ویندوز ۱۰ ویندوز ۱۱ تعداد ۱۶ شماره پروانه یا مجوز"
   },
   {
@@ -4685,7 +4821,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات درگاه‌های ارتباطی HDMI نوع کانکتور HDMI پشتیبانی از Full HD رزولوشن HD رزولوشن ۱۲۰۰ × ۱۹۲۰ سایر توضیحات مبدل"
   },
   {
@@ -4699,7 +4835,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات درگاه‌های ارتباطی HDMI نوع کانکتور HDMI پشتیبانی از Full HD رزولوشن HD رزولوشن ۱۲۰۰ × ۱۹۲۰ سایر توضیحات مبدل"
   },
   {
@@ -4713,7 +4849,7 @@
     "category3": "pc-acess",
     "slug": "/acsessory/pc-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات درگاه‌های ارتباطی HDMI نوع کانکتور HDMI پشتیبانی از Full HD رزولوشن HD رزولوشن ۱۲۰۰ × ۱۹۲۰ سایر توضیحات مبدل"
   },
   {
@@ -4728,7 +4864,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "توضیحات TwinMOS EliteDrive 1TB USB 3.2/Type-C Portable SSD حافظه SSD اکسترنال توین موس مدل EliteDrive یک دستگاه ذخیره‌سازی قابل حمل"
   },
   {
@@ -4743,7 +4879,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "توضیحات TwinMOS EliteDrive 1TB USB 3.2/Type-C Portable SSD حافظه SSD اکسترنال توین موس مدل EliteDrive یک دستگاه ذخیره‌سازی قابل حمل"
   },
   {
@@ -4759,7 +4895,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات فیزیکی وزن ۶۰۰ گرم مشخصات فنی ظرفیت پنج ترابایت نوع اتصال باسیم سازگار با سیستم‌عامل‌های Windows XP/Vista/۷/۸/۸.۱/۱۰ Mac OS"
   },
   {
@@ -4775,7 +4911,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات فیزیکی وزن ۶۰۰ گرم مشخصات فنی ظرفیت پنج ترابایت نوع اتصال باسیم سازگار با سیستم‌عامل‌های Windows XP/Vista/۷/۸/۸.۱/۱۰ Mac OS"
   },
   {
@@ -4791,7 +4927,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات فیزیکی وزن ۲۷۰ گرم مشخصات فنی ظرفیت دو ترابایت نوع اتصال باسیم قابلیت‌های مقاومتی مقاوم در برابر گرد"
   },
   {
@@ -4807,7 +4943,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات فیزیکی وزن ۲۷۰ گرم مشخصات فنی ظرفیت دو ترابایت نوع اتصال باسیم قابلیت‌های مقاومتی مقاوم در برابر گرد"
   },
   {
@@ -4823,7 +4959,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات فیزیکی وزن ۲۷۰ گرم مشخصات فنی ظرفیت دو ترابایت نوع اتصال باسیم قابلیت‌های مقاومتی مقاوم در برابر گرد"
   },
   {
@@ -4839,7 +4975,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : دو ترابایت قابلیت‌های مقاومتی : مقاوم در برابر گرد و غبار"
   },
   {
@@ -4855,7 +4991,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : دو ترابایت قابلیت‌های مقاومتی : مقاوم در برابر گرد و غبار"
   },
   {
@@ -4871,7 +5007,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها ظرفیت : یک ترابایت"
   },
   {
@@ -4887,7 +5023,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/pc-acess/hard-external",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی‌ها ظرفیت : یک ترابایت"
   },
   {
@@ -4902,7 +5038,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "کارت شبکه USB مدل ۱۰/۱۰۰/۱۰۰۰ (usb 3.0 to LAN)"
   },
   {
@@ -4917,7 +5053,7 @@
     "category4": "هارد اکسترنال",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "کارت شبکه USB مدل ۱۰/۱۰۰/۱۰۰۰ (usb 3.0 to LAN)"
   },
   {
@@ -4932,7 +5068,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تعداد باتری های موجود در پک ۱ عدد نوع باتری سکه‌ای minicell ولتاژ باتری ۳ ولت نوع تکنولوژی باتری لیتیومی"
   },
   {
@@ -4947,7 +5083,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "تعداد باتری های موجود در پک ۱ عدد نوع باتری سکه‌ای minicell ولتاژ باتری ۳ ولت نوع تکنولوژی باتری لیتیومی"
   },
   {
@@ -4962,7 +5098,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "لیبل زمینه مشکی"
   },
   {
@@ -4977,7 +5113,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "لیبل زمینه مشکی"
   },
   {
@@ -4992,7 +5128,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 0,
-    "discount": "false",
+    "discount": false,
     "description": "پشتیبانی از درایور نوری با سایز ۱۲.۷ میلی متری اتصال از طریق USB۳.۰ جمع و جور و قابل حمل"
   },
   {
@@ -5007,7 +5143,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پشتیبانی از درایور نوری با سایز ۱۲.۷ میلی متری اتصال از طریق USB۳.۰ جمع و جور و قابل حمل"
   },
   {
@@ -5022,7 +5158,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/laptop-acess",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پشتیبانی از درایور نوری با سایز ۱۲.۷ میلی متری اتصال از طریق USB۳.۰ جمع و جور و قابل حمل"
   },
   {
@@ -5037,7 +5173,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "پشتیبانی از درایور نوری با سایز ۱۲.۷ میلی متری اتصال از طریق USB۳.۰ جمع و جور و قابل حمل"
   },
   {
@@ -5052,7 +5188,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات درگاه‌های ارتباطی VGA ۳.۵ میلی‌متر سازگار با انواع دستگاه های مجهز به درگاه HDMI نوع کابل HDMI طول کابل"
   },
   {
@@ -5067,7 +5203,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات درگاه‌های ارتباطی VGA ۳.۵ میلی‌متر سازگار با انواع دستگاه های مجهز به درگاه HDMI نوع کابل HDMI طول کابل"
   },
   {
@@ -5083,7 +5219,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مناسب برای آقایان و بانوان نوع کاربری ورزشی رسمی روزمره ابعاد قاب ۴۲.۸x۴۴.۴x۹ میلی‌متر وزن ۳۳.۳ گرم فرم صفحه"
   },
   {
@@ -5099,7 +5235,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مناسب برای آقایان و بانوان نوع کاربری ورزشی رسمی روزمره ابعاد قاب ۴۲.۸x۴۴.۴x۹ میلی‌متر وزن ۳۳.۳ گرم فرم صفحه"
   },
   {
@@ -5115,7 +5251,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی های محصول: امکان برقراری مکالمه ی با کیفیت و بدون قطعی امکان ارسال پیام امکان برقراری اینترنت پر سرعت"
   },
   {
@@ -5131,7 +5267,7 @@
     "category4": "لوازم جانبی لپ تاپ",
     "slug": "/acsessory/mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی های محصول: امکان برقراری مکالمه ی با کیفیت و بدون قطعی امکان ارسال پیام امکان برقراری اینترنت پر سرعت"
   },
   {
@@ -5146,7 +5282,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ویژگی های محصول: امکان برقراری مکالمه ی با کیفیت و بدون قطعی امکان ارسال پیام امکان برقراری اینترنت پر سرعت"
   },
   {
@@ -5161,7 +5297,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "مشخصات مشخصات وزن ۶۳ گرم درگاه‌های ارتباطی USB Type-C کابل همراه بدون کابل شدت جریان خروجی ۲.۸ آمپر مخصوص تبلت"
   },
   {
@@ -5176,7 +5312,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات وزن ۶۳ گرم درگاه‌های ارتباطی USB Type-C کابل همراه بدون کابل شدت جریان خروجی ۲.۸ آمپر مخصوص تبلت"
   },
   {
@@ -5191,7 +5327,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "مشخصات مشخصات وزن ۶۳ گرم درگاه‌های ارتباطی USB Type-C کابل همراه بدون کابل شدت جریان خروجی ۲.۸ آمپر مخصوص تبلت"
   },
   {
@@ -5207,7 +5343,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "وضعیت نو – آکبند- ضمانت سلامت کالا آمپر  UP TO 3 AMP توان خروجی ۴۵ وات سازنده چین پورت دارای "
   },
   {
@@ -5223,7 +5359,7 @@
     "category4": "",
     "slug": "/acsessory/mobile/charger-mobile",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "وضعیت نو – آکبند- ضمانت سلامت کالا آمپر  UP TO 3 AMP توان خروجی ۴۵ وات سازنده چین پورت دارای "
   },
   {
@@ -5254,7 +5390,7 @@
     "category4": "",
     "slug": "/acsessory/printer",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ویژگی‌ها نوع چاپ : تک رنگ سایز چاپ : A4 تکنولوژی چاپ : چاپ لیزری کاربری : ۴ کاره (پرینت، اسکن، کپی، فکس)"
   },
   {
@@ -5269,7 +5405,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "سایر مشخصات رنگ مشکی تکنولوژی پرینتر لیزری کارکرد چاپ ۲۱۰۰ دستگاه‌های سازگار P۱۵۶۶،"
   },
   {
@@ -5284,7 +5420,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "سایر مشخصات رنگ مشکی تکنولوژی پرینتر لیزری کارکرد چاپ ۲۱۰۰ دستگاه‌های سازگار P۱۵۶۶،"
   },
   {
@@ -5299,7 +5435,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5314,7 +5450,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5329,7 +5465,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5344,7 +5480,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5359,7 +5495,7 @@
     "category4": "",
     "slug": "/printer/consuming-materials",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5374,7 +5510,7 @@
     "category4": "قطعات-کامپیوتر",
     "slug": "",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "تکنولوژی پرینتر لیزری کارکرد ۲۳۰۰ دستگاه‌های سازگار HP LaserJet P۲۰۳۵, P ۲۰۳۵, P۲۰۳۵N, P ۲۰۳۵N, P۲۰۵۵DN, P ۲۰۵۵DN, P۲۰۵۵, P"
   },
   {
@@ -5390,7 +5526,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5406,7 +5542,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5422,7 +5558,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5438,7 +5574,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5454,7 +5590,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-ausus",
     "labale": "شارژر-hp",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5469,7 +5605,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5484,7 +5620,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5499,7 +5635,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5514,7 +5650,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5529,7 +5665,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5544,7 +5680,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-toshiba",
     "labale": "شارژر-توشیبا",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5560,7 +5696,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-microsoft",
     "labale": "شارژر مایکروسافت",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5576,7 +5712,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-microsoft",
     "labale": "شارژر مایکروسافت",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5592,7 +5728,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-microsoft",
     "labale": "شارژر مایکروسافت",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5608,7 +5744,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-microsoft",
     "labale": "شارژر مایکروسافت",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5624,7 +5760,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-microsoft",
     "labale": "شارژر مایکروسافت",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5640,7 +5776,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5656,7 +5792,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5672,7 +5808,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "true",
+    "discount": true,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5688,7 +5824,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5704,7 +5840,7 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
   },
   {
@@ -5720,7 +5856,477 @@
     "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
     "labale": "شارژر FUJITSO",
     "Inventory": 10,
-    "discount": "false",
+    "discount": false,
     "description": "ولتاژ ورودی ۱۰۰ ~ ۲۴۰ ولت ولتاژ خروجی ۱۹ ولت شدت جریان خروجی ۳.۴۲ آمپر توان خروجی ۶۵ وات ابعاد"
+  },
+  {
+    "id": "403",
+    "image": "/images/battryLaptop/330.jpg",
+    "image2": "/images/battryLaptop/331.jpg",
+    "nameProduct": "باتری لپ تاپ ASUS E402 B21N1505",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/hp/sharjer-fujitso",
+    "slug": "/laptoppart/laptopadapert/sharjer-fujitso",
+    "labale": "باتری ASUS",
+    "Inventory": 10,
+    "discount": false,
+    "description": "Part : C31N1724 ولتاژ : ۱۱.۵۵ ظرفیت باتری : ۴۳۳۵mAh  ۵۰Wh"
+  },
+  {
+    "id": "404",
+    "image": "/images/battryLaptop/332.jpg",
+    "image2": "/images/battryLaptop/332.jpg",
+    "nameProduct": "باتری لپ تاپ ASUS E402 B21N1505",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-asus",
+    "slug": "/laptoppart/laptop-battery/batrry-asus",
+    "labale": "باتری ASUS",
+    "Inventory": 10,
+    "discount": true,
+    "description": "Part : C31N1724 ولتاژ : ۱۱.۵۵ ظرفیت باتری : ۴۳۳۵mAh  ۵۰Wh"
+  },
+  {
+    "id": "405",
+    "image": "/images/battryLaptop/332.jpg",
+    "image2": "/images/battryLaptop/332.jpg",
+    "nameProduct": "باتری لپ تاپ ASUS E402 B21N1505",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-asus",
+    "slug": "/laptoppart/laptop-battery/batrry-asus",
+    "labale": "باتری ASUS",
+    "Inventory": 10,
+    "discount": true,
+    "description": "Part : C31N1724 ولتاژ : ۱۱.۵۵ ظرفیت باتری : ۴۳۳۵mAh  ۵۰Wh"
+  },
+  {
+    "id": "406",
+    "image": "/images/battryLaptop/332.jpg",
+    "image2": "/images/battryLaptop/332.jpg",
+    "nameProduct": "باتری لپ تاپ ASUS E402 B21N1505",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-asus",
+    "slug": "/laptoppart/laptop-battery/batrry-asus",
+    "labale": "باتری ASUS",
+    "Inventory": 10,
+    "discount": false,
+    "description": "Part : C31N1724 ولتاژ : ۱۱.۵۵ ظرفیت باتری : ۴۳۳۵mAh  ۵۰Wh"
+  },
+  {
+    "id": "407",
+    "image": "/images/battryLaptop/333.jpg",
+    "image2": "/images/battryLaptop/333.jpg",
+    "nameProduct": "باتری لپ تاپ ASUS E402 B21N1505",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-asus",
+    "slug": "/laptoppart/laptop-battery/batrry-asus",
+    "labale": "باتری ASUS",
+    "Inventory": 10,
+    "discount": false,
+    "description": "Part : C31N1724 ولتاژ : ۱۱.۵۵ ظرفیت باتری : ۴۳۳۵mAh  ۵۰Wh"
+  },
+  {
+    "id": "408",
+    "image": "/images/battryLaptop/334.jpg",
+    "image2": "/images/battryLaptop/335.jpg",
+    "image3": "/images/battryLaptop/336.jpg",
+    "nameProduct": "باتری لپ تاپ HP ProBook 445 G2",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-hp",
+    "slug": "/laptoppart/laptop-battery/batrry-hp",
+    "labale": "باتری hp",
+    "Inventory": 10,
+    "discount": false,
+    "description": "HP برند : ONYX گارانتی : ۶ ماه تعویض تعداد سلول : ۴ ولتاژ : ۱۴.۸V ظرفیت : ۳۳Wh – 2200mAh"
+  },
+  {
+    "id": "409",
+    "image": "/images/battryLaptop/334.jpg",
+    "image2": "/images/battryLaptop/335.jpg",
+    "image3": "/images/battryLaptop/336.jpg",
+    "nameProduct": "باتری لپ تاپ HP ProBook 445 G2",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-hp",
+    "slug": "/laptoppart/laptop-battery/batrry-hp",
+    "labale": "باتری hp",
+    "Inventory": 10,
+    "discount": true,
+    "description": "HP برند : ONYX گارانتی : ۶ ماه تعویض تعداد سلول : ۴ ولتاژ : ۱۴.۸V ظرفیت : ۳۳Wh – 2200mAh"
+  },
+  {
+    "id": "410",
+    "image": "/images/battryLaptop/334.jpg",
+    "image2": "/images/battryLaptop/335.jpg",
+    "image3": "/images/battryLaptop/336.jpg",
+    "nameProduct": "باتری لپ تاپ HP ProBook 445 G2",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-hp",
+    "slug": "/laptoppart/laptop-battery/batrry-hp",
+    "labale": "باتری hp",
+    "Inventory": 10,
+    "discount": false,
+    "description": "HP برند : ONYX گارانتی : ۶ ماه تعویض تعداد سلول : ۴ ولتاژ : ۱۴.۸V ظرفیت : ۳۳Wh – 2200mAh"
+  },
+  {
+    "id": "411",
+    "image": "/images/battryLaptop/337.webp",
+    "image2": "/images/battryLaptop/337.webp",
+    "image3": "/images/battryLaptop/338.webp",
+    "nameProduct": "باتری لپ تاپ HP EliteBook 840 G3",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-hp",
+    "slug": "/laptoppart/laptop-battery/batrry-hp",
+    "labale": "باتری hp",
+    "Inventory": 10,
+    "discount": false,
+    "description": "HP برند : ONYX تعداد سلول : ۳ ولتاژ : ۱۱.۴V ظرفیت : ۴۷Wh – 4100mAh گارانتی : سه ماه"
+  },
+  {
+    "id": "412",
+    "image": "/images/battryLaptop/337.webp",
+    "image2": "/images/battryLaptop/337.webp",
+    "image3": "/images/battryLaptop/338.webp",
+    "nameProduct": "باتری لپ تاپ HP EliteBook 840 G3",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-hp",
+    "slug": "/laptoppart/laptop-battery/batrry-hp",
+    "labale": "باتری hp",
+    "Inventory": 10,
+    "discount": true,
+    "description": "HP برند : ONYX تعداد سلول : ۳ ولتاژ : ۱۱.۴V ظرفیت : ۴۷Wh – 4100mAh گارانتی : سه ماه"
+  },
+  {
+    "id": "413",
+    "image": "/images/battryLaptop/339.jpg",
+    "image2": "/images/battryLaptop/339.jpg",
+    "nameProduct": "باتری لپ تاپ Dell Latitude E5450 E5550 6MT4T",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-dell",
+    "slug": "/laptoppart/laptop-battery/batrry-dell",
+    "labale": "باتری DELL",
+    "Inventory": 10,
+    "discount": true,
+    "description": "باتری لپ تاپ Dell Latitude E5450 E5550 6MT4T"
+  },
+  {
+    "id": "414",
+    "image": "/images/battryLaptop/339.jpg",
+    "image2": "/images/battryLaptop/339.jpg",
+    "nameProduct": "باتری لپ تاپ Dell Latitude E5450 E5550 6MT4T",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-dell",
+    "slug": "/laptoppart/laptop-battery/batrry-dell",
+    "labale": "باتری DELL",
+    "Inventory": 10,
+    "discount": true,
+    "description": "باتری لپ تاپ Dell Latitude E5450 E5550 6MT4T"
+  },
+  {
+    "id": "415",
+    "image": "/images/battryLaptop/340.jpg",
+    "image2": "/images/battryLaptop/341.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-lenovo",
+    "slug": "/laptoppart/laptop-battery/batrry-lenovo",
+    "labale": "باتری LENOVO",
+    "Inventory": 10,
+    "discount": true,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "416",
+    "image": "/images/battryLaptop/340.jpg",
+    "image2": "/images/battryLaptop/341.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-lenovo",
+    "slug": "/laptoppart/laptop-battery/batrry-lenovo",
+    "labale": "باتری LENOVO",
+    "Inventory": 10,
+    "discount": false,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "417",
+    "image": "/images/battryLaptop/340.jpg",
+    "image2": "/images/battryLaptop/341.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-lenovo",
+    "slug": "/laptoppart/laptop-battery/batrry-lenovo",
+    "labale": "باتری LENOVO",
+    "Inventory": 10,
+    "discount": true,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "418",
+    "image": "/images/battryLaptop/342.jpg",
+    "image2": "/images/battryLaptop/342.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-lenovo",
+    "slug": "/laptoppart/laptop-battery/batrry-lenovo",
+    "labale": "باتری LENOVO",
+    "Inventory": 10,
+    "discount": true,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "419",
+    "image": "/images/battryLaptop/340.jpg",
+    "image2": "/images/battryLaptop/341.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-lenovo",
+    "slug": "/laptoppart/laptop-battery/batrry-lenovo",
+    "labale": "باتری LENOVO",
+    "Inventory": 10,
+    "discount": false,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "420",
+    "image": "/images/battryLaptop/343.jpg",
+    "image2": "/images/battryLaptop/343.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-acer",
+    "slug": "/laptoppart/laptop-battery/batrry-acer",
+    "labale": "باتری ACER",
+    "Inventory": 10,
+    "discount": false,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "421",
+    "image": "/images/battryLaptop/343.jpg",
+    "image2": "/images/battryLaptop/343.jpg",
+    "nameProduct": "شارژر لپ تاپ Lenovo IdeaPad 100S / IP100s",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-acer",
+    "slug": "/laptoppart/laptop-battery/batrry-acer",
+    "labale": "باتری ACER",
+    "Inventory": 10,
+    "discount": false,
+    "description": "مدل : Ideapad 100S ولتاژ : ۵V آمپر : ۴A توان خروجی : ۲۰W گارانتی : مهلت تست هفت روزه"
+  },
+  {
+    "id": "422",
+    "image": "/images/battryLaptop/344.jpg",
+    "image2": "/images/battryLaptop/344.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-msi",
+    "slug": "/laptoppart/laptop-battery/batrry-msi",
+    "labale": "باتری MSI",
+    "Inventory": 10,
+    "discount": false,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۳ ماه تعویض تعداد سلول : ۳ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "423",
+    "image": "/images/battryLaptop/344.jpg",
+    "image2": "/images/battryLaptop/344.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-msi",
+    "slug": "/laptoppart/laptop-battery/batrry-msi",
+    "labale": "باتری MSI",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۳ ماه تعویض تعداد سلول : ۳ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "424",
+    "image": "/images/battryLaptop/344.jpg",
+    "image2": "/images/battryLaptop/344.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-maicrosoft",
+    "slug": "/laptoppart/laptop-battery/batrry-maicrosoft",
+    "labale": "باتری MICROSOFT",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۳ ماه تعویض تعداد سلول : ۳ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "425",
+    "image": "/images/battryLaptop/345.jpg",
+    "image2": "/images/battryLaptop/346.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-toshiba",
+    "slug": "/laptoppart/laptop-battery/batrry-toshiba",
+    "labale": "باتری TOSHIBA",
+    "Inventory": 10,
+    "discount": true,
+    "description": "باتری لپ تاپ Toshiba Satellite L100"
+  },
+  {
+    "id": "426",
+    "image": "/images/battryLaptop/348.jpg",
+    "image2": "/images/battryLaptop/349.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": false,
+    "description": "باتری لپ تاپ sony Satellite L100"
+  },
+  {
+    "id": "427",
+    "image": "/images/battryLaptop/348.jpg",
+    "image2": "/images/battryLaptop/349.jpg",
+    "nameProduct": "باتری لپ تاپ MSI BTY-M6J",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": true,
+    "description": "باتری لپ تاپ sony Satellite L100"
+  },
+  {
+    "id": "428",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "429",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "430",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "431",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": false,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "432",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": false,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
+  },
+  {
+    "id": "433",
+    "image": "/images/battryLaptop/350.jpg",
+    "image2": "/images/battryLaptop/351.jpg",
+    "nameProduct": "باتری لپ تاپ SONY سری SVS1312",
+    "price": 2242130,
+    "category1": "قطعات لپ تاپ",
+    "category": "باتری لپ تاپ",
+    "category3": "laptopadapert/batrry-sony",
+    "slug": "/laptoppart/laptop-battery/batrry-sony",
+    "labale": "باتری SONY",
+    "Inventory": 10,
+    "discount": true,
+    "description": "برند :  MM با سلول سامسونگ ساخت کره گارانتی : ۶ ماه تعویض تعداد سلول : ۶ ولتاژ : ۱۱.۱V"
   }
 ]

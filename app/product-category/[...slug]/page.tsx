@@ -1,41 +1,15 @@
+import { filterProducts } from "@/app/utility/flterProducts ";
+import Breadcrumbs from "@/app/ui/BreadcrumbProps";
 import SaidbarMobile from "@/components/module/SaidbarMobile";
 import MainProducts from "@/components/templates/MainProducts";
-import { Product } from "@/types/interFace";
-import Link from "next/link";
-import data from "@/public/json/endproduct.json";
 
 async function page({ params }: { params: { slug: string[] } }) {
   const slug = "/" + params.slug.join("/");
-
-  // تعیین دسته و زیر دسته
   const mainCategory = params.slug[1];
-  const subCategory = params.slug[2]; // laptophard یا ssd یا hhd
+  const subCategory = params.slug[2];
 
   // فیلتر محصولات
-  let filteredProducts: any[] = [];
-
-  if (slug === "/product-category/laptoppart") {
-    // نمایش تمام داده‌ها در این مسیر
-    filteredProducts = data;
-  } else if (
-    mainCategory === "printer" &&
-    subCategory === "consuming-materials"
-  ) {
-    // فیلتر محصولات مربوط به مسیر "printer/consuming-materials"
-    filteredProducts = data.filter(
-      (item: any) =>
-        item.category1 === "printer" && item.category3 === "consuming-materials"
-    );
-  } else if (subCategory === "ssd" || subCategory === "hdd") {
-    // فیلتر بر اساس زیر دسته‌ها
-    filteredProducts = data.filter(
-      (item: any) =>
-        item.category3 === "laptophard" && item.category4 === subCategory
-    );
-  } else {
-    // فیلتر محصولات با استفاده از slug دقیق
-    filteredProducts = data.filter((item) => item.slug === slug);
-  }
+  const filteredProducts = filterProducts(slug, mainCategory, subCategory);
 
   // گرفتن دسته‌بندی مرتبط
   const category =
@@ -51,8 +25,6 @@ async function page({ params }: { params: { slug: string[] } }) {
     );
   }
 
-  // گرفتن مقادیر دیتاها شامل دسته بندی ها و اسم محصولات و ...
-
   const categorys = filteredProducts.map((product) => ({
     category1: product.category1,
     category3: product.category3,
@@ -60,30 +32,10 @@ async function page({ params }: { params: { slug: string[] } }) {
     category: product.category,
   }));
 
-  console.log(categorys);
-
   return (
     <div className="mt-[2.3rem]">
       <div className="flex items-center lg:text-[14px] text-[12px] mb-2 gap-2 cursor-pointer justify-between">
-        <div className="flex items-center gap-2 lg:*:text-[14px] *:text-[12px] *:text-[#777777]">
-          <Link href={"/"}>خانه</Link>
-          <p>/</p>
-          {categorys[0]?.category1 && (
-            <Link href={"/"}>{categorys[0].category1}</Link>
-          )}
-          {categorys[2]?.category4 && (
-            <>
-              <p>/</p>
-              <Link href={"/"}>{categorys[2].category4}</Link>
-            </>
-          )}
-          {categorys[1]?.category && (
-            <>
-              <p>/</p>
-              <Link href={"/"}>{categorys[1].category}</Link>
-            </>
-          )}
-        </div>
+        <Breadcrumbs categories={categorys} />
         <div>{filteredProducts.length}</div>
       </div>
 

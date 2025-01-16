@@ -102,6 +102,7 @@ export interface Product {
   slug2?: string;
   Inventory: number;
   description: string;
+  discount:boolean;
   image2?: string | undefined;
   image3?: string | undefined;
   image4?: string | undefined;
@@ -156,5 +157,4 @@ export interface dataLabale {
 
 export interface FilteredData {
   filteredProducts: any[];
-  datas:any[]
 }

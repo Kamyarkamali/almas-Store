@@ -14,6 +14,8 @@ interface FavoritesContextType {
   favorites: Product[];
   addFavorite: (item: any) => void;
   removeFavorite: (item: any) => void;
+  checkbox: boolean;
+  toggleCheckbox: () => void;
 }
 
 interface Productadd {
@@ -46,8 +48,13 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
   children,
 }) => {
   const [favorites, setFavorites] = useState<any[]>([]);
-  const [isClient, setIsClient] = useState(false); // بررسی برای محیط مرورگر
+  const [isClient, setIsClient] = useState<boolean>(false);
 
+  const [checkbox, setCheckbox] = useState<boolean>(false);
+
+  const toggleCheckbox = () => {
+    setCheckbox((prev) => !prev);
+  };
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -95,7 +102,13 @@ export const FavoritesProvider: React.FC<FavoritesProviderProps> = ({
 
   return (
     <FavoritesContext.Provider
-      value={{ favorites, addFavorite, removeFavorite }}
+      value={{
+        favorites,
+        addFavorite,
+        removeFavorite,
+        checkbox,
+        toggleCheckbox,
+      }}
     >
       {children}
     </FavoritesContext.Provider>

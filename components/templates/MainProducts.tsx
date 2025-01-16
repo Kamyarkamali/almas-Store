@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Toaster } from "react-hot-toast";
 
+import data from "@/public/json/endproduct.json"; // آرایه محصولات
 // interface
 import { Product } from "@/types/interFace";
 // helpers
@@ -23,15 +24,10 @@ const ProductCard = ({
   setOpenModal: (value: boolean) => void;
 }) => {
   const [currentImage, setCurrentImage] = useState(product.image);
-  // افزودن به لیست علاقه مندی ها
-  const { addFavorite } = useFavorites();
+  const { addFavorite, checkbox } = useFavorites();
 
   return (
-    <div
-      className="p-4 relative flex flex-col items-center bg-white border shadow-sm hover:shadow-lg rounded-md cursor-pointer transition-all duration-300 group"
-      onMouseEnter={() => product.image2 && setCurrentImage(product.image2)}
-      onMouseLeave={() => setCurrentImage(product.image)}
-    >
+    <div className="p-4 relative flex flex-col items-center bg-white border shadow-sm hover:shadow-lg rounded-md cursor-pointer transition-all duration-300 group">
       {/* تصویر محصول */}
       <div className="overflow-hidden rounded-md">
         <Link href={`/product/${product.id}`}>
@@ -101,8 +97,16 @@ const ProductCard = ({
 const MainProducts = ({ products }: { products: Product[] }) => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [show, setShow] = useState<Product[]>([]);
+  const { checkbox } = useFavorites();
 
-  if (!products || products.length === 0) {
+  // فیلتر کردن داده‌ها بر اساس تخفیف
+  useEffect(() => {
+    const filtered = products.filter((item) => item.discount === checkbox);
+    setShow(filtered);
+  }, [checkbox, products]);
+
+  if (!show || show.length === 0) {
     return (
       <p className="bg-red-400 p-1 text-center text-white rounded-sm">
         محصولی برای نمایش وجود ندارد.
@@ -112,7 +116,7 @@ const MainProducts = ({ products }: { products: Product[] }) => {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-4 mt-[3rem]">
-      {products.map((product) => (
+      {show.map((product) => (
         <ProductCard
           key={product.id}
           product={product}
