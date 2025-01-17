@@ -1,4 +1,3 @@
-// کامپوننت های آیکون
 import Link from "next/link";
 import ShopSvg from "../icon/ShopSvg";
 import ShuffileSvg from "../icon/ShuffileSvg";

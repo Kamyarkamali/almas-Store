@@ -2,9 +2,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Toaster } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
-import data from "@/public/json/endproduct.json"; // آرایه محصولات
 // interface
 import { Product } from "@/types/interFace";
 // helpers
@@ -14,6 +13,7 @@ import formatNumber from "@/helpers/replaceNumber";
 import ModaProducts from "../element/ModaProducts";
 import { useFavorites } from "@/context/FavoritesProvider";
 import { useCart } from "@/hooks/useCart";
+import { Altet } from "@/types/enums";
 
 const ProductCard = ({
   product,
@@ -27,9 +27,13 @@ const ProductCard = ({
   const [currentImage] = useState(product.image);
   const { addFavorite } = useFavorites();
 
+  // استفاده  از کاستومم  هوک  و  ریداکس- دخیره مقادیر در لوکال استوریج
   const { addProduct } = useCart();
 
-  // استفاده  از کاستومم  هوک  و  ریداکس- دخیره مقادیر در لوکال استوریج
+  const addProducts = (product: any) => {
+    addProduct(product);
+    toast.success(Altet.ADDED_PRODUCT);
+  };
 
   return (
     <div className="p-4 relative flex flex-col items-center bg-white border shadow-sm hover:shadow-lg rounded-md cursor-pointer transition-all duration-300 group">
@@ -87,12 +91,20 @@ const ProductCard = ({
             alt="faiverite"
           />
         </button>
-        <button
-          onClick={() => addProduct(product)}
-          className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors"
-        >
-          {product.Inventory > 0 ? "افزودن به سبد خرید" : "اطلاعات بیشتر"}
-        </button>
+        {product.Inventory > 0 ? (
+          <button
+            onClick={() => addProducts(product)}
+            className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors"
+          >
+            افزودن به سبد خرید
+          </button>
+        ) : (
+          <Link href={`/product/${product.id}`}>
+            <button className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors">
+              اطلاعات بیشتر
+            </button>
+          </Link>
+        )}
         <section className="relative">
           <button className="py-2 text-white text-sm rounded-md transition-colors">
             <img

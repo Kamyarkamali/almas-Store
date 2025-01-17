@@ -3,9 +3,11 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface Product {
   id: string;
-  name: string;
+  nameProduct: string;
   price: number;
   quantity: number;
+  description: string;
+  image: string;
 }
 
 interface CartState {
@@ -21,7 +23,8 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<Product>) => {
-      const { id, name, price, quantity } = action.payload;
+      const { id, nameProduct, price, description, quantity, image } =
+        action.payload;
 
       // برای  quantity یک مقدار پیش فرض  قرار میدیک
       const validQuantity = quantity > 0 ? quantity : 1;
@@ -33,14 +36,28 @@ const cartSlice = createSlice({
       if (existingProduct) {
         existingProduct.quantity += validQuantity;
       } else {
-        state.products.push({ id, name, price, quantity: validQuantity });
+        state.products.push({
+          id,
+          nameProduct,
+          image,
+          description,
+          price,
+          quantity: validQuantity,
+        });
       }
     },
+    // redux/cartSlice.ts
     removeFromCart: (state, action: PayloadAction<string>) => {
-      state.products = state.products.filter(
+      const updatedProducts = state.products.filter(
         (product) => product.id !== action.payload
       );
+
+      state.products = updatedProducts;
+
+      // به‌روزرسانی localStorage پس از حذف محصول
+      localStorage.setItem("cart", JSON.stringify(updatedProducts));
     },
+
     updateQuantity: (
       state,
       action: PayloadAction<{ id: string; quantity: number }>
