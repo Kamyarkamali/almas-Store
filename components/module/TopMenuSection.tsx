@@ -8,12 +8,25 @@ import { useState } from "react";
 
 import BasketDeckstop from "./BasketDeckstop";
 import LoginFormDeckstop from "./LoginFormDeckstop";
+import { useCart } from "@/hooks/useCart";
+import { RootState } from "@reduxjs/toolkit/query";
+import { useSelector } from "react-redux";
+import { selectCartTotalPrice } from "@/featcher/crtSlice";
+import formatNumber from "@/helpers/replaceNumber";
 
 function TopMenuSection() {
   const { favorites } = useFavorites();
 
   const [openBasket, setOpenBasket] = useState<boolean>(false);
   const [openLogin, setOpenLogin] = useState<boolean>(false);
+
+  const { cart } = useCart();
+
+  const totalPrice = useSelector((state: RootState) =>
+    selectCartTotalPrice(state)
+  );
+
+  console.log(totalPrice);
 
   return (
     <section className="flex items-center gap-2">
@@ -22,14 +35,16 @@ function TopMenuSection() {
           <div className="relative">
             <ShopSvg width="21px" height="21px" color="#B6B6B6" />
             <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
+              <span className="text-[9px]">
+                {cart.length > 0 ? cart.length : 0}
+              </span>
             </div>
           </div>
           <p
             onClick={() => setOpenBasket(true)}
             className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer"
           >
-            0 تومان
+            {formatNumber(totalPrice ? totalPrice : 0)} تومان
           </p>
           {/* اجرای منو کناری سبد خرید  */}
           <div

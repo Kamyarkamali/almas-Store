@@ -13,6 +13,7 @@ import formatNumber from "@/helpers/replaceNumber";
 // component
 import ModaProducts from "../element/ModaProducts";
 import { useFavorites } from "@/context/FavoritesProvider";
+import { useCart } from "@/hooks/useCart";
 
 const ProductCard = ({
   product,
@@ -23,8 +24,12 @@ const ProductCard = ({
   setSelectedProduct: (product: Product) => void;
   setOpenModal: (value: boolean) => void;
 }) => {
-  const [currentImage, setCurrentImage] = useState(product.image);
+  const [currentImage] = useState(product.image);
   const { addFavorite } = useFavorites();
+
+  const { addProduct } = useCart();
+
+  // استفاده  از کاستومم  هوک  و  ریداکس- دخیره مقادیر در لوکال استوریج
 
   return (
     <div className="p-4 relative flex flex-col items-center bg-white border shadow-sm hover:shadow-lg rounded-md cursor-pointer transition-all duration-300 group">
@@ -82,7 +87,10 @@ const ProductCard = ({
             alt="faiverite"
           />
         </button>
-        <button className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors">
+        <button
+          onClick={() => addProduct(product)}
+          className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors"
+        >
           {product.Inventory > 0 ? "افزودن به سبد خرید" : "اطلاعات بیشتر"}
         </button>
         <section className="relative">
