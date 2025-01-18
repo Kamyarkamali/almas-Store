@@ -12,8 +12,10 @@ import LikeHeartSvg from "../icon/LikeHeartSvg";
 import Link from "next/link";
 import SearchSvg3 from "../icon/SearchSvg3";
 import { useFavorites } from "@/context/FavoritesProvider";
-import { Toaster } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 import { NavigationOptions } from "swiper/types";
+import { useCart } from "@/hooks/useCart";
+import { Altet } from "@/types/enums";
 
 // مودال برای نمایش جزئیات محصول
 const ModaProducts = ({
@@ -23,7 +25,6 @@ const ModaProducts = ({
   product: any;
   onClose: () => void;
 }) => {
-  const [hover, setHover] = useState<boolean>(false);
   return (
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center z-50">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
@@ -53,6 +54,15 @@ const SectionMotherBoard = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const { addFavorite } = useFavorites();
+  // ترکیب ریداس و کاستوم هوک برای نمایش مقادیر سبد خرید
+  const { addProduct } = useCart();
+
+  // اضافه کردن محول به سبد خرید
+
+  const addProducts = (product: any) => {
+    addProduct(product);
+    toast.success(Altet.ADDED_PRODUCT);
+  };
 
   const handleModalOpen = (product: any) => {
     setSelectedProduct(product);
@@ -132,7 +142,10 @@ const SectionMotherBoard = () => {
 
               {/* باکس گزینه‌ها */}
               <div className="absolute bottom-[6rem] w-[185px] justify-around left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out p-2 flex items-center z-10">
-                <div>
+                <div
+                  onClick={() => addProducts(product)}
+                  className="cursor-pointer"
+                >
                   <IconBasket />
                 </div>
 

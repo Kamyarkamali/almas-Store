@@ -12,8 +12,10 @@ import LikeHeartSvg from "../icon/LikeHeartSvg";
 import Link from "next/link";
 import SearchSvg3 from "../icon/SearchSvg3";
 import { useFavorites } from "@/context/FavoritesProvider";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { NavigationOptions } from "swiper/types";
+import { useCart } from "@/hooks/useCart";
+import { Altet } from "@/types/enums";
 
 // مودال برای نمایش جزئیات محصول
 const ModaProducts = ({
@@ -52,6 +54,15 @@ const RamSection = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const { addFavorite } = useFavorites();
+  // ترکیب ریداس و کاستوم هوک برای نمایش مقادیر سبد خرید
+  const { addProduct } = useCart();
+
+  // اضافه کردن محول به سبد خرید
+
+  const addProducts = (product: any) => {
+    addProduct(product);
+    toast.success(Altet.ADDED_PRODUCT);
+  };
 
   const handleModalOpen = (product: any) => {
     setSelectedProduct(product);
@@ -131,7 +142,10 @@ const RamSection = () => {
 
               {/* باکس گزینه‌ها */}
               <div className="absolute bottom-[6rem] w-[185px] justify-around left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-md opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out p-2 flex items-center z-10">
-                <div>
+                <div
+                  className="cursor-pointer"
+                  onClick={() => addProducts(product)}
+                >
                   <IconBasket />
                 </div>
 

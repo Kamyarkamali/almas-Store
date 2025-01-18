@@ -8,10 +8,16 @@ import { Toaster, toast } from "react-hot-toast";
 import { Altet } from "@/types/enums";
 import formatNumber from "@/helpers/replaceNumber";
 import DeleteSvg from "../icon/DeleteSvg";
+import { useSelector } from "react-redux";
+import { selectCartTotalPrice } from "@/featcher/crtSlice";
+import NavarForm from "../element/NavarForm";
 
 const BasketDeckstop: FC<OpenBasket2> = ({ openBasket, setOpenBasket }) => {
   // ترکیب ریداس و کاستوم هوک برای نمایش مقادیر سبد خرید
   const { cart, removeProduct, updateProductQuantity } = useCart();
+
+  // قیمت کل سبد خرید
+  const totalPrice = useSelector((state: any) => selectCartTotalPrice(state));
 
   // تابع پاک کردن ممحصول از سبد خرید و لوکال استوریج
   const removeProductToBasket = (id: string) => {
@@ -39,7 +45,7 @@ const BasketDeckstop: FC<OpenBasket2> = ({ openBasket, setOpenBasket }) => {
       ></div>
 
       <div
-        className={`w-[340px] h-screen bg-white fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out ${
+        className={`w-[340px] h-screen overflow-y-auto bg-white fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out ${
           openBasket ? "transform-none" : "-translate-x-full"
         }`}
       >
@@ -79,7 +85,6 @@ const BasketDeckstop: FC<OpenBasket2> = ({ openBasket, setOpenBasket }) => {
             </Link>
           </div>
         )}
-
         {cart.map(({ id, nameProduct, image, price, quantity }) => (
           <div
             key={id}
@@ -139,6 +144,38 @@ const BasketDeckstop: FC<OpenBasket2> = ({ openBasket, setOpenBasket }) => {
             </div>
           </div>
         ))}
+
+        {/* نمایش قیما کل و جزئیات سبد خرید */}
+        <div className="mt-[7rem] border-t-[1px] border-[#bcb8b8] p-2">
+          <section className="border-b-[1px] border-[#bcb8b8] w-full p-2">
+            <div className="flex justify-between items-center">
+              <p className="text-[18px] font-bold">جمع کل:</p>
+              <p className="text-[18px] text-[#D60644] font-bold">
+                {formatNumber(totalPrice)} تومان
+              </p>
+            </div>
+          </section>
+
+          {/* شرط  رایگان شدن  ارسال */}
+          <section className="flex flex-col">
+            <p className="text-[14px] text-[#777777] p-2 font-semibold">
+              در صورت رسیدن مبلغ خرید به 10.000.000 تومان مبلغ ارسال رایگان می
+              شود
+            </p>
+            <NavarForm totalPrice={totalPrice} />
+
+            <div className="flex flex-col gap-2 items-center mt-4">
+              <Link onClick={() => setOpenBasket(false)} href={"/cart"}>
+                <button className="w-[310px] h-[41px] rounded-sm text-[13px] font-bold text-[#333333] bg-gray-100 hover:bg-gray-200 transition-all duration-300">
+                  مشاهده سبد خرید
+                </button>
+              </Link>
+              <button className="text-[13px] w-[310px] h-[41px] rounded-md transition-all duration-300 hover:bg-[#ab0637] font-bold text-white bg-[#D60644]">
+                تسویه حساب
+              </button>
+            </div>
+          </section>
+        </div>
       </div>
       <Toaster />
     </>

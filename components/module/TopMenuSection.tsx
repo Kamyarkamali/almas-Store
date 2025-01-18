@@ -21,11 +21,7 @@ function TopMenuSection() {
 
   const { cart } = useCart();
 
-  const totalPrice = useSelector((state: RootState) =>
-    selectCartTotalPrice(state)
-  );
-
-  console.log(totalPrice);
+  const totalPrice = useSelector((state: any) => selectCartTotalPrice(state));
 
   return (
     <section className="flex items-center gap-2">
