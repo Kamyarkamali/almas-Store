@@ -4,7 +4,7 @@ import data from "@/public/json/endproduct.json";
 import Link from "next/link";
 
 const Computerpart = async (): Promise<JSX.Element> => {
-  const filteredProducts: Product[] = data.filter(
+  const filteredProducts: any = data.filter(
     (item) => item.category === "کامپیوتر اسمبل شده"
   );
 

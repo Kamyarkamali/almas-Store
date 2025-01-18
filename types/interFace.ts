@@ -93,7 +93,7 @@ export interface Product {
   id: string;
   image: string;
   nameProduct: string;
-  price: number |;
+  price: number;
   category1: string;
   category?: string;
   category3?: string;
@@ -102,7 +102,7 @@ export interface Product {
   slug2?: string;
   Inventory: number;
   description: string;
-  discount:boolean;
+  discount?: boolean;
   image2?: string | undefined;
   image3?: string | undefined;
   image4?: string | undefined;
@@ -159,12 +159,11 @@ export interface FilteredData {
   filteredProducts: any[];
 }
 
-
 export interface CartItem {
   id: string;
   name: string;
   price: number;
-  image?:string;
+  image?: string;
   quantity: number;
 }
 
