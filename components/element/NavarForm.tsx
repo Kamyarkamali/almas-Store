@@ -25,7 +25,7 @@ const NavarForm: FC<TotalPriceProps> = ({ totalPrice }) => {
   }, [totalPrice]);
 
   return (
-    <div className="relative w-[320px] mx-auto h-[10px] bg-gray-300 rounded-md">
+    <div className="relative w-full mx-auto h-[6px] rounded-md bg-gray-300">
       <div
         className="absolute h-full bg-red-500 transition-all duration-500 ease-in-out"
         style={{ width: `${progress}%` }}

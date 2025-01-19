@@ -1,10 +1,10 @@
 "use client";
-
-import { useCart } from "@/hooks/useCart";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useCart } from "@/hooks/useCart";
+
 import ArrowLeftCartSvg from "../icon/ArrowLeftCartSvg";
-import ShoBasket from "../shop/shoBasket";
+import ShoBasket from "@/components/shop/ShoBasket";
 import SettlementComponent from "../shop/SettlementComponent";
 import OrderCompletion from "../shop/OrderCompletion";
 
@@ -29,7 +29,7 @@ function CartComponent() {
       {cart.length === 0 && <p>محصولی در سبد خرید وجود ندارد!</p>}
 
       {/* منوی انتخاب */}
-      <div className="bg-[#E8E8E8] text-[22px] gap-7 font-bold w-full h-[157px] flex justify-center items-center transition-all duration-300 ease-linear">
+      <div className="bg-[#E8E8E8] text-[22px] gap-7 font-bold w-full lg:h-[157px] h-[56px] flex justify-center items-center transition-all duration-300 ease-linear">
         {/* گزینه‌های منو */}
         {[
           { id: 1, label: "سبد خرید" },
@@ -40,13 +40,22 @@ function CartComponent() {
             key={item.id}
             onClick={() => setSelected(item.id)}
             className={`text-[#777777]${
-              selected === item.id
-                ? "text-[#D60644] border-b-[1px] border-gray-700"
-                : ""
+              selected === item.id ? "text-[#D60644] flex" : ""
             } flex gap-4 items-center cursor-pointer`}
           >
-            <p>{item.label}</p>
-            <ArrowLeftCartSvg />
+            <p
+              className={`${
+                selected === item.id
+                  ? "block md:border-b-[1px] border-gray-700"
+                  : "hidden md:block"
+              } lg:text-[18px] text-[15px]`}
+            >
+              {item.label}
+            </p>
+            {/* آیکون */}
+            <div className="md:block hidden">
+              <ArrowLeftCartSvg />
+            </div>
           </div>
         ))}
       </div>

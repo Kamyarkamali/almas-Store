@@ -8,7 +8,6 @@ import { useState } from "react";
 import BasketDeckstop from "./BasketDeckstop";
 import LoginFormDeckstop from "./LoginFormDeckstop";
 import { useCart } from "@/hooks/useCart";
-import { RootState } from "@reduxjs/toolkit/query";
 import { useSelector } from "react-redux";
 import { selectCartTotalPrice } from "@/featcher/crtSlice";
 import formatNumber from "@/helpers/replaceNumber";
