@@ -14,7 +14,10 @@ import { selectCartTotalPrice } from "@/featcher/crtSlice";
 import NavarForm from "../element/NavarForm";
 // کاستوم هوک
 
-const BasketShop: FC<CombinedProps> = ({ openBasket, setOpenBasket }) => {
+const BasketShop: FC<CombinedProps> = ({
+  openBasket,
+  setOpenBasket = () => {},
+}) => {
   const { cart, removeProduct, updateProductQuantity } = useCart();
 
   // قیمت کل سبد خرید

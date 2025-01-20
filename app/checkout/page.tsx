@@ -1,9 +1,9 @@
-import CartComponent from "@/components/templates/CartComponent";
+import SettlementComponent from "@/components/shop/SettlementComponent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "سبد خرید -  فروشگاه اینترنتی الماس- مرجع تخصصی قطعات لپ تاپ و کامپیوتر",
+    " پرداخت -  فروشگاه اینترنتی الماس- مرجع تخصصی قطعات لپ تاپ و کامپیوتر",
   description: "فروشگاه اینترنتی الماس- مرجع تخصصی قطعات لپ تاپ و کامپیوتر ",
   icons: "/images/section1/logo.png",
 };
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div>
-      <CartComponent />
+      <SettlementComponent />
     </div>
   );
 }
