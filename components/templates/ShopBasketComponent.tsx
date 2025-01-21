@@ -1,6 +1,7 @@
 "use client";
 import { selectCartTotalPrice } from "@/featcher/crtSlice";
 import formatNumber from "@/helpers/replaceNumber";
+import Link from "next/link";
 import { useSelector } from "react-redux";
 
 function ShopBasketComponent() {
@@ -30,9 +31,12 @@ function ShopBasketComponent() {
             </p>
           </div>
           <div className="flex justify-center mt-[2.43rem]">
-            <button className="text-white bg-[#D60644] hover:bg-[#9f1e45] transition-colors duration-200 w-full p-3 rounded-md text-[14px]">
+            <Link
+              href={"/checkout"}
+              className="text-white text-center bg-[#D60644] hover:bg-[#9f1e45] transition-colors duration-200 w-full p-3 rounded-md text-[14px]"
+            >
               ادامه جهت تسویه حساب
-            </button>
+            </Link>
           </div>
         </div>
       </div>

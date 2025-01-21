@@ -10,6 +10,8 @@ import Link from "next/link";
 
 function LoginForm() {
   const [showPassword, setShowPassword] = useState<boolean>(false);
+  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const [isOtpVisible, setIsOtpVisible] = useState(false);
 
   const {
     register,
@@ -76,27 +78,7 @@ function LoginForm() {
           <p className="text-red-500 text-xs mt-1">{errors.password.message}</p>
         )}
       </div>
-      {/* Answer */}
-      <div className="mt-[1.5rem]">
-        <div className="flex flex-col gap-4">
-          <label className="text-[14px] text-[#242424]">
-            لطفا یک پاسخ را با ارقام وارد کنید:
-          </label>
-          <label className="text-[14px] text-[#777777]">13 + هجده=</label>
-        </div>
-        <input
-          type="text"
-          {...register("answer", {
-            required: "پاسخ الزامی است",
-            validate: (value) =>
-              value === "31" || "پاسخ نادرست است، لطفا دوباره تلاش کنید",
-          })}
-          className="border-[2px] border-[#e4e1e1] text-[13px] pr-2 rounded-md w-[235px] h-[42px] focus:outline-none mt-[5px]"
-        />
-        {errors.answer && (
-          <p className="text-red-500 text-xs mt-1">{errors.answer.message}</p>
-        )}
-      </div>
+
       {/* Submit Button */}
       <div className="mt-[1.1875rem]">
         <button
@@ -112,9 +94,6 @@ function LoginForm() {
             مرا به خاطر بسپار
           </label>
         </div>
-        <p className="text-[14px] mt-[15px] text-[#D60644] hover:border-b-[0.5px] hover:text-[#a83356] transition-all duration-300 ease-linear border-[#D60644] w-fit">
-          رمز عبور را فراموش کرده اید؟
-        </p>
         <div className="border-b-[1px] border-[#afa8a8] p-1 w-full"></div>
       </div>
 

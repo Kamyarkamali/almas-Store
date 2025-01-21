@@ -1,31 +1,77 @@
 "use client";
 import React, { FC, useState } from "react";
-
 import { useForm } from "react-hook-form";
-import PasswordSvg from "@/components/icon/PasswordSvg";
-import HidePassword from "@/components/icon/HidePassword";
 import { FormData, LoginForm } from "@/types/interFace";
 import Image from "next/image";
 import Link from "next/link";
 import CloseSvg from "../icon/CloseSvg";
+import { Toaster, toast } from "react-hot-toast";
+import { Altet } from "@/types/enums";
 
-const LoginFormDeckstop: FC<LoginForm> = ({ openLogin, setOpenLogin }) => {
-  const [showPassword, setShowPassword] = useState<boolean>(false);
-
+const LoginFormDeckstop: FC<LoginForm> = ({ setOpenLogin }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
   } = useForm<FormData>();
+
+  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const [isOtpVisible, setIsOtpVisible] = useState(false);
 
   const onSubmit = (data: FormData) => {
     console.log("Form Data:", data);
   };
 
+  const handleOtpChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    index: number
+  ) => {
+    const value = e.target.value;
+    if (/[^0-9]/.test(value)) return;
+    const newOtp = [...otp];
+    newOtp[index] = value;
+    setOtp(newOtp);
+
+    if (index < otp.length - 1 && value) {
+      const nextInput = document.getElementById(`otp-input-${index + 1}`);
+      nextInput?.focus();
+    }
+  };
+
+  const handleOtpDelete = (
+    e: React.KeyboardEvent<HTMLInputElement>,
+    index: number
+  ) => {
+    if (e.key === "Backspace" && otp[index] === "") {
+      const prevInput = document.getElementById(`otp-input-${index - 1}`);
+      prevInput?.focus();
+    }
+  };
+
+  const isValidMobile = (value: string) => {
+    return /^(09)[0-9]{9}$/.test(value);
+  };
+
+  const isValidEmail = (value: string) => {
+    return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+  };
+
+  const handleFormSubmit = (data: FormData) => {
+    // ارسال کد تایید به ایمیل یا شماره موبایل معتبر
+    if (isValidEmail(data.username) || isValidMobile(data.username)) {
+      setIsOtpVisible(true); // نمایش فرم OTP
+
+      toast.success(Altet.SENDOTPCODE);
+    } else {
+      toast.error(Altet.ERROROTP);
+    }
+  };
+
   return (
     <>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit(handleFormSubmit)}
         className="pt-5 px-4 pb-[15px] bg-white max-w-md mx-auto z-50"
       >
         <div className="flex items-center justify-between">
@@ -42,16 +88,19 @@ const LoginFormDeckstop: FC<LoginForm> = ({ openLogin, setOpenLogin }) => {
         {/* Username or Email */}
         <div className="mt-4">
           <label className="after:content-['*'] text-[14px] text-[#242424]">
-            نام کاربری یا آدرس ایمیل
+            شماره موبایل یا آدرس ایمیل
           </label>
           <input
             type="text"
             {...register("username", {
               required: "نام کاربری یا ایمیل الزامی است",
-              pattern: {
-                value:
-                  /^(?:[a-zA-Z0-9_]{3,20}|[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,4})$/,
-                message: "باید نام کاربری یا ایمیل معتبر وارد کنید",
+              validate: {
+                isEmailOrMobile: (value) => {
+                  if (!isValidEmail(value) && !isValidMobile(value)) {
+                    return "باید ایمیل یا شماره موبایل معتبر وارد کنید";
+                  }
+                  return true;
+                },
               },
             })}
             className="border-[2px] border-[#e4e1e1] text-[13px] pr-2 rounded-md w-full h-[42px] focus:outline-none mt-[5px]"
@@ -63,62 +112,27 @@ const LoginFormDeckstop: FC<LoginForm> = ({ openLogin, setOpenLogin }) => {
           )}
         </div>
 
-        {/* Password */}
-        <div className="mt-4">
-          <label className="after:content-['*'] text-[14px] text-[#242424]">
-            رمز عبور
-          </label>
-          <div className="border-[2px] rounded-md border-[#e4e1e1] flex items-center pl-2">
-            <input
-              type={showPassword ? "text" : "password"}
-              {...register("password", {
-                required: "رمز عبور الزامی است",
-                minLength: {
-                  value: 6,
-                  message: "رمز عبور باید حداقل 6 کاراکتر باشد",
-                },
-              })}
-              className="text-[13px] pr-2 h-[38px] rounded-md w-full focus:outline-none mt-[5px]"
-            />
-            <div
-              onClick={() => setShowPassword(!showPassword)}
-              className="cursor-pointer"
-            >
-              {showPassword ? (
-                <PasswordSvg width="16px" height="16px" />
-              ) : (
-                <HidePassword width="16px" height="16px" />
-              )}
+        {/* OTP Form */}
+        {isOtpVisible && (
+          <div className="mt-4">
+            <label className="text-[14px] text-[#242424]">کد تایید (OTP)</label>
+            <div className="flex gap-2 mt-2" dir="ltr">
+              {otp.map((value, index) => (
+                <input
+                  key={index}
+                  id={`otp-input-${index}`}
+                  type="text"
+                  value={value}
+                  onChange={(e) => handleOtpChange(e, index)}
+                  onKeyDown={(e) => handleOtpDelete(e, index)}
+                  maxLength={1}
+                  className="w-10 h-10 text-center border-[2px] border-[#e4e1e1] rounded-md"
+                  dir="ltr"
+                />
+              ))}
             </div>
           </div>
-          {errors.password && (
-            <p className="text-red-500 text-xs mt-1">
-              {errors.password.message}
-            </p>
-          )}
-        </div>
-
-        {/* Answer */}
-        <div className="mt-4">
-          <div className="flex flex-col gap-2">
-            <label className="text-[14px] text-[#242424]">
-              لطفا یک پاسخ را با ارقام وارد کنید:
-            </label>
-            <label className="text-[14px] text-[#777777]">13 + هجده=</label>
-          </div>
-          <input
-            type="text"
-            {...register("answer", {
-              required: "پاسخ الزامی است",
-              validate: (value) =>
-                value === "31" || "پاسخ نادرست است، لطفا دوباره تلاش کنید",
-            })}
-            className="border-[2px] border-[#e4e1e1] text-[13px] pr-2 rounded-md w-full h-[42px] focus:outline-none mt-[5px]"
-          />
-          {errors.answer && (
-            <p className="text-red-500 text-xs mt-1">{errors.answer.message}</p>
-          )}
-        </div>
+        )}
 
         {/* Submit Button */}
         <div className="mt-[1.1875rem]">
@@ -135,9 +149,6 @@ const LoginFormDeckstop: FC<LoginForm> = ({ openLogin, setOpenLogin }) => {
               مرا به خاطر بسپار
             </label>
           </div>
-          <p className="text-[14px] mt-[15px] text-[#D60644] hover:border-b-[0.5px] hover:text-[#a83356] transition-all duration-300 ease-linear border-[#D60644] w-fit">
-            رمز عبور را فراموش کرده اید؟
-          </p>
           <div className="border-b-[1px] border-[#afa8a8] p-1 w-full"></div>
         </div>
 
@@ -168,6 +179,7 @@ const LoginFormDeckstop: FC<LoginForm> = ({ openLogin, setOpenLogin }) => {
           </div>
         </div>
       </form>
+      <Toaster />
     </>
   );
 };

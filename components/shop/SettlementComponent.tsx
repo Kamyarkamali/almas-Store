@@ -6,6 +6,7 @@ import ShoBasket from "@/components/shop/ShoBasket";
 import OrderCompletion from "../shop/OrderCompletion";
 import { useState } from "react";
 import Link from "next/link";
+import CheckOut from "../module/CheckOut";
 
 function SettlementComponent() {
   const { cart } = useCart();
@@ -34,7 +35,6 @@ function SettlementComponent() {
           </div>
         </div>
       )}
-
       {/* منوی انتخاب */}
       <div
         className={`${
@@ -78,6 +78,7 @@ function SettlementComponent() {
           {selected === 3 && <OrderCompletion />}
         </section>
       )}
+      <CheckOut />
     </div>
   );
 }
