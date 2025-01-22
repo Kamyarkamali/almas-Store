@@ -74,3 +74,41 @@ export const dataLabales: dataLabale[] = [
     image: "/images/labaleLaptops/19.webp",
   },
 ];
+
+export const dashboard = [
+  {
+    id: 1,
+    title: "داشبورد",
+    image: "/images/dasboard/dashboard.svg",
+    href: "/dashboard/profile",
+  },
+  {
+    id: 2,
+    title: "اطلاعات حساب کاربری",
+    image: "/images/dasboard/userDashboard.svg",
+    href: "/dashboard/detailseuser",
+  },
+  {
+    id: 3,
+    title: "سفارش ها",
+    image: "/images/dasboard/basket.svg",
+    href: "/dashboard/orders",
+  },
+  {
+    id: 4,
+    title: "علاقه مندی ها",
+    image: "/images/dasboard/like.svg",
+    href: "/dashboard/faiverites",
+  },
+  {
+    id: 5,
+    title: "آدرس های من",
+    image: "/images/dasboard/addres.svg",
+    href: "/dashboard/myaddres",
+  },
+  {
+    id: 6,
+    title: "خروج",
+    image: "/images/dasboard/logout.svg",
+  },
+];

@@ -6,4 +6,9 @@ export enum Altet {
   REMOVEPRODUCTS = "از سبد خرید حذف شد",
   SENDOTPCODE = "کد تایید به ایمیل یا شماره موبایل ارسال شد.",
   ERROROTP = "ایمیل یا شماره موبایل معتبر وارد کنید.",
+  COMPARERESULT = "فقط محصولات مرتبط قابل مقایسه هستند!",
+  ADDEDTOCOMPARE = "به لیست مقایسه اضافه شد",
+  ALERTCOMPARE = "این محصول در لیست مقایسه وجود دارد!",
+  REMOVEDCOMPARE = "از لیست مقایسه حذف شد!",
+  REMOVELISTCOMPARE = "لیست مقایسه خالی شد!",
 }
