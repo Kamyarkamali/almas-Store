@@ -1,7 +1,12 @@
+import MyFaiverits from "@/components/dashbordComponents/MyFaiverits";
 import React from "react";
 
 function Faiveritse() {
-  return <div>Faiveritse</div>;
+  return (
+    <div>
+      <MyFaiverits />
+    </div>
+  );
 }
 
 export default Faiveritse;

@@ -1,34 +1,22 @@
+"use client";
+import { products } from "@/data/data";
 import formatNumber from "@/helpers/replaceNumber";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 function Myorders() {
-  // شبیه‌سازی محصولات
-  const products = [
-    {
-      id: 1,
-      name: "لپ تاپ HP مدل 100",
-      warranty: "گارانتی 2 سال",
-      oldPrice: 2000000,
-      newPrice: 1000000,
-      image: "/images/laptop/100.jpg",
-    },
-    {
-      id: 2,
-      name: "لپ تاپ Dell مدل XPS",
-      warranty: "گارانتی 1 سال",
-      oldPrice: 3000000,
-      newPrice: 2500000,
-      image: "/images/laptop/101.jpg",
-    },
-    // محصولات دیگر...
-  ];
+  const router = usePathname();
 
   return (
     <div className="border w-full rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-4">
       {/* عنوان و مشاهده بیشتر */}
       <div className="flex items-center justify-between">
         <p className="text-[16px] md:text-[18px] font-bold border-b-2 border-blue-700">
-          سفارش‌های من
+          {router === "/dashboard/profile"
+            ? "سفارش های من"
+            : router === "/dashboard/faiverites"
+            ? "کالاهای پسندیده"
+            : ""}
         </p>
         <button className="text-[14px] md:text-[16px] text-blue-600 font-bold hover:underline">
           مشاهده بیشتر
@@ -55,7 +43,7 @@ function Myorders() {
               <del className="text-gray-800">
                 {formatNumber(product.oldPrice)} تومان
               </del>
-              <p className="text-green-700 font-bold">
+              <p className="text-green-500 font-bold">
                 {formatNumber(product.newPrice)} تومان
               </p>
             </div>

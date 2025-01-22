@@ -127,3 +127,22 @@ export const steps = [
     image: "/images/dasboard/orders/4.png",
   },
 ];
+
+export const products = [
+  {
+    id: 1,
+    name: "لپ تاپ HP مدل 100",
+    warranty: "گارانتی 2 سال",
+    oldPrice: 2000000,
+    newPrice: 1000000,
+    image: "/images/laptop/100.jpg",
+  },
+  {
+    id: 2,
+    name: "لپ تاپ Dell مدل XPS",
+    warranty: "گارانتی 1 سال",
+    oldPrice: 3000000,
+    newPrice: 2500000,
+    image: "/images/laptop/101.jpg",
+  },
+];
