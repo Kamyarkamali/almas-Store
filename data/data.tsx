@@ -112,3 +112,18 @@ export const dashboard = [
     image: "/images/dasboard/logout.svg",
   },
 ];
+
+export const steps = [
+  { id: 1, label: "تایید سفارش", image: "/images/dasboard/orders/1.png" },
+  { id: 2, label: "مرسوله در پست", image: "/images/dasboard/orders/2.png" },
+  {
+    id: 3,
+    label: "رهسپاری مرسوله به سمت مقصد",
+    image: "/images/dasboard/orders/3.png",
+  },
+  {
+    id: 4,
+    label: "دریافت مرسوله توسط مشتری",
+    image: "/images/dasboard/orders/4.png",
+  },
+];

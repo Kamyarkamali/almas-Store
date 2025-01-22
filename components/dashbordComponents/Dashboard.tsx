@@ -1,4 +1,5 @@
 import React from "react";
+import Myorders from "./Myorders";
 
 function Dashboard() {
   return (
@@ -34,7 +35,6 @@ function Dashboard() {
           </div>
         </div>
       </div>
-
       {/* جعبه سفارشات */}
       <div className="bg-[#ffffff] w-full rounded-lg p-4 md:p-9 shadow-md hover:shadow-lg transition-shadow duration-300">
         <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-6">
@@ -80,6 +80,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
+      <Myorders />
     </div>
   );
 }

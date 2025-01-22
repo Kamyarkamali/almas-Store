@@ -1,7 +1,11 @@
-import React from "react";
+import OrderComponent from "@/components/dashbordComponents/OrderComponent";
 
 function Orders() {
-  return <div>Orders</div>;
+  return (
+    <div>
+      <OrderComponent />
+    </div>
+  );
 }
 
 export default Orders;

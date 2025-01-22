@@ -174,3 +174,11 @@ export interface CartState {
 export interface totalPrice {
   totalPrice: number;
 }
+
+export interface FormInputs {
+  firstName: string;
+  lastName: string;
+  displayName: string;
+  email?: string;
+  phoneNumber: string;
+}
