@@ -11,12 +11,15 @@ import { useCart } from "@/hooks/useCart";
 import { useSelector } from "react-redux";
 import { selectCartTotalPrice } from "@/featcher/crtSlice";
 import formatNumber from "@/helpers/replaceNumber";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 function TopMenuSection() {
   const { favorites } = useFavorites();
 
   const [openBasket, setOpenBasket] = useState<boolean>(false);
   const [openLogin, setOpenLogin] = useState<boolean>(false);
+
+  const compareList = useSelector((state: any) => state.compare.compareList);
 
   const { cart } = useCart();
 
@@ -83,12 +86,17 @@ function TopMenuSection() {
           <div className="relative">
             <ShuffileSvg width="21px" height="21px" color="#B6B6B6" />
             <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
+              <span className="text-[9px]">
+                {compareList.length ? compareList.length : 0}
+              </span>
             </div>
           </div>
-          <p className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
+          <Link
+            href={"/compare"}
+            className="text-[13px] text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer"
+          >
             مقایسه
-          </p>
+          </Link>
         </div>
       </div>
 

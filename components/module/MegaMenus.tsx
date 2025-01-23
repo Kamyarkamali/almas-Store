@@ -100,6 +100,12 @@ function MegaMenus() {
             </div>
           ))}
         </ul>
+        <Link
+          className="text-[13px] text-[#ffffff] bg-red-500 py-2 px-4 rounded-lg hover:bg-red-600 transition-all duration-300"
+          href={"/dashboard/profile"}
+        >
+          دیدن پنل کاربر(تست)
+        </Link>
       </div>
     </div>
   );

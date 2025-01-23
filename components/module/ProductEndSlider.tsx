@@ -16,6 +16,9 @@ import toast, { Toaster } from "react-hot-toast";
 import { NavigationOptions } from "swiper/types";
 import { useCart } from "@/hooks/useCart";
 import { Altet } from "@/types/enums";
+import useLocalStorage from "@/hooks/useLocalStorage";
+import { addToCompare } from "@/featcher/compareSlice";
+import { useDispatch } from "react-redux";
 
 // مودال برای نمایش جزئیات محصول
 const ModaProducts = ({
@@ -51,6 +54,8 @@ const ModaProducts = ({
 const ProductEndSlider = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // وضعیت مودال
   const [selectedProduct, setSelectedProduct] = useState<any>(null); // محصول انتخاب‌شده
+  const [compareList, setCompareList] = useLocalStorage<any>("compareList", []);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const { addFavorite } = useFavorites();
@@ -73,6 +78,20 @@ const ProductEndSlider = () => {
   // تابع برای بستن مودال
   const handleModalClose = () => {
     setIsModalOpen(false);
+  };
+
+  const dispatch = useDispatch();
+  const handleAddToCompare = (product: any) => {
+    // بررسی دسته‌بندی محصولات برای اطمینان از مقایسه درست
+    if (
+      compareList.length > 0 &&
+      compareList[0].category !== product.category
+    ) {
+      alert("دسته‌بندی محصولات با هم برابر نیستند!");
+      return;
+    }
+    setCompareList([...compareList, product]);
+    dispatch(addToCompare(product));
   };
 
   return (
@@ -152,7 +171,10 @@ const ProductEndSlider = () => {
                   <SearchSvg3 />
                 </div>
 
-                <div className="cursor-pointer">
+                <div
+                  onClick={() => handleAddToCompare(product)}
+                  className="cursor-pointer"
+                >
                   <ShuffileSvg />
                 </div>
 

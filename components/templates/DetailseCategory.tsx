@@ -2,7 +2,7 @@
 import React, { FC, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 import formatNumber from "@/helpers/replaceNumber";
 import { DetailseCategoryProps } from "@/types/interFace";
@@ -14,6 +14,11 @@ import { useFavorites } from "@/context/FavoritesProvider";
 import DesctComments from "../module/DesctComments";
 
 import { Box } from "@/data/data";
+import { addToCompare } from "@/featcher/compareSlice";
+import { useDispatch } from "react-redux";
+import useLocalStorage from "@/hooks/useLocalStorage";
+import { useCart } from "@/hooks/useCart";
+import { Altet } from "@/types/enums";
 
 const DetailseCategory: FC<DetailseCategoryProps> = ({
   product,
@@ -38,11 +43,30 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
   const [mainImage, setMainImage] = useState(image);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [compareList, setCompareList] = useLocalStorage<any>("compareList", []);
 
   const images = [image, image2, image3, image4].filter((img) => img);
 
+  // ترکیب ریداس و کاستوم هوک برای نمایش مقادیر سبد خرید
+  const { addProduct, cart, updateProductQuantity } = useCart();
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  const addProducts = (product: any) => {
+    addProduct(product);
+    toast.success(Altet.ADDED_PRODUCT);
+  };
+
+  // تابع اضافه کردن مقدار quantity
+  const handleQuantityChange = (productId: string, quantity: number) => {
+    updateProductQuantity(productId, quantity);
+  };
+
+  // تابع کم کردن quantity
+  const decrementQuantity = (productId: string, quantity: number) => {
+    handleQuantityChange(productId, quantity);
+  };
 
   const goToNextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -52,6 +76,20 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
     setCurrentImageIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
+  };
+
+  const dispatch = useDispatch();
+  const handleAddToCompare = (product: any) => {
+    // بررسی دسته‌بندی محصولات برای اطمینان از مقایسه درست
+    if (
+      compareList.length > 0 &&
+      compareList[0].category !== product.category
+    ) {
+      alert("دسته‌بندی محصولات با هم برابر نیستند!");
+      return;
+    }
+    setCompareList([...compareList, product]);
+    dispatch(addToCompare(product));
   };
 
   return (
@@ -171,24 +209,46 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
               Inventory > 0 ? "flex" : "hidden"
             } flex flex-col xl:flex-row items-center justify-center gap-4 mt-4`}
           >
-            <div className="flex items-center gap-2 border-[2px] border-[#D9D9D9] rounded-md h-10">
-              <button className="border-l-2 h-full rounded-md transition-all duration-300 rounded-l-none w-8 text-sm hover:bg-red-600 hover:text-white">
-                -
+            {cart.map((item) => (
+              <div className="flex items-center gap-2 border-[2px] border-[#D9D9D9] rounded-md h-10">
+                <button
+                  onClick={() =>
+                    handleQuantityChange(item.id, item.quantity - 1)
+                  }
+                  className="border-l-2 h-full rounded-md transition-all duration-300 rounded-l-none w-8 text-sm hover:bg-red-600 hover:text-white"
+                >
+                  -
+                </button>
+                <p className="text-sm">{item.quantity ? item.quantity : 1}</p>
+                <button
+                  onClick={() =>
+                    handleQuantityChange(item.id, item.quantity + 1)
+                  }
+                  className="border-r-2 rounded-md transition-all duration-300 rounded-r-none w-8 h-full text-sm hover:bg-red-600 hover:text-white"
+                >
+                  +
+                </button>
+              </div>
+            ))}
+
+            {Inventory > 0 ? (
+              <button
+                onClick={() => addProducts(product)}
+                className="bg-[#D60644] disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded"
+              >
+                افزودن به سبد خرید
               </button>
-              <p className="text-sm">1</p>
-              <button className="border-r-2 rounded-md transition-all duration-300 rounded-r-none w-8 h-full text-sm hover:bg-red-600 hover:text-white">
-                +
+            ) : (
+              <button className="bg-[#D60644] disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded">
+                موجود نیست
               </button>
-            </div>
-            <button
-              disabled={Inventory <= 0}
-              className="bg-[#D60644] disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded"
-            >
-              {Inventory > 0 ? "افزودن به سبد خرید" : "موجود نیست"}
-            </button>
+            )}
           </section>
           <div className="flex items-center justify-start">
-            <div className="flex items-center gap-2 mt-4 pr-5">
+            <div
+              onClick={() => handleAddToCompare(product)}
+              className="flex cursor-pointer items-center gap-2 mt-4 pr-5"
+            >
               <ShuffileSvg width="25px" height="25px" />
               <p className="text-[14px] font-bold">مقایسه</p>
             </div>

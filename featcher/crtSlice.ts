@@ -94,7 +94,7 @@ export const selectCartTotalPrice = (state: { cart: CartState }) => {
     ) {
       return total + product.price * product.quantity;
     }
-    return total; // در صورتی که مقادیر غیر عددی بودند، آنها را نادیده بگیریم
+    return total;
   }, 0);
 };
 

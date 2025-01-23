@@ -16,6 +16,13 @@ import { Toaster, toast } from "react-hot-toast";
 import { NavigationOptions } from "swiper/types";
 import { useCart } from "@/hooks/useCart";
 import { Altet } from "@/types/enums";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addToCompare,
+  removeFromCompare,
+  resetCompare,
+} from "@/featcher/compareSlice";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 // مودال برای نمایش جزئیات محصول
 const ModaProducts = ({
@@ -49,15 +56,30 @@ const ModaProducts = ({
 };
 
 const SectionMotherBoard = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // وضعیت مودال
-  const [selectedProduct, setSelectedProduct] = useState<any>(null); // محصول انتخاب‌شده
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [compareList, setCompareList] = useLocalStorage<any>("compareList", []);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const { addFavorite } = useFavorites();
   // ترکیب ریداس و کاستوم هوک برای نمایش مقادیر سبد خرید
   const { addProduct } = useCart();
 
-  // اضافه کردن محول به سبد خرید
+  const dispatch = useDispatch();
+  const handleAddToCompare = (product: any) => {
+    // بررسی دسته‌بندی محصولات برای اطمینان از مقایسه درست
+    if (
+      compareList.length > 0 &&
+      compareList[0].category !== product.category
+    ) {
+      alert("دسته‌بندی محصولات با هم برابر نیستند!");
+      return;
+    }
+
+    // اضافه کردن محصول به لیست
+    setCompareList([...compareList, product]);
+    dispatch(addToCompare(product));
+  };
 
   const addProducts = (product: any) => {
     addProduct(product);
@@ -157,7 +179,10 @@ const SectionMotherBoard = () => {
                   <SearchSvg3 />
                 </div>
 
-                <div className="cursor-pointer">
+                <div
+                  onClick={() => handleAddToCompare(product)}
+                  className="cursor-pointer"
+                >
                   <ShuffileSvg />
                 </div>
 
