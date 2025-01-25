@@ -4,13 +4,15 @@ import ShopSvg from "../icon/ShopSvg";
 import UserSvg from "../icon/UserSvg";
 import Link from "next/link";
 import { useFavorites } from "@/context/FavoritesProvider";
+import { useCart } from "@/hooks/useCart";
 
 function ItemBottomMenu() {
   const { favorites } = useFavorites();
+  const { cart } = useCart();
   return (
     <div className="w-full flex justify-around">
       <Link
-        href={"#"}
+        href={"/"}
         className="flex flex-col items-center gap-1 cursor-pointer"
       >
         <MarketSvg width="23px" height="23px" />
@@ -41,15 +43,19 @@ function ItemBottomMenu() {
 
       <div className="flex items-center group">
         <div className="flex flex-col items-center gap-1">
-          <Link href={"#"} className="relative">
+          <Link href={"/cart"} className="relative">
             <ShopSvg width="20px" height="20px" color="#B6B6B6" />
             <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
+              <span className="text-[9px]">
+                {cart.length ? cart.length : 0}
+              </span>
             </div>
           </Link>
-          <p className="text-[11px] font-bold text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
-            سبد خرید
-          </p>
+          <Link href={"/cart"}>
+            <p className="text-[11px] font-bold text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
+              سبد خرید
+            </p>
+          </Link>
         </div>
       </div>
 
@@ -57,9 +63,6 @@ function ItemBottomMenu() {
         <div className="flex flex-col items-center gap-1">
           <Link href={"#"} className="relative">
             <UserSvg width="20px" height="20px" color="#B6B6B6" />
-            <div className="absolute bg-[#d60644] flex justify-center items-center text-white rounded-[100%] w-[15px] h-[15px] top-[-4px] left-[-0.5rem]">
-              <span className="text-[9px]">0</span>
-            </div>
           </Link>
           <p className="text-[11px] font-bold text-[#333333] group-hover:text-[#453939be] transition-colors cursor-pointer">
             حساب کاربری من

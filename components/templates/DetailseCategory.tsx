@@ -40,6 +40,14 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
     Inventory,
   } = product || productLaptop || {};
 
+  const handleQuantityDecrise = (item: any) => {
+    if (item.quantity > 1) {
+      item.quantity = item.quantity - 1;
+    } else if (item.quantity === 1) {
+      item.quantity = 1;
+    }
+  };
+
   const [mainImage, setMainImage] = useState(image);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -212,9 +220,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
             {cart.map((item) => (
               <div className="flex items-center gap-2 border-[2px] border-[#D9D9D9] rounded-md h-10">
                 <button
-                  onClick={() =>
-                    handleQuantityChange(item.id, item.quantity - 1)
-                  }
+                  onClick={() => handleQuantityDecrise(item)}
                   className="border-l-2 h-full rounded-md transition-all duration-300 rounded-l-none w-8 text-sm hover:bg-red-600 hover:text-white"
                 >
                   -
