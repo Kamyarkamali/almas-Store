@@ -1,4 +1,4 @@
-import { Boxs, dataLabale } from "@/types/interFace";
+import { Boxs, dataLabale, MenuItem } from "@/types/interFace";
 
 export const Box: Boxs[] = [
   {
@@ -191,4 +191,62 @@ export const cities = [
   "گیلان",
   "کیش",
   "قشم",
+];
+
+// components/menuData.ts
+export const menuItems: MenuItem[] = [
+  {
+    title: "پیشخوان",
+    icon: "Layout",
+    path: "/admin/dashboard",
+    submenu: [
+      { title: "خانه", path: "/" },
+      { title: "به‌روزرسانی‌ها", path: "/admin/dashboard/updates" },
+    ],
+  },
+  {
+    title: "نوشته‌ها",
+    icon: "Edit",
+    path: "/admin/posts",
+    submenu: [
+      { title: "همه نوشته‌ها", path: "/admin/posts/all" },
+      { title: "نوشته تازه", path: "/admin/posts/add" },
+      { title: "دسته‌ها", path: "/admin/posts/categories" },
+      { title: "برچسب‌ها", path: "/admin/posts/tags" },
+      {
+        title: "زباله دان",
+        path: "/admin/trashed",
+      },
+    ],
+  },
+  {
+    title: "محصولات",
+    icon: "ShoppingCart",
+    path: "/admin/products",
+    submenu: [
+      { title: "همه محصولات", path: "/admin/products/all" },
+      { title: "افزودن محصول جدید", path: "/admin/products/add" },
+      { title: "برندها", path: "/admin/products/brands" },
+      { title: "دسته‌بندی‌ها", path: "/admin/products/categories" },
+      { title: "برچسب‌ها", path: "/admin/products/tags" },
+      { title: "ویژگی‌ها", path: "/admin/products/features" },
+      { title: "نقد و بررسی", path: "/admin/products/reviews" },
+    ],
+  },
+  {
+    title: "کاربران",
+    icon: "Users",
+    path: "/admin/users",
+    submenu: [
+      { title: "همه کاربران", path: "/admin/users/all" },
+      { title: "افزودن کاربر", path: "/admin/users/add" },
+      { title: "نقش‌ها", path: "/admin/users/roles" },
+    ],
+  },
+  {
+    title: "خروج",
+    icon: "LogOut",
+    path: "/admin/logout",
+    submenu: [],
+  },
 ];

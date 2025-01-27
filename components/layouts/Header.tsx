@@ -6,6 +6,7 @@ import MenuLg from "../module/MenuLg";
 import ScrollTop from "../buttons/ScrollTop";
 import BottomMenuMobile from "../module/BottomMenuMobile";
 import MegaMenus from "../module/MegaMenus";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [openLogin, setOpenLogin] = useState<boolean>(false);

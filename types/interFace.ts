@@ -182,3 +182,27 @@ export interface FormInputs {
   email?: string;
   phoneNumber: string;
 }
+
+export interface SubmenuItem {
+  title: string;
+  path: string;
+}
+
+export interface MenuItem {
+  title: string;
+  icon: keyof typeof import("lucide-react");
+  path: string;
+  submenu: SubmenuItem[];
+}
+
+export interface Post {
+  id: number;
+  title: string;
+  category: string;
+  tags: string[];
+  content: string;
+  images: string[];
+  status: boolean;
+  createdAt: string;
+  mainImage: string[];
+}

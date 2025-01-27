@@ -11,4 +11,5 @@ export enum Altet {
   ALERTCOMPARE = "این محصول در لیست مقایسه وجود دارد!",
   REMOVEDCOMPARE = "از لیست مقایسه حذف شد!",
   REMOVELISTCOMPARE = "لیست مقایسه خالی شد!",
+  ADDBLOGS = "بلاگ اضافه شد",
 }
