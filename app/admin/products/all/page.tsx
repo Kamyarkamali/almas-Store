@@ -1,5 +1,11 @@
+import ShowAllProducts from "@/components/adminComponent/ShowAllProducts";
+
 function page() {
-  return <div>page</div>;
+  return (
+    <div>
+      <ShowAllProducts />
+    </div>
+  );
 }
 
 export default page;

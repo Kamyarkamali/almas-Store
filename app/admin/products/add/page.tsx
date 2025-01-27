@@ -1,7 +1,11 @@
-import React from "react";
+import AdminProductComponent from "@/components/adminComponent/AdminProductComponent";
 
 function page() {
-  return <div>page</div>;
+  return (
+    <div>
+      <AdminProductComponent />
+    </div>
+  );
 }
 
 export default page;
