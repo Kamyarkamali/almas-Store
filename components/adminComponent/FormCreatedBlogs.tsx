@@ -14,12 +14,8 @@ const FormCreatedBlogs = () => {
     formState: { errors },
   } = useForm();
 
-  // استیت موقت برای نگه داری  بلاگ ها
   const dispatch = useDispatch();
   const state = useSelector((state: any) => state.posts.posts);
-
-  const state2 = useSelector((state: any) => state);
-  console.log(state2);
 
   const { fields: imageFields, append: appendImage } = useFieldArray({
     control,
@@ -42,8 +38,6 @@ const FormCreatedBlogs = () => {
       createdAt: new Date().toISOString(),
     };
 
-    // setPosts((prevPosts) => [...prevPosts, newPost]);
-    // اضافه کردن بلاگ به ریداکس
     dispatch(addPost(newPost));
 
     toast.success(Altet.ADDBLOGS);
@@ -54,31 +48,25 @@ const FormCreatedBlogs = () => {
     e: React.ChangeEvent<HTMLInputElement>,
     onChange: Function
   ) => {
-    const files = e.target.files;
-    if (files) {
-      const fileArray: string[] = [];
-      Array.from(files).forEach((file) => {
-        const reader = new FileReader();
-        reader.onload = () => {
-          if (reader.result) {
-            fileArray.push(reader.result as string);
-            onChange(fileArray);
-          }
-        };
-        reader.readAsDataURL(file);
-      });
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        onChange(reader.result as string);
+      };
+      reader.readAsDataURL(file);
     }
   };
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md space-y-6">
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 ">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         <div className="flex justify-between">
           <h1 className="text-2xl font-bold border-b pb-4">ایجاد نوشته تازه</h1>
           {state.length > 0 && (
-            <Link href="/admin/posts/all">
+            <Link href="/posts">
               <p className="text-2xl text-red-600 cursor-pointer font-bold pb-1">
-                دیدن همه نوشته ها
+                دیدن همه نوشته‌ها
               </p>
             </Link>
           )}
@@ -159,27 +147,47 @@ const FormCreatedBlogs = () => {
         <div>
           <button
             type="button"
-            onClick={() => appendHeading({ title: "" })}
+            onClick={() => appendHeading({ title: "", content: "" })}
             className="text-blue-500 hover:underline"
           >
             + اضافه کردن سرعنوان
           </button>
           {headingFields.map((field, index) => (
-            <div key={field.id} className="space-y-2 mt-4">
-              <label className="block font-medium">سرعنوان {index + 1}</label>
-              <Controller
-                name={`headings[${index}].title`}
-                control={control}
-                defaultValue={field.title}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="text"
-                    className="w-full border outline-none border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder={`سرعنوان ${index + 1}`}
-                  />
-                )}
-              />
+            <div key={field.id} className="space-y-4 mt-4">
+              <div>
+                <label className="block font-medium">سرعنوان {index + 1}</label>
+                <Controller
+                  name={`headings[${index}].title`}
+                  control={control}
+                  defaultValue={field.title}
+                  render={({ field }) => (
+                    <input
+                      {...field}
+                      type="text"
+                      className="w-full border outline-none border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder={`سرعنوان ${index + 1}`}
+                    />
+                  )}
+                />
+              </div>
+              <div>
+                <label className="block font-medium">
+                  متن سرعنوان {index + 1}
+                </label>
+                <Controller
+                  name={`headings[${index}].content`}
+                  control={control}
+                  defaultValue={field.content || ""}
+                  render={({ field }) => (
+                    <textarea
+                      {...field}
+                      className="w-full border outline-none border-gray-300 rounded-lg p-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder={`متن مرتبط با سرعنوان ${index + 1}`}
+                      rows={4}
+                    ></textarea>
+                  )}
+                />
+              </div>
             </div>
           ))}
         </div>
@@ -204,9 +212,9 @@ const FormCreatedBlogs = () => {
                 defaultValue={field.url}
                 render={({ field }) => (
                   <input
-                    {...field}
                     type="file"
                     accept="image/*"
+                    onChange={(e) => handleImageUpload(e, field.onChange)}
                     className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border file:rounded-lg file:border-gray-300 file:text-sm file:bg-gray-50 file:text-gray-700 hover:file:bg-gray-100"
                   />
                 )}

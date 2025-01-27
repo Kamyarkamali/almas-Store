@@ -205,4 +205,5 @@ export interface Post {
   status: boolean;
   createdAt: string;
   mainImage: string[];
+  trashed: boolean;
 }

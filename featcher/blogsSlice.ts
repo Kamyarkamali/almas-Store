@@ -1,7 +1,14 @@
+import { Post } from "@/types/interFace";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-// برای ذخیره سازی موقت بلاگ‌ها
-const initialState: any = {
+// تعریف تایپ برای پست‌ها
+
+// تعریف حالت اولیه
+interface BlogsState {
+  posts: Post[];
+}
+
+const initialState: BlogsState = {
   posts: [],
 };
 
@@ -9,36 +16,43 @@ const blogsSlice = createSlice({
   name: "blogs",
   initialState,
   reducers: {
-    setPosts(state, action: PayloadAction<any>) {
-      state.posts = action.payload.map((post: any) => ({
+    // تنظیم پست‌ها
+    setPosts(state, action: PayloadAction<Post[]>) {
+      state.posts = action.payload.map((post) => ({
         ...post,
-        trashed: post.trashed || false, // مطمئن شوید که `trashed` برای هر پست در نظر گرفته شده
+        trashed: post.trashed || false, // مقدار پیش‌فرض
+        status: post.status || false, // مقدار پیش‌فرض
       }));
     },
-    addPost(state, action: PayloadAction<any>) {
-      state.posts.push({ ...action.payload, trashed: false });
+    // افزودن پست جدید
+    addPost(state, action: PayloadAction<Omit<Post, "trashed" | "status">>) {
+      state.posts.push({
+        ...action.payload,
+        trashed: false,
+        status: false,
+      });
     },
-    // آکشن برای انتقال پست به زباله دان
+    // انتقال پست به زباله‌دان
     moveToTrash(state, action: PayloadAction<number>) {
-      const post = state.posts.find((p: any) => p.id === action.payload);
+      const post = state.posts.find((p) => p.id === action.payload);
       if (post) {
         post.trashed = true;
       }
     },
-    // آکشن برای بازیابی پست از زباله دان
+    // بازیابی پست از زباله‌دان
     restoreFromTrash(state, action: PayloadAction<number>) {
-      const post = state.posts.find((p: any) => p.id === action.payload);
+      const post = state.posts.find((p) => p.id === action.payload);
       if (post) {
         post.trashed = false;
       }
     },
-    // آکشن برای حذف دائم پست
+    // حذف دائمی پست
     deletePostPermanently(state, action: PayloadAction<number>) {
-      state.posts = state.posts.filter((p: any) => p.id !== action.payload);
+      state.posts = state.posts.filter((p) => p.id !== action.payload);
     },
-    // آکشن جدید برای تغییر وضعیت پست
+    // تغییر وضعیت پست
     togglePostStatus(state, action: PayloadAction<number>) {
-      const post = state.posts.find((p: any) => p.id === action.payload);
+      const post = state.posts.find((p) => p.id === action.payload);
       if (post) {
         post.status = !post.status;
       }
