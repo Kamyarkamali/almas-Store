@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { nanoid } from "nanoid";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addProduct } from "@/featcher/createProducts";
 import { toast, Toaster } from "react-hot-toast";
 import { Altet } from "@/types/enums";
@@ -11,23 +10,26 @@ import { Altet } from "@/types/enums";
 const AdminProductComponent = () => {
   const { register, handleSubmit, control, reset, setValue } = useForm({
     defaultValues: {
+      id: nanoid(),
       nameProduct: "",
+      image: "",
+      image2: "",
+      image3: "",
+      category1: "",
       category: "",
       description: "",
       price: "",
-      discountedPrice: "",
+      trashed: false,
+      discountPrice: "",
+      discount: false,
       activePrice: "price",
       status: "active",
       thumbnail: null,
+      Inventory: 0,
     },
   });
 
-  const [images, setImages] = useState<File[]>([]);
-
   const dispatch = useDispatch();
-
-  const state = useSelector((state: any) => state.product.products);
-  console.log(state);
 
   const addProducts = (product: any) => {
     dispatch(addProduct(product));
@@ -39,29 +41,16 @@ const AdminProductComponent = () => {
       ...data,
       id: nanoid(),
       thumbnail: data.thumbnail ? URL.createObjectURL(data.thumbnail) : null,
-      images,
     };
 
-    // console.log("ارسال محصول به Redux و API:", product);
-
-    // ارسال محصول به Redux
     addProducts(product);
-
     reset();
-    setImages([]);
-  };
-
-  const handleAddImage = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files) {
-      setImages((prev) => [...prev, ...Array.from(files)]);
-    }
   };
 
   const handleThumbnailUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
+    const file: any = e.target.files?.[0];
     if (file) {
-      setValue("thumbnail", file);
+      setValue("image", file);
     }
   };
 
@@ -82,11 +71,19 @@ const AdminProductComponent = () => {
           className="border p-3 rounded-lg w-full focus:outline-blue-500"
         />
 
-        {/* دسته‌بندی */}
+        {/* دسته‌بندی اول */}
         <input
           type="text"
-          placeholder="دسته‌بندی"
-          {...register("category", { required: "دسته‌بندی الزامی است" })}
+          placeholder="دسته‌بندی اصلی (مثلاً قطعات لپ تاپ)"
+          {...register("category1", { required: "دسته‌بندی اصلی الزامی است" })}
+          className="border p-3 rounded-lg w-full focus:outline-blue-500"
+        />
+
+        {/* دسته‌بندی دوم */}
+        <input
+          type="text"
+          placeholder="دسته‌بندی فرعی (مثلاً پردازنده)"
+          {...register("category", { required: "دسته‌بندی فرعی الزامی است" })}
           className="border p-3 rounded-lg w-full focus:outline-blue-500"
         />
 
@@ -107,31 +104,17 @@ const AdminProductComponent = () => {
               {...register("price", { required: "قیمت عادی الزامی است" })}
               className="border p-3 rounded-lg w-full focus:outline-blue-500"
             />
-            <label className="flex items-center gap-1">
-              <input
-                type="radio"
-                value="price"
-                {...register("activePrice")}
-                defaultChecked
-              />
-              قیمت عادی
-            </label>
+            <label className="text-sm text-gray-500">قیمت عادی</label>
           </div>
+
           <div className="flex items-center gap-2">
             <input
               type="number"
               placeholder="قیمت تخفیف‌خورده (تومان)"
-              {...register("discountedPrice")}
+              {...register("discountPrice")}
               className="border p-3 rounded-lg w-full focus:outline-blue-500"
             />
-            <label className="flex items-center gap-1">
-              <input
-                type="radio"
-                value="discountedPrice"
-                {...register("activePrice")}
-              />
-              قیمت تخفیف‌خورده
-            </label>
+            <label className="text-sm text-gray-500">قیمت تخفیف‌خورده</label>
           </div>
         </div>
 
@@ -144,9 +127,17 @@ const AdminProductComponent = () => {
           <option value="inactive">غیرفعال</option>
         </select>
 
+        {/* موجودی انبار */}
+        <input
+          type="number"
+          placeholder="موجودی انبار"
+          {...register("Inventory", { required: "موجودی انبار الزامی است" })}
+          className="border p-3 rounded-lg w-full focus:outline-blue-500"
+        />
+
         {/* آپلود عکس شاخص */}
         <Controller
-          name="thumbnail"
+          name="image"
           control={control}
           render={({ field }) => (
             <div>
@@ -166,48 +157,42 @@ const AdminProductComponent = () => {
           )}
         />
 
-        {/* آپلود عکس‌های محصول */}
-        <div>
-          <label className="block mb-2 text-sm font-medium">
-            عکس‌های محصول:
-          </label>
-          <div className="flex flex-col gap-3">
-            <button
-              type="button"
-              onClick={() => document.getElementById("upload-images")?.click()}
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition w-max"
-            >
-              + افزودن عکس
-            </button>
-            <input
-              type="file"
-              accept="image/*"
-              multiple
-              onChange={handleAddImage}
-              id="upload-images"
-              className="hidden"
-            />
-            <div className="grid grid-cols-3 gap-3 mt-2">
-              {images.map((image, index) => (
-                <div key={index} className="relative">
-                  <img
-                    src={URL.createObjectURL(image)}
-                    alt={`عکس ${index + 1}`}
-                    className="w-full h-24 object-cover rounded-lg border"
-                  />
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setImages(images.filter((_, i) => i !== index))
-                    }
-                    className="absolute top-1 right-1 bg-red-500 text-white text-xs p-1 rounded-full"
-                  >
-                    ✕
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* آپلود عکس‌های اضافی */}
+        <div className="grid grid-cols-2 gap-4">
+          <Controller
+            name="image2"
+            control={control}
+            render={({ field }) => (
+              <div>
+                <label className="block mb-2 text-sm font-medium">
+                  عکس محصول ۲:
+                </label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => field.onChange(e.target.files?.[0] || null)}
+                  className="border p-3 rounded-lg w-full"
+                />
+              </div>
+            )}
+          />
+          <Controller
+            name="image3"
+            control={control}
+            render={({ field }) => (
+              <div>
+                <label className="block mb-2 text-sm font-medium">
+                  عکس محصول ۳:
+                </label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => field.onChange(e.target.files?.[0] || null)}
+                  className="border p-3 rounded-lg w-full"
+                />
+              </div>
+            )}
+          />
         </div>
 
         {/* دکمه ارسال */}

@@ -148,6 +148,7 @@ export interface LaptoppartComponentProps {
   totalProducts?: Product[];
   filteredLaptop?: Product[];
   filteredProducts?: Product[];
+  state?: any;
 }
 
 export interface dataLabale {

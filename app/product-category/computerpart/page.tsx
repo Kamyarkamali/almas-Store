@@ -1,11 +1,16 @@
+"use client";
 import LaptoppartComponent from "@/components/templates/laptoppartComponent";
 import data from "@/public/json/endproduct.json";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
-const Computerpart = async (): Promise<JSX.Element> => {
+const Computerpart = (): JSX.Element => {
   const filteredProducts: any = data.filter(
     (item) => item.category === "کامپیوتر اسمبل شده"
   );
+
+  // گرفتن دیتای ساخته شده از ریداکس // موقت
+  const state = useSelector((state: any) => state.product.products);
 
   return (
     <div>
@@ -23,6 +28,7 @@ const Computerpart = async (): Promise<JSX.Element> => {
         </Link>
       </nav>
       <LaptoppartComponent
+        state={state}
         initialProducts={filteredProducts.slice(0, 8)}
         totalProducts={filteredProducts}
       />

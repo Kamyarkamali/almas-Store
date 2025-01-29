@@ -91,6 +91,7 @@ const ProductCard = ({
 const LaptoppartComponent: React.FC<LaptoppartComponentProps> = ({
   initialProducts,
   totalProducts,
+  state,
 }) => {
   const [visibleProducts, setVisibleProducts] = useState<Product[]>(
     initialProducts || []

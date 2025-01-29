@@ -95,6 +95,7 @@ const FormCreatedBlogs = () => {
             )}
           />
           {errors.title && (
+            // @ts-ignore
             <p className="text-red-500 text-sm">{errors.title.message}</p>
           )}
         </div>
@@ -138,9 +139,10 @@ const FormCreatedBlogs = () => {
               ></textarea>
             )}
           />
-          {errors.content && (
-            <p className="text-red-500 text-sm">{errors.content.message}</p>
-          )}
+          {errors.content?.message &&
+            typeof errors.content.message === "string" && (
+              <p className="text-red-500 text-sm">{errors.content.message}</p>
+            )}
         </div>
 
         {/* دکمه برای افزودن سرعنوان */}
@@ -159,6 +161,7 @@ const FormCreatedBlogs = () => {
                 <Controller
                   name={`headings[${index}].title`}
                   control={control}
+                  // @ts-ignore
                   defaultValue={field.title}
                   render={({ field }) => (
                     <input
@@ -177,6 +180,7 @@ const FormCreatedBlogs = () => {
                 <Controller
                   name={`headings[${index}].content`}
                   control={control}
+                  // @ts-ignore
                   defaultValue={field.content || ""}
                   render={({ field }) => (
                     <textarea
@@ -209,6 +213,7 @@ const FormCreatedBlogs = () => {
               <Controller
                 name={`additionalImages[${index}].url`}
                 control={control}
+                // @ts-ignore
                 defaultValue={field.url}
                 render={({ field }) => (
                   <input

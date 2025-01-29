@@ -13,4 +13,9 @@ export enum Altet {
   REMOVELISTCOMPARE = "لیست مقایسه خالی شد!",
   ADDBLOGS = "بلاگ اضافه شد",
   ADDPRODUCTS = "محصول اضافه شد",
+  ADDTOTRASHED = "محصول به زباله دان اضافه شد",
+  BACKTOPRODUCTS = "بازگشت به محصولات",
+  COMPILEDELETED = "محصول کامل حذف شد",
+  SHOWPRODDUCT = "محصول قابل مشاهده است",
+  NOTSHOWPRODUCT = "محصول قابل مشاهده نیست",
 }

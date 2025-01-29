@@ -13,6 +13,7 @@ const Sidebar = () => {
 
   // نمایش  زیر منوها-مقدار بلاگ ها
   const state = useSelector((state: any) => state.posts.posts);
+  const state2 = useSelector((state: any) => state.product.products);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
   const toggleSubmenu = (menuTitle: string) => {
@@ -50,7 +51,11 @@ const Sidebar = () => {
                     onClick={() => toggleSubmenu(item.title)}
                   >
                     <span>{item.title}</span>
-                    {Icon && <Icon size={20} />}
+
+                    {
+                      // @ts-ignore
+                      Icon && <Icon size={20} />
+                    }
                   </div>
 
                   {item.submenu.length > 0 && (
@@ -77,7 +82,13 @@ const Sidebar = () => {
                                 </span>
                               </div>
                             ) : (
-                              <span>{submenu.title}</span>
+                              <span>
+                                {`${
+                                  submenu.title === "همه محصولات"
+                                    ? state2.length + " عدد محصول"
+                                    : submenu.title
+                                }`}
+                              </span>
                             )}
                           </Link>
                         </li>

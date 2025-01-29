@@ -1,4 +1,3 @@
-// store/slices/productSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface Product {
@@ -8,12 +7,13 @@ interface Product {
   category1: string;
   category: string;
   slug: string;
-  images: string[]; // تغییر به آرایه‌ای از رشته‌ها برای تصاویر
+  trashed: boolean;
+  images: string[];
   description: string;
   status: "active" | "inactive";
   discount: boolean;
   inventory: number;
-  thumbnail: string; // اضافه کردن ویژگی thumbnail برای تصویر شاخص
+  thumbnail: string;
 }
 
 interface ProductState {
@@ -55,7 +55,17 @@ const productSlice = createSlice({
     moveToTrash: (state, action: PayloadAction<string>) => {
       const product = state.products.find((p) => p.id === action.payload);
       if (product) {
-        product.status = "inactive"; // تغییر وضعیت به "غیرفعال" به جای حذف کامل
+        product.trashed = true;
+      } else {
+        console.error("Product not found with id:", action.payload);
+      }
+    },
+    toggleTrashed: (state, action: PayloadAction<string>) => {
+      const product = state.products.find((p) => p.id === action.payload);
+      if (product) {
+        product.trashed = !product.trashed;
+      } else {
+        console.error("Product not found with id:", action.payload);
       }
     },
   },
@@ -67,5 +77,6 @@ export const {
   updateProduct,
   updateProductStatus,
   moveToTrash,
+  toggleTrashed,
 } = productSlice.actions;
 export default productSlice.reducer;
