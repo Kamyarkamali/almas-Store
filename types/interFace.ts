@@ -208,3 +208,18 @@ export interface Post {
   mainImage: string[];
   trashed: boolean;
 }
+
+interface User {
+  id: string;
+  fristname: string;
+  lastname: string;
+  phonenumber: string;
+  role: string;
+  avatar?: string;
+}
+
+export interface UserTableProps {
+  users?: User[];
+  onEdit: (user: User) => void;
+  onDelete: (user: User) => void;
+}
