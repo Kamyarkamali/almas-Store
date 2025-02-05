@@ -36,7 +36,7 @@ const TabaleUsers: React.FC<UserTableProps> = ({ onEdit, onDelete }) => {
       {loader ? (
         <div className="overflow-x-auto">
           {users.length > 0 ? (
-            <table className="min-w-full bg-white border border-gray-200">
+            <table className="min-w-full  bg-white border border-gray-200">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="py-2 px-4 border-b lg:text-[13px] text-[10px]">
