@@ -24,3 +24,43 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* استایل کلی ادیتور */
+.custom-quill {
+  direction: ltr;
+  @apply text-right rounded-lg border border-gray-300 shadow-md
+    transition-all duration-300;
+}
+
+/* تغییر رنگ و افکت هنگام فوکوس */
+.custom-quill:focus-within {
+  @apply border-blue-500 shadow-lg;
+}
+
+/* استایل نوار ابزار */
+.custom-quill .ql-toolbar {
+  @apply bg-gray-100 border-b border-gray-300 rounded-t-lg p-2;
+}
+
+/* استایل دکمه‌های نوار ابزار */
+.custom-quill .ql-toolbar button {
+  @apply text-gray-700 transition-all duration-200;
+}
+
+.custom-quill .ql-toolbar button:hover {
+  @apply text-blue-500;
+}
+
+/* استایل محتوای داخل ادیتور */
+.custom-quill .ql-container {
+  @apply bg-white text-gray-800 border-none rounded-b-lg min-h-[200px];
+}
+
+/* استایل متن و Placeholder */
+.custom-quill .ql-editor {
+  @apply text-lg leading-7 p-4;
+}
+
+.custom-quill .ql-editor.ql-blank::before {
+  @apply text-gray-500 text-right font-medium;
+}

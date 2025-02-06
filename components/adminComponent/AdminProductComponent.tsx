@@ -1,22 +1,24 @@
 "use client";
 
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import Select from "react-select";
+
+import { addProduct } from "@/featcher/createProducts";
 import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { nanoid } from "nanoid";
-import { useDispatch } from "react-redux";
-import { addProduct } from "@/featcher/createProducts";
 import { toast, Toaster } from "react-hot-toast";
 import { Altet } from "@/types/enums";
-import Select from "react-select";
-import { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 // تعریف نوع داده فرم
 interface ProductFormData {
   id: string;
   nameProduct: string;
   image: string;
-  image2: string;
-  image3: string;
   category1: string;
+  shortdescription: string;
   description: string;
   price: string;
   trashed: boolean;
@@ -49,6 +51,7 @@ const AdminProductComponent = () => {
         maunimages: [{ file: null }],
         image: "",
         category1: "",
+        shortdescription: "",
         description: "",
         price: "",
         trashed: false,
@@ -143,11 +146,38 @@ const AdminProductComponent = () => {
         </div>
 
         {/* توضیحات */}
-        <textarea
-          placeholder="توضیحات محصول"
-          {...register("description")}
-          className="border p-3 rounded-lg w-full focus:outline-blue-500"
-          rows={4}
+        <Controller
+          name="shortdescription"
+          control={control}
+          render={({ field }) => (
+            <div className="my-4">
+              <ReactQuill
+                {...field}
+                theme="snow"
+                placeholder="توضیح مختصری در مورد محصول بنویسید..."
+                onChange={(value) => field.onChange(value)}
+                className="custom-quill"
+              />
+            </div>
+          )}
+        />
+
+        {/* توضیحات کلی */}
+
+        <Controller
+          name="description"
+          control={control}
+          render={({ field }) => (
+            <div className="my-4">
+              <ReactQuill
+                {...field}
+                theme="snow"
+                placeholder="توضیحات کلی محصول را بنویسید..."
+                onChange={(value) => field.onChange(value)}
+                className="custom-quill"
+              />
+            </div>
+          )}
         />
 
         {/* قیمت‌ها */}
@@ -185,7 +215,7 @@ const AdminProductComponent = () => {
         {/* موجودی انبار */}
         <input
           type="text"
-          placeholder="موجودی انبار"
+          placeholder="موجودی انبار به تعداد موجود"
           {...register("Inventory", { required: "موجودی انبار الزامی است" })}
           className="border p-3 rounded-lg w-full focus:outline-blue-500"
         />
