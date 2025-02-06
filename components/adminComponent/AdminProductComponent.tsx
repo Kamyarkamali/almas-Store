@@ -1,32 +1,70 @@
 "use client";
 
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { nanoid } from "nanoid";
 import { useDispatch } from "react-redux";
 import { addProduct } from "@/featcher/createProducts";
 import { toast, Toaster } from "react-hot-toast";
 import { Altet } from "@/types/enums";
+import Select from "react-select";
+import { useState } from "react";
+
+// تعریف نوع داده فرم
+interface ProductFormData {
+  id: string;
+  nameProduct: string;
+  image: string;
+  image2: string;
+  image3: string;
+  category1: string;
+  description: string;
+  price: string;
+  trashed: boolean;
+  discountPrice: string;
+  discount: boolean;
+  activePrice: string;
+  status: string;
+  thumbnail: File | null;
+  Inventory: string;
+  maunimages: { file: File | null }[];
+}
+
+const categoryOptions: { value: string; label: string }[] = [
+  { value: "لپ‌تاپ", label: "لپ‌تاپ" },
+  { value: "گوشی", label: "گوشی" },
+  { value: "لوازم جانبی", label: "لوازم جانبی" },
+  { value: "کنسول بازی", label: "کنسول بازی" },
+];
 
 const AdminProductComponent = () => {
-  const { register, handleSubmit, control, reset, setValue } = useForm({
-    defaultValues: {
-      id: nanoid(),
-      nameProduct: "",
-      image: "",
-      image2: "",
-      image3: "",
-      category1: "",
-      category: "",
-      description: "",
-      price: "",
-      trashed: false,
-      discountPrice: "",
-      discount: false,
-      activePrice: "price",
-      status: "active",
-      thumbnail: null,
-      Inventory: 0,
-    },
+  const [categories, setCategories] = useState<
+    { value: string; label: string }[]
+  >([]);
+
+  const { register, handleSubmit, control, reset, setValue } =
+    useForm<ProductFormData>({
+      defaultValues: {
+        id: nanoid(),
+        nameProduct: "",
+        maunimages: [{ file: null }],
+        image: "",
+        category1: "",
+        description: "",
+        price: "",
+        trashed: false,
+        discountPrice: "",
+        discount: false,
+        activePrice: "price",
+        status: "active",
+        thumbnail: null,
+        Inventory: "",
+      },
+    });
+
+  // Move this inside the component, after defining `control`
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: "maunimages",
   });
 
   const dispatch = useDispatch();
@@ -36,11 +74,12 @@ const AdminProductComponent = () => {
     toast.success(Altet.ADDPRODUCTS);
   };
 
-  const onSubmit = (data: any) => {
-    const product = {
+  const onSubmit = (data: ProductFormData) => {
+    const product: ProductFormData = {
       ...data,
       id: nanoid(),
-      thumbnail: data.thumbnail ? URL.createObjectURL(data.thumbnail) : null,
+      category1: categories.map((cat) => cat.value).join(", "),
+      thumbnail: data.thumbnail ? data.thumbnail : null,
     };
 
     addProducts(product);
@@ -48,44 +87,60 @@ const AdminProductComponent = () => {
   };
 
   const handleThumbnailUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file: any = e.target.files?.[0];
+    const file: File | null = e.target.files?.[0] || null;
     if (file) {
-      setValue("image", file);
+      setValue("thumbnail", file);
     }
   };
-
   return (
     <div className="p-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
-      <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">
+      <h1 className="text-2xl text-white bg-blue-500 p-2 font-bold mb-6 text-center">
         افزودن محصول جدید
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-6 text-gray-700"
       >
-        {/* نام محصول */}
-        <input
-          type="text"
-          placeholder="نام محصول"
-          {...register("nameProduct", { required: "نام محصول الزامی است" })}
-          className="border p-3 rounded-lg w-full focus:outline-blue-500"
-        />
-
         {/* دسته‌بندی اول */}
-        <input
-          type="text"
-          placeholder="دسته‌بندی اصلی (مثلاً قطعات لپ تاپ)"
-          {...register("category1", { required: "دسته‌بندی اصلی الزامی است" })}
-          className="border p-3 rounded-lg w-full focus:outline-blue-500"
-        />
+        <div className="p-6 w-full mx-auto bg-white shadow-lg rounded-lg">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-6 text-gray-700"
+          >
+            {/* نام محصول */}
+            <input
+              type="text"
+              placeholder="نام محصول"
+              {...register("nameProduct", { required: "نام محصول الزامی است" })}
+              className="border p-3 rounded-lg w-full focus:outline-blue-500"
+            />
+            <h1 className="text-xl font-bold mb-6 text-center text-green-500">
+              افزودن دسته بندی محصول
+            </h1>
 
-        {/* دسته‌بندی دوم */}
-        <input
-          type="text"
-          placeholder="دسته‌بندی فرعی (مثلاً پردازنده)"
-          {...register("category", { required: "دسته‌بندی فرعی الزامی است" })}
-          className="border p-3 rounded-lg w-full focus:outline-blue-500"
-        />
+            {/* دسته‌بندی‌ها */}
+            <Controller
+              name="category1"
+              control={control}
+              render={({ field }) => (
+                <Select
+                  {...field}
+                  options={categoryOptions}
+                  isMulti
+                  placeholder="دسته‌بندی‌ها را انتخاب کنید..."
+                  className="border p-3 rounded-lg w-full"
+                  value={categories}
+                  onChange={(selectedOptions) => {
+                    setCategories(
+                      selectedOptions as { value: string; label: string }[]
+                    );
+                    field.onChange(selectedOptions);
+                  }}
+                />
+              )}
+            />
+          </form>
+        </div>
 
         {/* توضیحات */}
         <textarea
@@ -129,7 +184,7 @@ const AdminProductComponent = () => {
 
         {/* موجودی انبار */}
         <input
-          type="number"
+          type="text"
           placeholder="موجودی انبار"
           {...register("Inventory", { required: "موجودی انبار الزامی است" })}
           className="border p-3 rounded-lg w-full focus:outline-blue-500"
@@ -151,56 +206,77 @@ const AdminProductComponent = () => {
                   field.onChange(e.target.files?.[0] || null);
                   handleThumbnailUpload(e);
                 }}
-                className="border p-3 rounded-lg w-full"
+                className="block w-full text-sm text-slate-500
+        file:mr-4 file:py-2 file:px-4 file:rounded-md
+        file:border-0 file:text-sm file:font-semibold
+        file:bg-pink-50 file:text-pink-700 duration-200 cursor-pointer
+        hover:file:bg-pink-100"
               />
+              {/* <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => {
+                  field.onChange(e.target.files?.[0] || null);
+                  handleThumbnailUpload(e);
+                }}
+                className="border p-3 rounded-lg w-full"
+              /> */}
             </div>
           )}
         />
 
         {/* آپلود عکس‌های اضافی */}
         <div className="grid grid-cols-2 gap-4">
-          <Controller
-            name="image2"
-            control={control}
-            render={({ field }) => (
-              <div>
-                <label className="block mb-2 text-sm font-medium">
-                  عکس محصول ۲:
-                </label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => field.onChange(e.target.files?.[0] || null)}
-                  className="border p-3 rounded-lg w-full"
-                />
-              </div>
-            )}
-          />
-          <Controller
-            name="image3"
-            control={control}
-            render={({ field }) => (
-              <div>
-                <label className="block mb-2 text-sm font-medium">
-                  عکس محصول ۳:
-                </label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => field.onChange(e.target.files?.[0] || null)}
-                  className="border p-3 rounded-lg w-full"
-                />
-              </div>
-            )}
-          />
-        </div>
+          {fields.map((field, index) => (
+            <div key={field.id} className="relative">
+              <Controller
+                name={`maunimages.${index}.file`}
+                control={control}
+                render={({ field }) => (
+                  <div>
+                    <label className="block mb-2 text-sm font-medium">
+                      عکس محصول {index + 1}:
+                    </label>
 
-        {/* دکمه ارسال */}
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) =>
+                        field.onChange(e.target.files?.[0] || null)
+                      }
+                      className="block w-full text-sm text-slate-500
+                      file:mr-4 file:py-2 file:px-4 file:rounded-md
+                      file:border-0 file:text-sm file:font-semibold
+                      file:bg-pink-50 file:text-pink-700
+                      hover:file:bg-pink-100 duration-200 cursor-pointer"
+                    />
+                  </div>
+                )}
+              />
+              {index > 0 && (
+                <button
+                  type="button"
+                  onClick={() => remove(index)}
+                  className="absolute top-0 right-[-1.5rem] bg-red-500 text-[12px] text-white p-1 rounded"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+        <button
+          type="button"
+          onClick={() => append({ file: null })}
+          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          + افزودن عکس
+        </button>
         <button
           type="submit"
-          className="bg-green-500 text-white p-3 rounded-lg w-full hover:bg-green-600 transition"
+          className="mt-4 ml-4 bg-green-500 text-white px-4 py-2 rounded"
         >
-          ذخیره محصول
+          ذحیره محصول
         </button>
       </form>
       <Toaster />

@@ -220,6 +220,6 @@ interface User {
 
 export interface UserTableProps {
   users?: User[];
-  onEdit: (user: User) => void;
-  onDelete: (user: User) => void;
+  onEdit?: (user: User) => void;
+  onDelete?: (user: User) => void;
 }

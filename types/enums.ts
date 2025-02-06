@@ -18,4 +18,6 @@ export enum Altet {
   COMPILEDELETED = "محصول کامل حذف شد",
   SHOWPRODDUCT = "محصول قابل مشاهده است",
   NOTSHOWPRODUCT = "محصول قابل مشاهده نیست",
+  DELETEDUSER = "کاربر حذف شد",
+  SUCCESSEDITE = "ویرایش انجام شد",
 }

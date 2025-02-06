@@ -7,6 +7,9 @@ import { menuItems } from "@/data/data";
 import { MenuItem } from "@/types/interFace";
 import { useSelector } from "react-redux";
 
+import { IoMenu } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false); // برای باز و بسته شدن سایدبار
   const [openMenu, setOpenMenu] = useState<string | null>(null); // برای زیرمنوها
@@ -27,7 +30,7 @@ const Sidebar = () => {
         className="fixed top-4 right-4 z-50 bg-gray-900 text-white p-2 rounded md:hidden"
         onClick={toggleSidebar}
       >
-        {isOpen ? "بستن" : "منو"}
+        {isOpen ? <IoCloseSharp /> : <IoMenu />}
       </button>
 
       {/* سایدبار */}

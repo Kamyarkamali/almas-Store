@@ -4,7 +4,7 @@
     "fristname": "علیرضا",
     "lastname": "جمشیدی",
     "phonenumber": "09123298124",
-    "role": "user",
+    "role": "customer",
     "avatar": ""
   },
   {
@@ -12,7 +12,7 @@
     "fristname": "کوروش",
     "lastname": "اسفندیاری",
     "phonenumber": "09359812001",
-    "role": "user",
+    "role": "customer",
     "avatar": ""
   },
   {
@@ -20,7 +20,7 @@
     "fristname": "اهورا",
     "lastname": "زمانی",
     "phonenumber": "09123298124",
-    "role": "user",
+    "role": "customer",
     "avatar": ""
   },
   {
@@ -28,7 +28,7 @@
     "fristname": "فرهاد",
     "lastname": "رحمانی",
     "phonenumber": "09123298124",
-    "role": "user",
+    "role": "customer",
     "avatar": ""
   },
   {
@@ -36,7 +36,7 @@
     "fristname": "داریوش",
     "lastname": "امیری",
     "phonenumber": "09101193844",
-    "role": "user",
+    "role": "admin",
     "avatar?": ""
   }
 ]
