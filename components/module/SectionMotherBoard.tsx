@@ -16,12 +16,8 @@ import { Toaster, toast } from "react-hot-toast";
 import { NavigationOptions } from "swiper/types";
 import { useCart } from "@/hooks/useCart";
 import { Altet } from "@/types/enums";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  addToCompare,
-  removeFromCompare,
-  resetCompare,
-} from "@/featcher/compareSlice";
+import { useDispatch } from "react-redux";
+import { addToCompare } from "@/featcher/compareSlice";
 import useLocalStorage from "@/hooks/useLocalStorage";
 
 // مودال برای نمایش جزئیات محصول
@@ -42,7 +38,7 @@ const ModaProducts = ({
           className="w-full h-auto mb-4"
         />
         <h3 className="text-lg font-semibold">{product.nameProduct}</h3>
-        <p>{product.description}</p>
+        <p>{product.shortDescription}</p>
         <p className="mt-2 text-xl">{product.price} تومان</p>
         <button
           onClick={onClose}

@@ -1,5 +1,5 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 
 import HamburgerMenuSvg from "../icon/HamburgerMenuSvg";
@@ -10,6 +10,7 @@ import UserSvg from "../icon/UserSvg";
 import Image from "next/image";
 import { CombinedProps } from "@/types/type";
 import BasketShop from "./BasketShop";
+import HamburgerMenu from "./HamburgerMenu";
 
 const MenuMobile: FC<CombinedProps> = ({
   openLogin = false,
@@ -17,20 +18,33 @@ const MenuMobile: FC<CombinedProps> = ({
   openBasket = false,
   setOpenBasket = () => {},
 }) => {
+  const [openBlur, setOpenBlur] = useState<boolean>(false);
+
   return (
     <div
       className={`${
         openLogin ||
-        (openBasket &&
+        openBasket ||
+        (openBlur &&
           "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-xl z-[10000]")
       }`}
     >
       <div className="flex lg:hidden justify-between items-center pr-2 pl-2 pt-2">
-        <section>
-          <div className="flex gap-1 items-center cursor-pointer">
+        <section className="relative">
+          <div
+            onClick={() => setOpenBlur(true)}
+            className="flex cursor-pointer gap-1 items-center"
+          >
             <HamburgerMenuSvg width="30px" height="25px" />
-            <p className="text-[13px]">منو</p>
           </div>
+          {/* همبرگرمنو */}
+          <section
+            className={`absolute transition-all duration-300 ease-linear top-[-1.2rem] ${
+              openBlur ? "right-[-10px]" : "right-[-1200%]"
+            }`}
+          >
+            <HamburgerMenu openBlur={openBlur} setOpenBlur={setOpenBlur} />
+          </section>
         </section>
 
         <section>

@@ -11,8 +11,8 @@ import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false); // برای باز و بسته شدن سایدبار
-  const [openMenu, setOpenMenu] = useState<string | null>(null); // برای زیرمنوها
+  const [isOpen, setIsOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
 
   // نمایش  زیر منوها-مقدار بلاگ ها
   const state = useSelector((state: any) => state.posts.posts);

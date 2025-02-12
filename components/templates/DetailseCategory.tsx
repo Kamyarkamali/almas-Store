@@ -37,7 +37,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
     image3,
     image4,
     price,
-    Inventory,
+    stock,
   } = product || productLaptop || {};
 
   const handleQuantityDecrise = (item: any) => {
@@ -205,16 +205,14 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
         {/* قیمت و دکمه‌ها */}
         <div className="w-full h-fit md:w-1/2 lg:w-1/4 border-[4px] border-[#D9D9D9] rounded-sm p-4">
           <p className="text-xl font-bold text-red-600">
-            {Inventory > 0 ? formatNumber(price) + " تومان" : "ناموجود"}
+            {stock > 0 ? formatNumber(price) + " تومان" : "ناموجود"}
           </p>
           <p className="text-[14px] text-[#D60644] mt-3">
-            {Inventory > 0
-              ? `${Inventory} تعداد در انبار موجود است`
-              : "موجود نیست"}
+            {stock > 0 ? `${stock} تعداد در انبار موجود است` : "موجود نیست"}
           </p>
           <section
             className={`${
-              Inventory > 0 ? "flex" : "hidden"
+              stock > 0 ? "flex" : "hidden"
             } flex flex-col xl:flex-row items-center justify-center gap-4 mt-4`}
           >
             {cart.map((item) => (
@@ -237,7 +235,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
               </div>
             ))}
 
-            {Inventory > 0 ? (
+            {stock > 0 ? (
               <button
                 onClick={() => addProducts(product)}
                 className="bg-[#D60644] disabled:bg-gray-400 disabled:cursor-not-allowed hover:bg-[#ab0637] transition-all duration-200 text-[14px] text-white w-[175px] px-4 py-2 rounded"
@@ -276,7 +274,7 @@ const DetailseCategory: FC<DetailseCategoryProps> = ({
           {/* باکس مشاهده */}
           <div
             className={`${
-              Inventory > 0 ? "flex" : "hidden"
+              stock > 0 ? "flex" : "hidden"
             } flex justify-center mt-[2rem]`}
           >
             <div className="w-[265px] h-[74px] bg-[#FAE6EC] p-3">

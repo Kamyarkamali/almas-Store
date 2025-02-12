@@ -211,8 +211,8 @@ export const menuItems: MenuItem[] = [
     submenu: [
       { title: "همه نوشته‌ها", path: "/admin/posts/all" },
       { title: "نوشته تازه", path: "/admin/posts/add" },
+      { title: "ساخت منو", path: "/admin/products/createdmenu" },
       { title: "دسته‌ها", path: "/admin/posts/categories" },
-      { title: "برچسب‌ها", path: "/admin/posts/tags" },
       {
         title: "زباله دان",
         path: "/admin/trashed",
@@ -226,11 +226,8 @@ export const menuItems: MenuItem[] = [
     submenu: [
       { title: "همه محصولات", path: "/admin/products/all" },
       { title: "افزودن محصول جدید", path: "/admin/products/add" },
-      { title: "برندها", path: "/admin/products/brands" },
+      // { title: "برندها", path: "/admin/products/brands" },
       { title: "دسته‌بندی‌ها", path: "/admin/products/categories" },
-      { title: "برچسب‌ها", path: "/admin/products/tags" },
-      { title: "ویژگی‌ها", path: "/admin/products/features" },
-      { title: "نقد و بررسی", path: "/admin/products/reviews" },
     ],
   },
   {

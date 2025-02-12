@@ -55,6 +55,11 @@ export interface LoginForm {
   setOpenLogin: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+export interface OpenBlur {
+  openBlur: boolean;
+  setOpenBlur: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 // type form login
 export interface FormData {
   username: string;
@@ -100,8 +105,9 @@ export interface Product {
   category4?: string;
   slug: string;
   slug2?: string;
-  Inventory: number;
+  stock: number;
   description: string;
+  shortdescription: string;
   discount?: boolean;
   image2?: string | undefined;
   image3?: string | undefined;

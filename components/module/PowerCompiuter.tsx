@@ -19,6 +19,7 @@ import { Altet } from "@/types/enums";
 import { useDispatch } from "react-redux";
 import { addToCompare } from "@/featcher/compareSlice";
 import useLocalStorage from "@/hooks/useLocalStorage";
+import formatNumber from "@/helpers/replaceNumber";
 
 // مودال برای نمایش جزئیات محصول
 const ModaProducts = ({
@@ -38,7 +39,7 @@ const ModaProducts = ({
           className="w-full h-auto mb-4"
         />
         <h3 className="text-lg font-semibold">{product.nameProduct}</h3>
-        <p>{product.description}</p>
+        <p>{product.shortdescription}</p>
         <p className="mt-2 text-xl">{product.price} تومان</p>
         <button
           onClick={onClose}
@@ -156,7 +157,7 @@ const PowerSection = () => {
                 {product.nameProduct}
               </h3>
               <p className="text-center text-red-600 mt-4 text-[12px] lg:text-[14px]">
-                {product.price} تومان
+                {formatNumber(product.price)} تومان
               </p>
 
               {/* باکس گزینه‌ها */}

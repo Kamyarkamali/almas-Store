@@ -11,7 +11,6 @@ import { useCart } from "@/hooks/useCart";
 import { useSelector } from "react-redux";
 import { selectCartTotalPrice } from "@/featcher/crtSlice";
 import formatNumber from "@/helpers/replaceNumber";
-import useLocalStorage from "@/hooks/useLocalStorage";
 
 function TopMenuSection() {
   const { favorites } = useFavorites();

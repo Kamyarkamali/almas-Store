@@ -38,7 +38,7 @@ const ModaProducts = ({
           className="w-full h-auto mb-4"
         />
         <h3 className="text-lg font-semibold">{product.nameProduct}</h3>
-        <p>{product.description}</p>
+        <p>{product.shortdescription}</p>
         <p className="mt-2 text-xl">{product.price} تومان</p>
         <button
           onClick={onClose}

@@ -1,7 +1,11 @@
-import React from "react";
+import Categorys from "@/components/adminComponent/Categorys";
 
 function page() {
-  return <div>page</div>;
+  return (
+    <div>
+      <Categorys />
+    </div>
+  );
 }
 
 export default page;
