@@ -78,7 +78,7 @@ const ProductCard = ({
           />
         </button>
         <button className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors">
-          {product.Inventory > 0 ? "افزودن به سبد خرید" : "اطلاعات بیشتر"}
+          {product.stock > 0 ? "افزودن به سبد خرید" : "اطلاعات بیشتر"}
         </button>
         <section className="relative">
           <button className="py-2 text-white text-sm rounded-md transition-colors">

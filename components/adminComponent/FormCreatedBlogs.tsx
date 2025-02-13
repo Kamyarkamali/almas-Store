@@ -143,6 +143,7 @@ export default function BlogForm() {
               {extraImageInputs.map((index) => (
                 <input
                   key={index}
+                  // @ts-ignore
                   {...register(`extraImages.${index}`)}
                   type="file"
                   accept="image/*"

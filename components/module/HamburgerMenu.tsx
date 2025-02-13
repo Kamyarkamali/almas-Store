@@ -23,6 +23,7 @@ const HamburgerMenu: FC<OpenBlur> = ({ openBlur, setOpenBlur }) => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
+      // @ts-ignore
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setOpenBlur(false);
       }

@@ -91,7 +91,7 @@ const ProductCard = ({
             alt="faiverite"
           />
         </button>
-        {product.Inventory > 0 ? (
+        {product.stock > 0 ? (
           <button
             onClick={() => addProducts(product)}
             className="w-[99px] h-[39px] py-2 bg-[#D60444] text-white text-[10px] hover:font-bold hover:duration-300 rounded-md transition-colors"
@@ -134,7 +134,7 @@ const MainProducts = ({ products }: { products: Product[] }) => {
       const filtered = products.filter(
         (item) =>
           (checkbox ? item.discount === checkbox : true) &&
-          (checkbox2 ? item.Inventory > 0 : true)
+          (checkbox2 ? item.stock > 0 : true)
       );
       setShow(filtered);
     } else {
