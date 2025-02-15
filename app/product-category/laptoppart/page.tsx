@@ -1,4 +1,3 @@
-import { Product } from "@/types/interFace";
 import LaptoppartComponent from "@/components/templates/laptoppartComponent";
 import data from "@/public/json/endproduct.json";
 import Link from "next/link";

@@ -50,10 +50,6 @@ const ProductCard = ({
           />
         </Link>
       </div>
-      {/* نام محصول */}
-      <p className="text-center text-[14px] text-[#333333] leading-7 mt-4 hover:text-[#777777] cursor-pointer duration-150">
-        {product.nameProduct}
-      </p>
       <div
         className={`${
           product.discount
@@ -63,6 +59,19 @@ const ProductCard = ({
       >
         <p>{product.discount === true ? "تخفیف 10 %" : ""}</p>
       </div>
+      {/* نام محصول */}
+      <p className="text-center text-[14px] text-[#333333] leading-7 mt-4 hover:text-[#777777] cursor-pointer duration-150">
+        {product.nameProduct}
+      </p>
+      {/* <div
+        className={`${
+          product.discount
+            ? "text-[10px] bg-green-600 text-white py-1 px-2 rounded-md"
+            : ""
+        } `}
+      >
+        <p>{product.discount === true ? "تخفیف 10 %" : ""}</p>
+      </div> */}
       {/* قیمت */}
       <p
         className={
@@ -129,6 +138,11 @@ const MainProducts = ({ products }: { products: Product[] }) => {
   const [show, setShow] = useState<Product[]>(products); // مقدار اولیه برابر با تمام محصولات
   const { checkbox, checkbox2 } = useFavorites();
 
+  const [currentPage, setCurrentPage] = useState<number>(1);
+
+  const productPerPage: number = 8;
+  const totalPage = Math.ceil(show.length / productPerPage);
+
   useEffect(() => {
     if (checkbox || checkbox2) {
       const filtered = products.filter(
@@ -140,7 +154,13 @@ const MainProducts = ({ products }: { products: Product[] }) => {
     } else {
       setShow(products);
     }
+    setCurrentPage(1);
   }, [checkbox, checkbox2, products]);
+
+  // محصولات مربوط به صفحه جاری
+  const indexOfLastProduct = currentPage * productPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productPerPage;
+  const currentProducts = show.slice(indexOfFirstProduct, indexOfLastProduct);
 
   if (!show || show.length === 0) {
     return (
@@ -174,6 +194,38 @@ const MainProducts = ({ products }: { products: Product[] }) => {
           setOpenModal={setOpenModal}
         />
       )}
+
+      {/* paganation */}
+      <div className="flex items-center justify-center mt-4">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className={`px-4 text-[13px]  py-2 rounded-md ${
+            currentPage === 1
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-blue-500 text-white hover:bg-blue-700"
+          }`}
+        >
+          قبلی
+        </button>
+        <span className="px-4 py-2 text-red-500 font-bold">
+          صفحه {currentPage} از {totalPage}
+        </span>
+        <button
+          onClick={() =>
+            setCurrentPage((prev) => Math.min(prev + 1, totalPage))
+          }
+          disabled={currentPage === totalPage}
+          className={`px-4 py-2 rounded-md ${
+            currentPage === totalPage
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-blue-500 text-white hover:bg-blue-700"
+          }`}
+        >
+          بعدی
+        </button>
+      </div>
+
       <Toaster />
     </div>
   );
