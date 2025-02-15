@@ -12,7 +12,7 @@ const Layouts: FC<Chidlren> = ({ children }) => {
 
   // مخفی سازی هدر و فوتر در  پنل ادمین
   useEffect(() => {
-    if (path && path.startsWith("/admin")) {
+    if ((path && path.startsWith("/admin")) || path.startsWith("/dashboard")) {
       setHide(true);
     } else {
       setHide(false);

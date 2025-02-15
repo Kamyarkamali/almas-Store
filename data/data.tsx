@@ -1,4 +1,5 @@
 import { Boxs, dataLabale, MenuItem } from "@/types/interFace";
+import { title } from "process";
 
 export const Box: Boxs[] = [
   {
@@ -76,6 +77,12 @@ export const dataLabales: dataLabale[] = [
 ];
 
 export const dashboard = [
+  {
+    id: 7,
+    title: "فروشگاه",
+    image: "/images/dasboard/home-svgrepo-com.svg",
+    href: "/",
+  },
   {
     id: 1,
     title: "داشبورد",
