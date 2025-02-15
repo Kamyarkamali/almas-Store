@@ -6,9 +6,11 @@ import ArrowDown from "../icon/ArrowDown";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useFavorites } from "@/context/FavoritesProvider";
+import PriceRangeButton from "../buttons/PriceRangeButton";
 
 export default function Sidebar() {
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
+  const [priceRange, setPriceRange] = useState({ min: 0, max: 1000000 });
   const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
 
   const { toggleCheckbox, toggleChebox2 } = useFavorites();
@@ -52,9 +54,16 @@ export default function Sidebar() {
         </div>
 
         {/* بخش فیلتر قیمت */}
-        <div className="border-[2px] w-[362px] h-[200px] p-5 mt-[30px]">
+        <div className="border-[2px] flex flex-col  w-[362px] h-[200px] p-5 mt-[30px]">
           <div className="bg-[#ECECEC] h-[40px] flex items-center justify-start p-4">
             <h2 className="font-bold">فیلتر قیمت</h2>
+          </div>
+          <div className="flex justify-center items-center mt-9">
+            <PriceRangeButton
+              min={priceRange.min}
+              max={priceRange.max}
+              onChange={setPriceRange}
+            />
           </div>
           <div className="flex flex-col h-full mt-[23px]">
             {/* اسلایدر */}
