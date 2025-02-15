@@ -4,13 +4,15 @@ import { FC, useState } from "react";
 import Description from "./Description";
 import Comments from "./Comments";
 import { DetailseCategoryProps } from "@/types/interFace";
+import FeaturesComponents from "./FeaturesComponents";
 
 const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
   const { price, stock, nameProduct, category } = product || {};
 
-  const [active, setActive] = useState<"توضیحات" | "نظرات">("توضیحات");
-
-  const handleActive = (value: "توضیحات" | "نظرات") => {
+  const [active, setActive] = useState<"توضیحات" | "ویژگی ها" | "نظرات">(
+    "توضیحات"
+  );
+  const handleActive = (value: "توضیحات" | "ویژگی ها" | "نظرات") => {
     setActive(value);
   };
 
@@ -27,6 +29,19 @@ const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
           <span
             className={`absolute  bottom-0 left-0 h-[2px] bg-red-500 transition-all duration-300 ${
               active === "توضیحات" ? "w-full" : "w-0"
+            }`}
+          ></span>
+        </p>
+        <p
+          onClick={() => handleActive("ویژگی ها")}
+          className={`relative text-[12px] lg:text-[14px] py-2 lg:py-0 cursor-pointer ${
+            active === "ویژگی ها" ? "text-red-500" : ""
+          }`}
+        >
+          ویژگی ها
+          <span
+            className={`absolute bottom-0 left-0 h-[2px] bg-red-500 transition-all duration-300 ${
+              active === "ویژگی ها" ? "w-full" : "w-0"
             }`}
           ></span>
         </p>
@@ -61,6 +76,7 @@ const DesctComments: FC<DetailseCategoryProps> = ({ product }) => {
             category={category}
           />
         )}
+        {active === "ویژگی ها" && <FeaturesComponents />}
       </div>
     </div>
   );
