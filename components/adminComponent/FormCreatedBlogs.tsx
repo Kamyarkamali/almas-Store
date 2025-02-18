@@ -2,7 +2,7 @@
 import Loader from "@/ui/Loader";
 import { useEffect, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
-import ReactQuill from "react-quill";
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 import "react-quill/dist/quill.snow.css";
 
 interface BlogFormData {
