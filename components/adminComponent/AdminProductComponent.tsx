@@ -3,13 +3,14 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import Select from "react-select";
+import dynamic from "next/dynamic";
 
 import { addProduct } from "@/featcher/createProducts";
 import { useForm, Controller, useFieldArray } from "react-hook-form";
 import { nanoid } from "nanoid";
 import { toast, Toaster } from "react-hot-toast";
 import { Altet } from "@/types/enums";
-import ReactQuill from "react-quill";
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 import "react-quill/dist/quill.snow.css";
 
 // تعریف نوع داده فرم
