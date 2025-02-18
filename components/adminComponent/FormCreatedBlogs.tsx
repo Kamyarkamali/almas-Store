@@ -1,5 +1,7 @@
 "use client";
+
 import Loader from "@/ui/Loader";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
