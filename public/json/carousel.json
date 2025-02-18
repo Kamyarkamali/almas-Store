@@ -1,0 +1,128 @@
+[
+    {
+     " id": 1,
+     " imag": "/images/labaleLaptops/1.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 2,
+     " imag": "/images/labaleLaptops/2.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 3,
+     " imag": "/images/labaleLaptops/3.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 4,
+     " imag": "/images/labaleLaptops/4.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 5,
+     " imag": "/images/labaleLaptops/5.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 6,
+     " imag": "/images/labaleLaptops/6.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 7,
+     " imag": "/images/labaleLaptops/7.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 8,
+     " imag": "/images/labaleLaptops/8.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+     " id": 9,
+     " imag": "/images/labaleLaptops/9.webp",
+     " path": "/",
+     " like": false,
+     " categor": ""
+    },
+    {
+      "id": 11,
+      "image": "/images/labaleLaptops/11.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id": "12",
+      "image": "/images/labaleLaptops/12.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id": "13",
+      "image": "/images/labaleLaptops/13.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id:" :"14",
+      "image": "/images/labaleLaptops/14.webp",
+      "paths": "/",
+      "liked": false,
+      "category" :""
+    },
+    {
+      "id": 15,
+      "image": "/images/labaleLaptops/15.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id:" :"16",
+      "image": "/images/labaleLaptops/16.webp",
+      "paths" :"/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id:" :"17",
+      "image": "/images/labaleLaptops/17.webp",
+      "paths" :"/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id:" :"18",
+      "image": "/images/labaleLaptops/18.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+    {
+      "id:" :"19",
+      "image": "/images/labaleLaptops/19.webp",
+      "paths": "/",
+      "liked": false,
+      "category": ""
+    },
+  ];

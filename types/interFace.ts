@@ -160,6 +160,9 @@ export interface LaptoppartComponentProps {
 export interface dataLabale {
   id: number;
   image: string;
+  paths: string;
+  liked: boolean;
+  category: string;
 }
 
 export interface FilteredData {

@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "image": "image1.jpg",
+      "category": "لپ تاپ",
+      "url": "laptop"
+    },
+    {
+      "image": "image2.jpg",
+      "category": "رم لپ تاپ",
+      "url": "ram"
+    },
+    {
+      "image": "image2.jpg",
+      "category": "هارد لپ تاپ",
+      "url": "hardlaptop"
+    }
+  ]
+}

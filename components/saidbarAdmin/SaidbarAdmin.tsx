@@ -67,7 +67,7 @@ const Sidebar = () => {
                         openMenu === item.title ? "block" : "hidden"
                       } mt-1 space-y-1 pr-8`}
                     >
-                      {item.submenu.map((submenu) => (
+                      {item?.submenu?.map((submenu) => (
                         <li key={submenu.title}>
                           <Link
                             href={submenu.path}
